@@ -82,9 +82,26 @@ A tabela a seguir contém a relação dos Requisitos Funcionais elicitados, com 
 
 | IDENTIFICADOR | NOME | DESCRIÇÃO |
 :---|:---|:---|
-|RF-001 |Nome do Requisito | Descreva aqui as informações sobre o requisito |
-|RF-002 | Nome do Requisito | Descreva aqui as informações sobre o segundo requisito |
-
+|RF-001 | Criar conta | criar uma conta para acessar o site. | 
+|RF-002 | Acessar conta | acessar a conta caso já tenha uma. | 
+|RF-003 | Navegar | ver produtos. | 
+|RF-004 | Adicionar produto | adicionar produto para venda | 
+|RF-005 | Selecionar preço | Filtrar preço máximo e mínimo de produto. | 
+|RF-006 | Selecionar marcar | Filtrar marcas dos produtos. | 
+|RF-007 | Selecionar modelo | Filtrar o modelo do produto. | 
+|RF-008 | Selecionar ano| Filtrar ano do produto. | 
+|RF-009 | Selecionar especificações | Filtrar especificações. | 
+|RF-010 | Selecionar estado de uso do produto | Filtrar o produto por usado ou novo. | 
+|RF-011 | Selecionar produto | selecionar para a compra. | 
+|RF-012 | Descrever o produto | especificações do produto. | 
+|RF-013 | Selecionar forma de pagamento | selecionar de forma simples as opções de pagamento. | 
+|RF-014 | Cadastrar cartão de crédito/débito | cadastrar dados do cartão de crédito/débito para compras. | 
+|RF-015 | Desvincular cartão de crédito/débito | fazer possível a desvinculação do cartão da conta. | 
+|RF-016 | Cancelar compra | cancelamento de compra. | 
+|RF-017 | Reembolsar compra | Devolver o dinheiro ao comprador. | 
+|RF-018 | Avisar a falta de estoque | Avisar ao usuário que acabou o estoque do produto. | 
+|RF-019 | Conversar com concessionaria | Conversar através de um chat durante o horário comercial com a concessionaria. | 
+|RF-020 | Apagar conta | Excluir conta do site. | 
 
 ## Requisitos Não Funcionais
 A tabela a seguir contém a relação com os Requisitos Não Funcionais identificados, contendo identificador, nome, descrição e prioridade:
