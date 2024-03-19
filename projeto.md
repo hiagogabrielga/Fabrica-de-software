@@ -29,7 +29,7 @@
   * [REQUISITOS NÃO FUNCIONAIS](#requisitos-não-funcionais)
 * [PROTOTIPAGEM](#prototipagem)
 * [DIAGRAMA DE CASOS DE USO](#diagrama-de-casos-de-uso)
-* [DIAGRAMA DE CLASSES](/img/diagramafs.jpg)
+* [DIAGRAMA DE CLASSES]((#diagrama-de-classes) /img/diagramafs.jpg)
 * [REFERÊNCIAS](#referências)
 
 
