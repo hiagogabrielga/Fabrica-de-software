@@ -29,7 +29,7 @@
   * [REQUISITOS NÃO FUNCIONAIS](#requisitos-não-funcionais)
 * [PROTOTIPAGEM](#prototipagem)
 * [DIAGRAMA DE CASOS DE USO](#diagrama-de-casos-de-uso)
-* [DIAGRAMA DE CLASSES](/img/diagramafs.jpg)
+* [DIAGRAMA DE CLASSES](#diagrama-de-classes)
 * [REFERÊNCIAS](#referências)
 
 
@@ -127,15 +127,14 @@ A tabela a seguir contém a relação com os Requisitos Não Funcionais identifi
 
 # Diagrama de Casos de Uso
 
-
 ![Diagrama de Casos de Uso](/img/use_case_placas.png)
 
 [ [INÍCIO](#fibonacci-management-system) ]
 
 # Diagrama de Classes
 
-[ [INÍCIO] (#diagrama-de-casos-de-uso)]
-
+[ [INÍCIO] (#diagrama-de-classes)]
+[ [Diagrama de classes](/img/diagramafs.jpg)]
 
 # REFERÊNCIAS
 
