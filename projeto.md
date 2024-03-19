@@ -29,7 +29,7 @@
   * [REQUISITOS NÃO FUNCIONAIS](#requisitos-não-funcionais)
 * [PROTOTIPAGEM](#prototipagem)
 * [DIAGRAMA DE CASOS DE USO](#diagrama-de-casos-de-uso)
-* [DIAGRAMA DE CLASSES](#diagrama-de-classes)
+* [DIAGRAMA DE CLASSES](/img/diagramafs.jpg)
 * [REFERÊNCIAS](#referências)
 
 
@@ -134,7 +134,7 @@ A tabela a seguir contém a relação com os Requisitos Não Funcionais identifi
 
 # Diagrama de Classes
 
-[ [INÍCIO](/img/diagramafs.jpg) ]
+[ [INÍCIO] ]
 
 
 # REFERÊNCIAS
