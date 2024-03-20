@@ -133,7 +133,7 @@ A tabela a seguir contém a relação com os Requisitos Não Funcionais identifi
 
 # Diagrama de Classes
 
-[Diagrama de classes](/img/diagramafs.jpg)
+![Diagrama de classes](/img/diagramafs.jpg)
 
 [ [INÍCIO](#diagrama-de-classes)]
 
