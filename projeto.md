@@ -10,7 +10,7 @@
 |Hiago Gabriel Gonçalves André|Gerente de Projeto|hiago.g@estudante.ifro.edu.br|
 |Wagner da Silva Ferreira Filho|Gerente de Projeto|wagner.ferreira@ifro.edu.br|
 |Wagner da Silva Ferreira Filho|Gerente de Projeto|wagner.ferreira@ifro.edu.br|
-|Wagner da Silva Ferreira Filho|Gerente de Projeto|wagner.ferreira@ifro.edu.br|
+|Nathan Teixeira Lopes|Gerente de Projeto|texeiranathan20@gmail.com|
 |Wagner da Silva Ferreira Filho|Gerente de Projeto|wagner.ferreira@ifro.edu.br|
 
 
