@@ -7,9 +7,10 @@
 ## *Stakeholders*
 |NOME|CARGO|E-MAIL|
 |:---|:---|:---|
-|Hiago Gabriel Gonçalves André|Gerente de Projeto|hiago.g@estudante.ifro.edu.br|
 |Carlos Eduardo Gomes de Oliveira|Gerente de Projeto|o.carlos@estudante.ifro.edu.br|
+|Hiago Gabriel Gonçalves André|Gerente de Projeto|hiago.g@estudante.ifro.edu.br|
 |Júlia de Abreu Alves|Gerente de Projeto|julia.abreu@estudante.ifro.edu.br|
+|Maria Eduarda de Sousa de Oliveira|Gerente de Projeto|eduarda.sousa@estudante.ifro.edu.br|
 |Nathan Teixeira Lopes|Gerente de Projeto|lopes.teixeira@estudante.ifro.edu.br|
 |Vitor Gabriel Capelleto|Gerente de Projeto|capelleto.gabriel@estudante.ifro.edu.br|
 
