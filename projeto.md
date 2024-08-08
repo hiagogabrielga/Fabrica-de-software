@@ -1,6 +1,6 @@
 <img src='/img/logo.png' alt='logo da empresa' width='90px' heidth='90px'/>
 
-# *Web Cars*
+# *Web-Cars*
 
 # PROJETO DE SOFTWARE
 
@@ -43,7 +43,7 @@
 | BENEFÍCIOS ESPERADOS |* Melhor acompanhamento pedagógico;<br/>* Redução da evasão escolar;<br/>* Aumento do número de matrículas;<br/>* Redução da inadimplência escolar;<br/>* Automatização dos processos financeiross|
 | INÍCIO E TÉRMINO PREVISTOS | 14/03/2023 - 07/12/2023 |
 
-[ [INÍCIO](#fibonacci-management-system) ]
+[ [INÍCIO](#Web-Cars) ]
 
 # INTRODUÇÃO
 
