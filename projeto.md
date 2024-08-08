@@ -101,7 +101,7 @@ A tabela a seguir contém a relação dos Requisitos Funcionais elicitados, com 
 |RF-017 | Possibilitar Avaliações e Comentários | Permitir que os usuários deixem avaliações e comentários nos produtos, enriquecendo a experiência de compra. Apresentar uma média de avaliações na página do produto para orientar as decisões de compra. | 
 |RF-018 | Possibilitar avaliações dos vendedores | Disponibilizar um sistema de avaliação para os vendedores, permitindo que compradores expressem suas experiências. Utilize essas avaliações para destacar vendedores confiáveis e construir confiança na comunidade. | 
 RF-019 | Adicionar Produtos ao Repositório | As concessionárias ou vendedores devem ter a capacidade de adicionar seus produtos ao repositório. Para cada produto, elas deverão fornecer as seguintes informações obrigatórias: Descrição detalhada do produto. Dados técnicos e especificações relevantes. Pelo menos 4 fotos de alta qualidade, capturando o produto de diferentes ângulos, para que os clientes possam visualizar todos os detalhes importantes. |
-RF-020 | Integrar o sistema com GPS para mostrar a localização das concessionárias que estão vendendo o veículo e fornecer rotas diretas para visitação. Vendedores não comerciais terão a opção de escolher que irão querer ou não fornecer sua localização, e serão avisados dos riscos.  |
+RF-020 | Integrar o sistema com GPS | Fornecer ferramenta para mostrar a localização das concessionárias que estão vendendo o veículo e fornecer rotas diretas para visitação. Vendedores não comerciais terão a opção de escolher que irão querer ou não fornecer sua localização, e serão avisados dos riscos.  |
 
 [ [INÍCIO](#Web-Cars) ]
 
