@@ -1,6 +1,6 @@
 <img src='/img/logo.png' alt='logo da empresa' width='90px' heidth='90px'/>
 
-# *Web-Cars*
+# *Web Cars*
 
 # PROJETO DE SOFTWARE
 
@@ -51,7 +51,7 @@
 
 Este documento destina-se aos clientes, engenheiros, gerentes e demais stakeholders deste projeto. O propósito deste documento é apresentar a descrição dos serviços e funções que o sistema Web Cars deve prover, bem como as suas restrições de operação e propriedades gerais, a fim de ilustrar uma descrição detalhada do sistema para um auxílio durante as etapas de análise, projeto e testes. O documento especifica todos os requisitos funcionais e não funcionais do sistema e contém a prototipagem, além de diagramas UML que foram construídos levando-se em conta as funcionalidades identificadas durante a fase de concepção do sistema.
 
-[ [INÍCIO](#fibonacci-management-system) ]
+[ [INÍCIO](#Web-Cars) ]
 
 # DESCRIÇÃO GERAL
 
