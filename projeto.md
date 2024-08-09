@@ -39,7 +39,7 @@
 |:---|:---|
 | NOME DO PROJETO | Web cars|
 | GERENTE DO PROJETO | Wagner Ferreira |
-| PRINCIPAL OBJETIVO | Forecer uma forma de auuxiliar concessionária locais com um repositório de carros. |
+| PRINCIPAL OBJETIVO | Fornecer uma forma de auxiliar concessionárias locais com um repositório de carros. |
 | BENEFÍCIOS ESPERADOS |* Maior alcance de vendas;<br/>* Apresentar maior variedades para clientes;|
 | INÍCIO E TÉRMINO PREVISTOS | 14/03/2023 - 07/12/2023 |
 
