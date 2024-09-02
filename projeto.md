@@ -102,7 +102,7 @@ A tabela a seguir contém a relação dos Requisitos Funcionais elicitados, com 
 | RF-017 | Agendamento de test drives | Implementar uma funcionalidade que permita aos clientes agendar test drives diretamente com as concessionárias ou vendedores autônomos. O sistema deve enviar lembretes automáticos via e-mail e permitir que o vendedor aceite ou sugira outro horário. |
 | RF-018 | Histórico de visualizações de produtos | Fornecer para concessionárias e vendedores autônomos um sistema que notifique quando uma conta visualizar um de seus produtos, permitindo acompanhamento e análise de interesse. |
 | RF-019 | Implementar opção de se tornar vendedor autônomo| na conta pessoal do usuário que é apenas cliente, terá o campo de se tornar vendedor. E na conta do vendedor terá como se tornar cliente. |
-
+| RF-020 | Implementar auto-Logout por Inatividade| Implementar uma funcionalidade que desconecta automaticamente o usuário de sua conta após um período de inatividade de 30 minutos. |
 
 
 [ [INÍCIO](#Web-Cars) ]
