@@ -101,10 +101,9 @@ A tabela a seguir contém a relação dos Requisitos Funcionais elicitados, com 
 | RF-016 | Fornecer atualizações de estoque | Notificar os clientes quando um item anteriormente esgotado estiver disponível novamente. Exibir informações de estoque em tempo real para evitar compras de produtos fora de estoque. | 
 | RF-017 | Acessar suporte ao cliente online | Implementar um sistema de chat ao vivo para oferecer suporte instantâneo durante o processo de compra. Disponibilizar uma seção de Perguntas Frequentes (FAQ) para responder às dúvidas mais comuns dos usuários. | 
 | RF-018 | Limitar visitantes | Visitantes no site não poderão negociar, avaliar ou receber notificações do site. | 
-| RF-019 | Implementar sistema de mensagens internas | Permitir que compradores e vendedores (concessionárias e autônomos) se comuniquem diretamente através de um sistema de mensagens internas, sem necessidade de expor informações pessoais, como e-mails ou números de telefone. As mensagens devem ser monitoradas para evitar práticas abusivas. | 
-| RF-020 | Agendamento de test drives | Implementar uma funcionalidade que permita aos clientes agendar test drives diretamente com as concessionárias ou vendedores autônomos. O sistema deve enviar lembretes automáticos via e-mail e permitir que o vendedor aceite ou sugira outro horário. | 
-| RF-021 | Histórico de visualizações de produtos | Fornecer para concessionárias e vendedores autônomos um sistema que notifique quando uma conta visualizar um de seus produtos, permitindo acompanhamento e análise de interesse. | 
-| RF-022 | Implementar opção de se tornar vendedor autônomo| na conta pessoal do usuário que é apenas cliente, terá o campo de se tornar vendedor. E na conta do vendedor terá como se tornar cliente. | 
+| RF-019 | Agendamento de test drives | Implementar uma funcionalidade que permita aos clientes agendar test drives diretamente com as concessionárias ou vendedores autônomos. O sistema deve enviar lembretes automáticos via e-mail e permitir que o vendedor aceite ou sugira outro horário. | 
+| RF-020 | Histórico de visualizações de produtos | Fornecer para concessionárias e vendedores autônomos um sistema que notifique quando uma conta visualizar um de seus produtos, permitindo acompanhamento e análise de interesse. | 
+| RF-021 | Implementar opção de se tornar vendedor autônomo| na conta pessoal do usuário que é apenas cliente, terá o campo de se tornar vendedor. E na conta do vendedor terá como se tornar cliente. | 
 
 
 [ [INÍCIO](#Web-Cars) ]
