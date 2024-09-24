@@ -83,27 +83,51 @@ A tabela a seguir contém a relação dos Requisitos Funcionais elicitados, com 
 
 | IDENTIFICADOR | NOME | DESCRIÇÃO |
 :---|:---|:---|
-| RF-001 | Criar conta comum | Para criar uma conta, o cliente precisará fornecer nome completo, CPF, número de telefone, e-mail, e criar e definir uma senha. | 
-| RF-002 | Criar conta concessionária | Para criar uma conta, a concessionária precisará fornecer o nome da empresa, CNPJ, número de telefone, e-mail, localização, e criar e definir uma senha. | 
-| RF-003 | Fazer login da conta | Para efetuar login da conta o usuário independente da conta, terá de apresentar o e-mail da conta e a senha da mesma. | 
-| RF-004 | Fazer logout da conta | Para qualquer conta poder efetuar o logout terá na janela de personalização de conta, um botão que ao usuário apertar o botão será efetuado o logout do usuário do site e voltar para a tela inicial. | 
-| RF-005 | Excluir conta | Para o usuário excluir sua conta, ele terá de acessar a janela de personalização de conta e no ultimo campo da janela irá conter um botão de excluir conta, em que ao clicar nele será aberto um pop-up em que será questionado para o usuário se ele realmente deseja realizar essa ação e no caso de ele realmente querer efetuar a exclusão da conta, será exigido a senha do usuário para finalizar o processo de exclusão. | 
-| RF-006 | Apresentar produtos mais populares ao entrar | Assim que o usuário entrar no site, ele verá os produtos mais populares daquele momento. Será exibida a imagem do produto, com o nome, marca e ano. Abaixo, deverá ser mostrado o preço em verde. Caso o produto esteja em desconto, o valor anterior deve estar acima, com tamanho inferior e riscado, com a porcentagem de desconto ao lado. | 
-| RF-007 | Apresentar informações mais detalhadas do produto | Quando o usuário clicar no anúncio do produto, ele será levado à página do produto, onde serão apresentados os dados do produto, como modelo, marca, ano, entre outros. Também deverá ser especificado se o produto é novo ou usado. | 
-| RF-008 | Pesquisar produtos | Deverá haver uma barra de pesquisa na parte superior central, onde o usuário poderá digitar o nome, ano ou marca do produto desejado. Também deverão ser incluídos filtros para facilitar a busca, como faixa de preço, faixa de ano, e a opção de especificar se deseja comprar um produto novo ou usado. | 
-| RF-009 | Conceder recomendações personalizadas para clientes | Permitir que os usuários personalizem suas preferências de recomendação para uma experiência mais individualizada. | 
-| RF-010 | Adicionar produtos ao repositório | As concessionárias ou vendedores autônomos devem ter a capacidade de adicionar seus produtos ao repositório. Para cada produto, devem ser fornecidas as seguintes informações obrigatórias: descrição detalhada do produto, dados técnicos e especificações relevantes. Devem ser incluídas pelo menos quatro fotos de alta qualidade, capturando o produto de diferentes ângulos, para que os clientes possam visualizar todos os detalhes importantes. | 
-| RF-011 | Integrar o sistema com GPS | Fornecer uma ferramenta para mostrar a localização das concessionárias que estão vendendo o veículo e fornecer rotas diretas para visitação dos clientes. Vendedores autônomos terão a opção de escolher se desejam ou não fornecer sua localização, sendo avisados dos riscos. | 
-| RF-012 | Criar listas de desejos | Possibilitar que os usuários criem listas de desejos, salvando itens para compras futuras. Incluir a opção de compartilhar listas de desejos, facilitando a interação e recomendações entre usuários. | 
-| RF-013 | Personalizar o perfil | Permitir que os usuários personalizem seus perfis com informações adicionais, como preferências de veículos, marcas favoritas, entre outros. Utilizar essas informações para aprimorar recomendações e proporcionar uma experiência personalizada. | 
-| RF-014 | Possibilitar avaliações e comentários | Permitir que os usuários deixem avaliações e comentários nos produtos, enriquecendo a experiência de compra. Apresentar uma média de avaliações na página do produto para orientar as decisões de compra. | 
-| RF-015 | Possibilitar avaliações de concessionárias | Disponibilizar um sistema de avaliação para as concessionárias, permitindo que os clientes expressem suas experiências. Utilizar essas avaliações para destacar vendedores confiáveis e construir confiança na comunidade. | 
-| RF-016 | Fornecer atualizações de estoque | Notificar os clientes quando um item anteriormente esgotado estiver disponível novamente. Exibir informações de estoque em tempo real para evitar compras de produtos fora de estoque. | 
-| RF-017 | Acessar suporte ao cliente online | Implementar um sistema de chat ao vivo para oferecer suporte instantâneo durante o processo de compra. Disponibilizar uma seção de Perguntas Frequentes (FAQ) para responder às dúvidas mais comuns dos usuários. | 
-| RF-018 | Limitar visitantes | Visitantes no site não poderão negociar, avaliar ou receber notificações do site. | 
-| RF-019 | Agendamento de test drives | Implementar uma funcionalidade que permita aos clientes agendar test drives diretamente com as concessionárias ou vendedores autônomos. O sistema deve enviar lembretes automáticos via e-mail e permitir que o vendedor aceite ou sugira outro horário. | 
-| RF-020 | Histórico de visualizações de produtos | Fornecer para concessionárias e vendedores autônomos um sistema que notifique quando uma conta visualizar um de seus produtos, permitindo acompanhamento e análise de interesse. | 
-| RF-021 | Implementar opção de se tornar vendedor autônomo| na conta pessoal do usuário que é apenas cliente, terá o campo de se tornar vendedor. E na conta do vendedor terá como se tornar cliente. | 
+| RF-001 | Criar conta comum | Para criar uma conta, o cliente precisará fornecer nome completo, CPF, número de telefone, e-mail, e criar e definir uma senha. |  
+
+| RF-002 | Criar conta concessionária | Para criar uma conta, a concessionária precisará fornecer o nome da empresa, CNPJ, número de telefone, e-mail, localização, e criar e definir uma senha. |  
+
+| RF-003 | Fazer login da conta | Para efetuar login da conta o usuário independente da conta, terá de apresentar o e-mail da conta e a senha da mesma. |  
+
+| RF-004 | Fazer logout da conta | Para qualquer conta poder efetuar o logout terá na janela de personalização de conta, um botão que ao usuário apertar o botão será efetuado o logout do usuário do site e voltar para a tela inicial. |  
+
+| RF-005 | Excluir conta | Para o usuário excluir sua conta, ele terá de acessar a janela de personalização de conta e no ultimo campo da janela irá conter um botão de excluir conta, em que ao clicar nele será aberto um pop-up em que será questionado para o usuário se ele realmente deseja realizar essa ação e no caso de ele realmente querer efetuar a exclusão da conta, será exigido a senha do usuário para finalizar o processo de exclusão. |  
+
+| RF-006 | Apresentar produtos mais populares ao entrar | Assim que o usuário entrar no site, ele verá os produtos mais populares daquele momento. Será exibida a imagem do produto, com o nome, marca e ano. Abaixo, deverá ser mostrado o preço em verde. Caso o produto esteja em desconto, o valor anterior deve estar acima, com tamanho inferior e riscado, com a porcentagem de desconto ao lado. |  
+
+| RF-007 | Apresentar informações mais detalhadas do produto | Quando o usuário clicar no anúncio do produto, ele será levado à página do produto, onde serão apresentados os dados do produto, como modelo, marca, ano, entre outros. Também deverá ser especificado se o produto é novo ou usado. |  
+
+| RF-008 | Pesquisar produtos | Deverá haver uma barra de pesquisa na parte superior central, onde o usuário poderá digitar o nome, ano ou marca do produto desejado. Também deverão ser incluídos filtros para facilitar a busca, como faixa de preço, faixa de ano, e a opção de especificar se deseja comprar um produto novo ou usado. |  
+
+| RF-009 | Conceder recomendações personalizadas para clientes | Permitir que os usuários personalizem suas preferências de recomendação para uma experiência mais individualizada. |  
+
+| RF-010 | Adicionar produtos ao repositório | As concessionárias ou vendedores autônomos devem ter a capacidade de adicionar seus produtos ao repositório. Para cada produto, devem ser fornecidas as seguintes informações obrigatórias: descrição detalhada do produto, dados técnicos e especificações relevantes. Devem ser incluídas pelo menos quatro fotos de alta qualidade, capturando o produto de diferentes ângulos, para que os clientes possam visualizar todos os detalhes importantes. |  
+
+| RF-011 | Alterar dados de um produto já postado | Para o vendedor alterar um possível erro ou dado errado do produto postado. Será possível ele fazer alterações nos produtos postados indo em sua conta e lá terá a opção de meus produtos aonde terá todos os produtos postados em ondem de mais recente a mais antigo, lá o vendedor poderá abrir a tela de edição e corrigir os dados do veículo. | 
+
+| RF-012 | Excluir produto | Para o usuário excluir seus produtos, ele terá de ir na tela da sua conta aonde terá a opção de meus produtos e neles terá a opção de “deletar este produto” que condo clicado será aberto um alerta questionando o usuário se ele realmente deseja realizar aquela ação e caso confirmado. O produto será excluído. | 
+
+| RF-013 | Integrar o sistema com GPS | Fornecer um a localização das concessionárias que estão vendendo o veículo e fornecer rotas diretas para visitação dos clientes. Vendedores autônomos terão a opção de escolher se desejam ou não fornecer sua localização, sendo avisados dos riscos. |  
+
+| RF-014 | Adicionar item à lista de desejo | Possibilitar que os usuários criem listas de desejos, salvando itens para compras futuras. |  
+
+| RF-015 | Excluir item da lista de desejo | Possibilitar que os usuários retirem os itens adicionado na lista de desejo. Para realizar isso o usuário enteará em sua lista de desejo e ao passar o mouse por cima haverá “...” no canto superior direito do card do produto e ao clicar nesses 3 pontos irá aparecer a opção ver mais detalhe do produto e excluir da lista de desejo. | 
+
+| RF-016 | Personalizar o perfil | Permitir que os usuários personalizem seus perfis com informações adicionais, como preferências de veículos, marcas favoritas, entre outros. Utilizar essas informações para aprimorar recomendações e proporcionar uma experiência personalizada. |  
+
+| RF-017 | Possibilitar avaliações de concessionárias | Disponibilizar um sistema de avaliação para as concessionárias, permitindo que os clientes expressem suas experiências. Utilizar essas avaliações para destacar vendedores confiáveis e construir confiança na comunidade. |  
+
+| RF-018 | Fornecer tela de suporte | No caso de o usuário ter dificuldades para efetuar alguma função terá uma tela de ajuda com opções de possíveis questionamentos que ao clicar aparecerá mensagens pronta explicando como efetuar o processo, caso o perchista a dificuldade do usuário ele terá a opção de acessar o suporte via WhatsApp. | 
+
+| RF-019 | Fornecer atualizações de estoque | Notificar os clientes quando um item anteriormente esgotado estiver disponível novamente. Exibir informações de estoque em tempo real para evitar compras de produtos fora de estoque. |  
+
+| RF-020 | Limitar visitantes | Visitantes no site não poderão negociar, avaliar ou receber notificações do site. |  
+
+| RF-021 | Histórico de visualizações de produtos | Fornecer para concessionárias e vendedores autônomos um sistema que notifique quando uma conta visualizar um de seus produtos, permitindo acompanhamento e análise de interesse. |  
+
+| RF-022 | Implementar opção de se tornar vendedor autônomo| na conta pessoal do usuário que é apenas cliente, terá o campo de se tornar vendedor. E na conta do vendedor terá como se tornar cliente. | 
+
+| RF-023 | Implementar um “avise me” | O usuário poderá criar uma espécie de filtro em que o usuário poderá colocar as especificações do veículo que ele deseja e criar um “vigia” que irá avisar o usuário quando o veículo com essas especificações ser postado por algum vendedor. | 
 
 
 [ [INÍCIO](#Web-Cars) ]
