@@ -137,7 +137,7 @@ A tabela a seguir contém a relação com os Requisitos Não Funcionais identifi
 
 # Diagrama de Classes
 
-![Diagrama de classes](/img/diagramaDeClasse.png)
+![Diagrama de classes](/img/diagramafs.png)
 
 [ [INÍCIO](#Web-Cars) ]
 
