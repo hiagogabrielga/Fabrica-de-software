@@ -19,7 +19,6 @@
             <form action="">
                 <div class="campoFundo">
                     <div class="wrapper">
-                        
                         <div>
                             <label for="marca">Marca</label>
                             <select name="marca" id="dropdonwMarca" class="dropdonw">
@@ -116,23 +115,31 @@
                         </div>
 
                     </div>
+                    <div>
+                        <label for="campoNome">Nome de exibição</label>
+                        <input type="text" name="campoNome" id="campoNome" placeholder="Ex: Marca Modelo" required>
+                    </div>
 
-                    <label for="campoNome">Nome de exibição</label>
-                    <input type="text" name="campoNome" id="campoNome" placeholder="Ex: Marca Modelo" required>
+                    <div>
+                        <label for="campoImagem">Imagens do produto</label>
+                        <input type="file" name="campoImagem" id="campoImagem" required>
+                    </div>
 
-                    <label for="campoImagem">Imagens do produto</label>
-                    <input type="file" name="campoImagem" id="campoImagem" required>
+                    <div>
+                        <label for="campoDetalhes">Detalhes</label>
+                        <textarea name="campoDetalhes" id="campoDetalhes"
+                            placeholder="Adicione os detalhes sobre o seu produto aqui!" required></textarea>
+                    </div>
 
-                    <label for="campoDetalhes">Detalhes</label>
-                    <textarea name="campoDetalhes" id="campoDetalhes"
-                        placeholder="Adicione os detalhes sobre o seu produto aqui!" required></textarea>
+                    <div>
+                        <label for="campoValor">Valor do produto a vista</label>
+                        <input type="text" name="campoValor" id="campoValor" required placeholder="Ex: R$ 79.490,00">
+                    </div>
 
-                    <label for="campoValor">Valor do produto a vista</label>
-                    <input type="text" name="campoValor" id="campoValor" required placeholder="Ex: R$ 79.490,00">
-
-                    <label for="campoContato">Contatos para negociações</label>
-                    <input type="text" name="campoContato" id="campoContato" required>
-
+                    <div>
+                        <label for="campoContato">Contatos para negociações</label>
+                        <input type="text" name="campoContato" id="campoContato" required>
+                    </div>
                 </div>
                 <input type="submit" value="Cadastrar Produto">
             </form>
