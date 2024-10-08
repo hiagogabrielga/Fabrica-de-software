@@ -357,3 +357,25 @@ form{
     object-fit: cover;
     /* Garante que a imagem preencha o espaço */
 }
+
+#campoContatoFundo{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    flex-direction: column;
+}
+
+#campoContato{
+    margin-left: 8px;
+    font-size: 15px;
+}
+
+#campoEmail,#campoZapZap{
+    align-items: center;
+    display: flex;
+}
+
+#campoEmail>i,#campoZapZap>i{
+    font-size: 2rem;
+}

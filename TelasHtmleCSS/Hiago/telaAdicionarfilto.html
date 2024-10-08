@@ -247,10 +247,16 @@
                                     class="campoSectionUm">
                             </div>
                             <div class="campodePrenchimento">
-                                <label for="campoIpva" class="nomePreenchimento">IPVA</label>
-                                <input type="checkbox" name="campoIpva" id="campoIpva" class="checkbox">
-                                <label for="campoIpva" id="labelIpva" class="label"></label>
-                            </div>
+                                <label for="campoDoIpva" class="nomePreenchimento">IPVA</label>
+                                <div class="campoDoIpva">
+                                    <input type="checkbox" name="campoIpva" id="campoIpva" class="checkbox">
+                                    <label for="campoIpva" id="labelIpva" class="label"></label>
+                                </div>
+                                <div id="campoDataVencimento" style="display: none;">
+                                    <label for="ipvaAnoe" class="nomePreenchimento">Data de vencimento</label>
+                                    <input type="date" name="ipvaAno" id="ipvaAnoe" class="campoSectionUm">
+                                </div>
+                            </div>                            
 
                             <div class="campodePrenchimento">
                                 <label for="campoBilndagem" class="nomePreenchimento">Blindagem</label>
@@ -301,17 +307,22 @@
 
                             <div class="campodePrenchimentoDifgerente" id="campoPrenchimentoContato">
                                 <label for="campoContato" class="nomePreenchimento">Contatos para negociações</label>
-                                <div id="campoContato">
+                                <div id="campoContatoFundo">
+
+                                    <label for="campoZapZap" class="nomePreenchimento">WhatsApp</label>
                                     <div id="campoZapZap">
                                         <i class="bi bi-whatsapp"></i>
-                                        <label for="campoContato" class="nomePreenchimento">WhatsApp</label>
-                                        <input type="text" name="campoContato" id="campoContato" placeholder="+55 (69) 98411-1111" required>
+                                        <input type="text" name="campoContato" id="campoContato"
+                                            placeholder="+55 (69) 98411-1111" required>
+                                        <input type="checkbox" name="" id="" checked>
                                     </div>
 
-                                    <div id="CampoEmail">
+                                    <label for="CampoEmail" class="nomePreenchimento">E-mail</label>
+                                    <div id="campoEmail">
                                         <i class="bi bi-envelope"></i>
-                                        <label for="campoContato" class="nomePreenchimento">E-mail</label>
-                                        <input type="text" name="campoContato" id="campoContato" placeholder="joaopedro@gmail.com" required>
+                                        <input type="email" name="campoContato" id="campoContato"
+                                            placeholder="joaopedro@gmail.com" required>
+                                        <input type="checkbox" name="" id="" checked>
                                     </div>
                                 </div>
                             </div>
@@ -327,6 +338,7 @@
     </footer>
     <script src="js/scriptAdicionarImagem.js"></script>
     <script src="js/ScriptDropDown.js"></script>
+    <script src="js/scriptCampoIpva.js"></script>
 </body>
 
 </html>
