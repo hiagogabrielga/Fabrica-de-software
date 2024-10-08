@@ -7,6 +7,7 @@
     <title>Web Cars</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/cssCorpo.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/reset">
 </head>
 
@@ -256,7 +257,7 @@
                                     <label for="ipvaAnoe" class="nomePreenchimento">Data de vencimento</label>
                                     <input type="date" name="ipvaAno" id="ipvaAnoe" class="campoSectionUm">
                                 </div>
-                            </div>                            
+                            </div>
 
                             <div class="campodePrenchimento">
                                 <label for="campoBilndagem" class="nomePreenchimento">Blindagem</label>
@@ -267,74 +268,78 @@
 
                         <section class="sectionUmaColuna">
                             <div class="campodePrenchimentoDifgerente">
-                                <label for="campoNome" class="nomePreenchimento">Nome de exibição</label>
-                                <input type="text" name="campoNome" id="campoNome" placeholder="Ex: Marca Modelo"
-                                    required class="campoSectionDois">
-                            </div>
-
-                            <div class="campodePrenchimentoDifgerente">
-                                <div class="upload-area">
-                                    <label for="inputImagem" class="nomePreenchimento">Imagens do produto</label>
-                                    <div class="campoDeAdicionar">
-                                        <label for="file-upload" class="custom-file-upload">
-                                            <i class="bi bi-file-earmark-plus-fill"></i>
-                                        </label>
-                                        <input type="file" id="file-upload" name="inputImagem" accept="image/*"
-                                            multiple>
-
-                                        <!-- Galeria onde as imagens serão exibidas -->
-                                        <div class="image-preview-area"></div>
-
-                                        <!-- Mensagem de erro caso não tenha imagens suficientes -->
-                                    </div>
-                                    <p class="error-message" style="display:none;color:red;">Adicione no mínimo 5
-                                        imagens.</p>
-                                </div>
-
-                            </div>
-
-                            <div class="campodePrenchimentoDifgerente">
-                                <label for="campoDetalhes" class="nomePreenchimento">Detalhes</label>
-                                <textarea name="campoDetalhes" id="campoDetalhes"
-                                    placeholder="Adicione os detalhes sobre o seu produto aqui!" required></textarea>
-                            </div>
-
-                            <div class="campodePrenchimentoDifgerente">
-                                <label for="campoValor" class="nomePreenchimento">Valor do produto a vista</label>
-                                <input type="text" name="campoValor" id="campoValor" required
+                                <label for="campoValorMin" class="nomePreenchimento">Valor mínimo</label>
+                                <input type="text" name="campoValorMin" id="campoValor" required
                                     placeholder="Ex: R$ 79.490,00" class="campoSectionDois">
                             </div class="campodePrenchimento">
-
-                            <div class="campodePrenchimentoDifgerente" id="campoPrenchimentoContato">
-                                <label for="campoContato" class="nomePreenchimento">Contatos para negociações</label>
-                                <div id="campoContatoFundo">
-
-                                    <label for="campoZapZap" class="nomePreenchimento">WhatsApp</label>
-                                    <div id="campoZapZap">
-                                        <i class="bi bi-whatsapp"></i>
-                                        <input type="text" name="campoContato" id="campoContato"
-                                            placeholder="+55 (69) 98411-1111" required>
-                                        <input type="checkbox" name="" id="" checked>
-                                    </div>
-
-                                    <label for="CampoEmail" class="nomePreenchimento">E-mail</label>
-                                    <div id="campoEmail">
-                                        <i class="bi bi-envelope"></i>
-                                        <input type="email" name="campoContato" id="campoContato"
-                                            placeholder="joaopedro@gmail.com" required>
-                                        <input type="checkbox" name="" id="" checked>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="campodePrenchimentoDifgerente">
+                                <label for="campoValorMax" class="nomePreenchimento">Valor máximo</label>
+                                <input type="text" name="campoValorMax" id="campoValor" required
+                                    placeholder="Ex: R$ 100.000,00" class="campoSectionDois">
+                            </div class="campodePrenchimento">
                         </section>
                     </div>
                 </div>
-                <input id="botaoEnviar" type="submit" value="Cadastrar Produto">
+                <input id="botaoEnviar" type="submit" value="Criar alerta para esse filtro">
             </form>
         </div>
     </main>
     <footer>
-        <H1>Não é minha responsábilidade</H1>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <div class="column">
+                    <h3><span>Institucional</h3>
+                    <ul>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li><a href="#">Gerenciamento de cookies</a></li>
+                        <li><a href="#">Termos e condições</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Comprar</h3>
+                    <ul>
+                        <li><a href="#">Veículos novos</a></li>
+                        <li><a href="#">Veículos semi-novos</a></li>
+                        <li><a href="#">Veículos usados</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Novidades</h3>
+                    <ul>
+                        <li><a href="#">Os mais populares</a></li>
+                        <li><a href="#">Promoções</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Ajuda</h3>
+                    <ul>
+                        <li><a href="#">Criar conta</a></li>
+                        <li><a href="#">Logar conta</a></li>
+                        <li><a href="#">Meu perfil</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Vender veículo</a></li>
+                        <li><a href="#">Contato: +55 (69) 012345678</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3></h3>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024–2025 Webcars do Brasil Ltda. Todos os direitos do site reservado</p>
+        </div>
     </footer>
     <script src="js/scriptAdicionarImagem.js"></script>
     <script src="js/ScriptDropDown.js"></script>

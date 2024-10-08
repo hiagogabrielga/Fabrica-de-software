@@ -12,6 +12,7 @@
 
 body {
     background-color: var(--corDeFundo);
+    margin: 0;
 }
 
 .fundo {
@@ -312,8 +313,8 @@ form{
 }
 
 .custom-file-upload {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    height: 100px;
     color: var(--corIconeImagem);
     font-size: 70px;
     background-color: #ff110057;
@@ -378,4 +379,42 @@ form{
 
 #campoEmail>i,#campoZapZap>i{
     font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fundoClonclusao{
+    padding: 1%;
+    background-color: var(--corIconeImagem);
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.areaBotoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+.areaBotoes>button{
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border: none;
+}
+
+.areaBotoes>button>a{
+    text-decoration: none;
+    width: 250px;
+    border-radius: 15px;
+}
+
+#mensagemDecomclusao{
+    font-size: 40px;
+    color: white;
 }
