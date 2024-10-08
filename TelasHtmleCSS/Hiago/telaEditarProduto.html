@@ -16,7 +16,7 @@
         <h1>Não é minha responsábilidade</h1>
     </header>
     <main>
-        <div>
+        <div class="formulario" style="display: block;">
             <form action="">
                 <div class="campoFundo">
                     <h2>Especificações do produto</h2>
@@ -234,7 +234,7 @@
 
                             <div class="campodePrenchimento">
                                 <label for="campoData" class="nomePreenchimento">Ano</label>
-                                <input type="date" name="campoData" id="campoData" required class="campoSectionUm">
+                                <input type="date" name="campoData" id="campoData" class="campoSectionUm">
                             </div>
 
                             <div class="campodePrenchimento">
@@ -270,7 +270,7 @@
                             <div class="campodePrenchimentoDifgerente">
                                 <label for="campoNome" class="nomePreenchimento">Nome de exibição</label>
                                 <input type="text" name="campoNome" id="campoNome" placeholder="Ex: Marca Modelo"
-                                    required class="campoSectionDois">
+                                 class="campoSectionDois">
                             </div>
 
                             <div class="campodePrenchimentoDifgerente">
@@ -297,12 +297,12 @@
                             <div class="campodePrenchimentoDifgerente">
                                 <label for="campoDetalhes" class="nomePreenchimento">Detalhes</label>
                                 <textarea name="campoDetalhes" id="campoDetalhes"
-                                    placeholder="Adicione os detalhes sobre o seu produto aqui!" required></textarea>
+                                    placeholder="Adicione os detalhes sobre o seu produto aqui!"></textarea>
                             </div>
 
                             <div class="campodePrenchimentoDifgerente">
                                 <label for="campoValor" class="nomePreenchimento">Valor do produto a vista</label>
-                                <input type="text" name="campoValor" id="campoValor" required
+                                <input type="text" name="campoValor" id="campoValor"
                                     placeholder="Ex: R$ 79.490,00" class="campoSectionDois">
                             </div class="campodePrenchimento">
 
@@ -314,7 +314,7 @@
                                     <div id="campoZapZap">
                                         <i class="bi bi-whatsapp"></i>
                                         <input type="text" name="campoContato" id="campoContato"
-                                            placeholder="+55 (69) 98411-1111" required>
+                                            placeholder="+55 (69) 98411-1111">
                                         <input type="checkbox" name="" id="" checked>
                                     </div>
 
@@ -322,7 +322,7 @@
                                     <div id="campoEmail">
                                         <i class="bi bi-envelope"></i>
                                         <input type="email" name="campoContato" id="campoContato"
-                                            placeholder="joaopedro@gmail.com" required>
+                                            placeholder="joaopedro@gmail.com">
                                         <input type="checkbox" name="" id="" checked>
                                     </div>
                                 </div>
@@ -330,8 +330,20 @@
                         </section>
                     </div>
                 </div>
-                <input id="botaoEnviar" type="submit" value="Editar Produto">
+                <div id="campoBotoesTelaEditar">
+                    <input id="botaoExcluir" type="submit" value="Excluir produto">
+                    <input id="botaoEnviar" type="submit" value="Editar Produto">
+                </div>
             </form>
+        </div>
+        <div class="conclusao" style="display: none;">
+            <div class="fundoClonclusao">
+                <h2 id="mensagemDecomclusao">ALTERAÇÕES FEITAS COM SUCESSO!</h2>
+                <div class="areaBotoes">
+                    <button><a href="#"><i class="bi bi-arrow-left"></i><span>Voltar a tela de produtos</span></a></button>
+                    <button><a href="#"><i class="bi bi-arrow-left"></i><span>Adicionar mais alterações</span></a></button>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -394,6 +406,7 @@
     <script src="js/scriptAdicionarImagem.js"></script>
     <script src="js/ScriptDropDown.js"></script>
     <script src="js/scriptCampoIpva.js"></script>
+    <script src="js/scriptApresentarTela.js"></script>
 </body>
 
 </html>

@@ -16,7 +16,7 @@
         <h1>Não é minha responsábilidade</h1>
     </header>
     <main>
-        <div>
+        <div class="formulario" style="display: block;">
             <form action="">
                 <div class="campoFundo">
                     <h2>Especificações do produto</h2>
@@ -280,8 +280,20 @@
                         </section>
                     </div>
                 </div>
-                <input id="botaoEnviar" type="submit" value="Editar filtro">
+                <div id="campoBotoesTelaEditar">
+                    <input id="botaoExcluir" type="submit" value="Excluir produto">
+                    <input id="botaoEnviar" type="submit" value="Editar Produto">
+                </div>
             </form>
+        </div>
+        <div class="conclusao" style="display: none;">
+            <div class="fundoClonclusao">
+                <h2 id="mensagemDecomclusao">ALTERAÇÕES FEITAS COM SUCESSO!</h2>
+                <div class="areaBotoes">
+                    <button><a href="#"><i class="bi bi-arrow-left"></i><span>Voltar a tela de produtos</span></a></button>
+                    <button><a href="#"><i class="bi bi-arrow-left"></i><span>Fazer mais alterações</span></a></button>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -344,6 +356,7 @@
     <script src="js/scriptAdicionarImagem.js"></script>
     <script src="js/ScriptDropDown.js"></script>
     <script src="js/scriptCampoIpva.js"></script>
+    <script src="js/scriptApresentarTela.js"></script>
 </body>
 
 </html>
