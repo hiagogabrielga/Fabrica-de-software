@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Cars</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/cssCorpo.css">
     <link rel="stylesheet" href="css/reset">
 </head>
@@ -15,139 +16,317 @@
     </header>
     <main>
         <div>
-            <h2>Especificações do produto</h2>
             <form action="">
                 <div class="campoFundo">
-                    <div class="wrapper">
-                        <div>
-                            <label for="marca">Marca</label>
-                            <select name="marca" id="dropdonwMarca" class="dropdonw">
-                                <option value="#" selected>Escolha</option>
-                                <option value="#">Opção 1</option>
-                                <option value="#">Opção 2</option>
-                                <option value="#">Opção 3</option>
-                            </select>
-                        </div>
+                    <h2>Especificações do produto</h2>
+                    <div class="fundo">
+                        <section class="sectionDuasColunas">
+                            <div class="campodePrenchimento">
+                                <div class="select">
+                                    <div id="category-select">
+                                        <label for="options-view-button">Marca</label>
+                                        <input type="checkbox" id="options-view-button">
+                                        <div id="select-button">
+                                            <div id="selected-value">Escolha</div>
+                                            <div id="chevrons">
+                                                <i class="bi bi-chevron-down"></i>
+                                                <i class="bi bi-chevron-up"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul id="options">
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 1">
+                                            <span>Opção 1</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 2">
+                                            <span>Opção 2</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 3">
+                                            <span>Opção 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div>
-                            <label for="modelo">Modelo</label>
-                            <select name="modelo" id="dropdonwModelo" class="dropdonw">
-                                <option value="#" selected>Escolha</option>
-                                <option value="#">Opção 1</option>
-                                <option value="#">Opção 2</option>
-                                <option value="#">Opção 3</option>
-                            </select>
-                        </div>
+                            <div class="campodePrenchimento">
+                                <div class="select">
+                                    <div id="category-select">
+                                        <label for="options-view-button">Modelo</label>
+                                        <input type="checkbox" id="options-view-button">
+                                        <div id="select-button">
+                                            <div id="selected-value">Escolha</div>
+                                            <div id="chevrons">
+                                                <i class="bi bi-chevron-down"></i>
+                                                <i class="bi bi-chevron-up"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul id="options">
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 1">
+                                            <span>Opção 1</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 2">
+                                            <span>Opção 2</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 3">
+                                            <span>Opção 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div>
-                            <label for="cor">Cor</label>
-                            <select name="cor" id="dropdonwCor" class="dropdonw">
-                                <option value="#" selected>Escolha</option>
-                                <option value="#">Opção 1</option>
-                                <option value="#">Opção 2</option>
-                                <option value="#">Opção 3</option>
-                            </select>
-                        </div>
+                            <div class="campodePrenchimento">
+                                <div class="select">
+                                    <div id="category-select">
+                                        <label for="options-view-button">Cor</label>
+                                        <input type="checkbox" id="options-view-button">
+                                        <div id="select-button">
+                                            <div id="selected-value">Escolha</div>
+                                            <div id="chevrons">
+                                                <i class="bi bi-chevron-down"></i>
+                                                <i class="bi bi-chevron-up"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul id="options">
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 1">
+                                            <span>Opção 1</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 2">
+                                            <span>Opção 2</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 3">
+                                            <span>Opção 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div>
-                            <label for="categoria">Categoria</label>
-                            <select name="categoria" id="dropdonwCategoria" class="dropdonw">
-                                <option value="#" selected>Escolha</option>
-                                <option value="#">Opção 1</option>
-                                <option value="#">Opção 2</option>
-                                <option value="#">Opção 3</option>
-                            </select>
-                        </div>
+                            <div class="campodePrenchimento">
+                                <div class="select">
+                                    <div id="category-select">
+                                        <label for="options-view-button">Categoria</label>
+                                        <input type="checkbox" id="options-view-button">
+                                        <div id="select-button">
+                                            <div id="selected-value">Escolha</div>
+                                            <div id="chevrons">
+                                                <i class="bi bi-chevron-down"></i>
+                                                <i class="bi bi-chevron-up"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul id="options">
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 1">
+                                            <span>Opção 1</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 2">
+                                            <span>Opção 2</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 3">
+                                            <span>Opção 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div>
-                            <label for="aro">Aro</label>
-                            <select name="aro" id="dropdonwAro" class="dropdonw">
-                                <option value="#" selected>Escolha</option>
-                                <option value="#">Opção 1</option>
-                                <option value="#">Opção 2</option>
-                                <option value="#">Opção 3</option>
-                            </select>
-                        </div>
+                            <div class="campodePrenchimento">
+                                <div class="select">
+                                    <div id="category-select">
+                                        <label for="options-view-button">Aro</label>
+                                        <input type="checkbox" id="options-view-button">
+                                        <div id="select-button">
+                                            <div id="selected-value">Escolha</div>
+                                            <div id="chevrons">
+                                                <i class="bi bi-chevron-down"></i>
+                                                <i class="bi bi-chevron-up"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul id="options">
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 1">
+                                            <span>Opção 1</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 2">
+                                            <span>Opção 2</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 3">
+                                            <span>Opção 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div>
-                            <label for="combustivel">Combustivel</label>
-                            <select name="combustivel" id="dropdonwCombustivel" class="dropdonw">
-                                <option value="#" selected>Escolha</option>
-                                <option value="#">Opção 1</option>
-                                <option value="#">Opção 2</option>
-                                <option value="#">Opção 3</option>
-                            </select>
-                        </div>
+                            <div class="campodePrenchimento">
+                                <div class="select">
+                                    <div id="category-select">
+                                        <label for="options-view-button">Combustivel</label>
+                                        <input type="checkbox" id="options-view-button">
+                                        <div id="select-button">
+                                            <div id="selected-value">Escolha</div>
+                                            <div id="chevrons">
+                                                <i class="bi bi-chevron-down"></i>
+                                                <i class="bi bi-chevron-up"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul id="options">
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 1">
+                                            <span>Opção 1</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 2">
+                                            <span>Opção 2</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 3">
+                                            <span>Opção 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div>
-                            <label for="condicaoDoVeiculo">Condição do veículo</label>
-                            <select name="condicaoDoVeiculo" id="dropdonwCondicaoDoVeiculo" class="dropdonw">
-                                <option value="#" selected>Escolha</option>
-                                <option value="#">Opção 1</option>
-                                <option value="#">Opção 2</option>
-                                <option value="#">Opção 3</option>
-                            </select>
-                        </div>
+                            <div class="campodePrenchimento">
+                                <div class="select">
+                                    <div id="category-select">
+                                        <label for="options-view-button">Condição do veículo</label>
+                                        <input type="checkbox" id="options-view-button">
+                                        <div id="select-button">
+                                            <div id="selected-value">Escolha</div>
+                                            <div id="chevrons">
+                                                <i class="bi bi-chevron-down"></i>
+                                                <i class="bi bi-chevron-up"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul id="options">
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 1">
+                                            <span>Opção 1</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 2">
+                                            <span>Opção 2</span>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="category" data-label="Opção 3">
+                                            <span>Opção 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                        <div>
-                            <label for="campoData">Ano</label>
-                            <input type="date" name="campoData" id="campoData" required>
-                        </div>
+                            <div class="campodePrenchimento">
+                                <label for="campoData" class="nomePreenchimento">Ano</label>
+                                <input type="date" name="campoData" id="campoData" required class="campoSectionUm">
+                            </div>
 
-                        <div>
-                            <label for="campoData">Data de compra</label>
-                            <input type="date" name="campoData" id="campoData">
-                        </div>
+                            <div class="campodePrenchimento">
+                                <label for="campoData" class="nomePreenchimento">Data de compra</label>
+                                <input type="date" name="campoData" id="campoData" class="campoSectionUm">
+                            </div>
 
-                        <div>
-                            <label for="campoQuilometragem">Quilometragem</label>
-                            <input type="text" name="campoQuilometragem" id="campoImagem" placeholder="Ex: 0 Km">
-                        </div>
+                            <div class="campodePrenchimento">
+                                <label for="campoQuilometragem" class="nomePreenchimento">Quilometragem</label>
+                                <input type="text" name="campoQuilometragem" id="campoImagem" placeholder="Ex: 0 Km"
+                                    class="campoSectionUm">
+                            </div>
+                            <div class="campodePrenchimento">
+                                <label for="campoIpva" class="nomePreenchimento">IPVA</label>
+                                <input type="checkbox" name="campoIpva" id="campoIpva" class="checkbox">
+                                <label for="campoIpva" id="labelIpva" class="label"></label>
+                            </div>
 
-                        <div>
-                            <label for="campoIpva">IPVA</label>
-                            <input type="checkbox" name="campoIpva" id="campoIpva">
-                        </div>
+                            <div class="campodePrenchimento">
+                                <label for="campoBilndagem" class="nomePreenchimento">Blindagem</label>
+                                <input type="checkbox" name="campoBilndagem" id="campoBilndagem" class="checkbox">
+                                <label for="campoBilndagem" id="labelBlindagem" class="label"></label>
+                            </div>
+                        </section>
 
-                        <div>
-                            <label for="campoBilndagem">Bilndagem</label>
-                            <input type="checkbox" name="campoBilndagem" id="campoBilndagem" required>
-                        </div>
+                        <section class="sectionUmaColuna">
+                            <div class="campodePrenchimentoDifgerente">
+                                <label for="campoNome" class="nomePreenchimento">Nome de exibição</label>
+                                <input type="text" name="campoNome" id="campoNome" placeholder="Ex: Marca Modelo"
+                                    required class="campoSectionDois">
+                            </div>
 
-                    </div>
-                    <div>
-                        <label for="campoNome">Nome de exibição</label>
-                        <input type="text" name="campoNome" id="campoNome" placeholder="Ex: Marca Modelo" required>
-                    </div>
+                            <div class="campodePrenchimentoDifgerente">
+                                <div class="upload-area">
+                                    <label for="inputImagem" class="nomePreenchimento">Imagens do produto</label>
+                                    <div class="campoDeAdicionar">
+                                        <label for="file-upload" class="custom-file-upload">
+                                            <i class="bi bi-file-earmark-plus-fill"></i>
+                                        </label>
+                                        <input type="file" id="file-upload" name="inputImagem" accept="image/*"
+                                            multiple>
 
-                    <div>
-                        <label for="campoImagem">Imagens do produto</label>
-                        <input type="file" name="campoImagem" id="campoImagem" required>
-                    </div>
+                                        <!-- Galeria onde as imagens serão exibidas -->
+                                        <div class="image-preview-area"></div>
 
-                    <div>
-                        <label for="campoDetalhes">Detalhes</label>
-                        <textarea name="campoDetalhes" id="campoDetalhes"
-                            placeholder="Adicione os detalhes sobre o seu produto aqui!" required></textarea>
-                    </div>
+                                        <!-- Mensagem de erro caso não tenha imagens suficientes -->
+                                    </div>
+                                    <p class="error-message" style="display:none;color:red;">Adicione no mínimo 5
+                                        imagens.</p>
+                                </div>
 
-                    <div>
-                        <label for="campoValor">Valor do produto a vista</label>
-                        <input type="text" name="campoValor" id="campoValor" required placeholder="Ex: R$ 79.490,00">
-                    </div>
+                            </div>
 
-                    <div>
-                        <label for="campoContato">Contatos para negociações</label>
-                        <input type="text" name="campoContato" id="campoContato" required>
+                            <div class="campodePrenchimentoDifgerente">
+                                <label for="campoDetalhes" class="nomePreenchimento">Detalhes</label>
+                                <textarea name="campoDetalhes" id="campoDetalhes"
+                                    placeholder="Adicione os detalhes sobre o seu produto aqui!" required></textarea>
+                            </div>
+
+                            <div class="campodePrenchimentoDifgerente">
+                                <label for="campoValor" class="nomePreenchimento">Valor do produto a vista</label>
+                                <input type="text" name="campoValor" id="campoValor" required
+                                    placeholder="Ex: R$ 79.490,00" class="campoSectionDois">
+                            </div class="campodePrenchimento">
+
+                            <div class="campodePrenchimentoDifgerente" id="campoPrenchimentoContato">
+                                <label for="campoContato" class="nomePreenchimento">Contatos para negociações</label>
+                                <div id="campoContato">
+                                    <div id="campoZapZap">
+                                        <i class="bi bi-whatsapp"></i>
+                                        <label for="campoContato" class="nomePreenchimento">WhatsApp</label>
+                                        <input type="text" name="campoContato" id="campoContato" placeholder="+55 (69) 98411-1111" required>
+                                    </div>
+
+                                    <div id="CampoEmail">
+                                        <i class="bi bi-envelope"></i>
+                                        <label for="campoContato" class="nomePreenchimento">E-mail</label>
+                                        <input type="text" name="campoContato" id="campoContato" placeholder="joaopedro@gmail.com" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
-                <input type="submit" value="Cadastrar Produto">
+                <input id="botaoEnviar" type="submit" value="Cadastrar Produto">
             </form>
         </div>
     </main>
     <footer>
         <H1>Não é minha responsábilidade</H1>
     </footer>
+    <script src="js/scriptAdicionarImagem.js"></script>
+    <script src="js/ScriptDropDown.js"></script>
 </body>
 
 </html>

@@ -1,21 +1,359 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     font-family: "Poppins", sans-serif;
+    --corPrincipal: #D9D9D9;
+    --corPrecimento: #ffffff;
+    --corDetalhes: #C63434;
+    --corFontes: #505050;
+    --corIconeImagem: #FF1300;
+    --corDeFundo: #EFEFEF;
 }
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: red;
+body {
+    background-color: var(--corDeFundo);
 }
-.wrapper>div {
+
+.fundo {
+    background-color: var(--corPrincipal);
+    border-radius: 16px;
+}
+
+.campoFundo{
+    margin: auto;
+    width: 60%;
+}
+
+.sectionDuasColunas{
+    display: flex;
+    padding: 5% 10% 0% 10%;
+    flex-wrap: wrap;
+}
+
+.sectionUmaColuna{
+    display: flex;
+    padding: 0% 10% 5% 10%;
+    flex-wrap: wrap;
+}
+
+.campodePrenchimento {
     box-sizing: border-box;
     padding: 1rem;
     margin: 1rem;
-    background-color: silver;
     display: flex;
     flex-direction: column;
-    width: calc((100% / 2) - 2rem); /* calco para descontar a margem da largura do box se aumenta a marge tem que ajustar aqui tb */
+    width: calc((100% / 2) - 4rem);
+    /* calc para descontar a margem da largura do box se aumenta a marge tem que ajustar aqui tb */
+}
+
+.campodePrenchimentoDifgerente{
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: calc((100% / 1) - 4rem);
+}
+
+/*css do menu dropdown*/
+.select{
+    position: relative;
+    width: 250px;
+    font-family: "Poppins", sans-serif;
+}
+#category-select label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#select-button{
+    display: flex;
+    height: 38px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+#selected-value{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.875rem;
+    letter-spacing: 0.02625rem;
+}
+
+#chevrons svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+#chevrons{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#chevrons [class='bi bi-chevron-up']{
+    display: none;
+}
+
+#category-select:has(#options-view-button:checked) label, #options-view-button:checked + #select-button #chevrons{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#options-view-button:checked + #select-button #chevrons [class="bi bi-chevron-down"]{
+    display: none;
+}
+#options-view-button:checked + #select-button #chevrons [class="bi bi-chevron-up"]{
+    display: block;
+}
+
+#category-select{
+    position: relative;
+}
+
+#options-view-button{
+    all: unset;
+
+    position: absolute;
+    inset: 0;
+
+    cursor: pointer;
+    z-index: 3;
+}
+
+#options{
+    position: absolute;
+    z-index: 10;
+    width: 250px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 1px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: white;
+    display: none;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: .5rem;
+    padding: .75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.option:hover{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.option:has(input:checked){
+    color: black;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.option:has(input:checked)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+    z-index: 1; /* Pseudo-elemento sobre o fundo, mas atrás do texto */
+}
+
+.option:has(input:checked):hover::before {
+    background-color: rgba(0, 0, 0, 0.2); /* Inicialmente transparente */
+}
+
+.option input[type="radio"]{
+    all: unset;
+
+    position: absolute;
+    inset: 0;
+}
+
+#category-select:has(#options-view-button:checked) + #options {
+    display: block;
+}
+
+.checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.checkbox+label {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+}
+
+.checkbox+label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 44px;
+    transition: 0.4s;
+}
+
+.checkbox+label:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 2px;
+    top: 2px;
+    bottom: 4px;
+    background-color: var(--corFontes);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.checkbox:checked+label:before {
+    background-color: var(--corIconeImagem);
+}
+
+.checkbox:checked+label:after {
+    transform: translateX(300%);
+    background-color: white;
+}
+
+.campoSectionUm{
+    height: 38px;
+    width: 242px;
+    border-radius: 10px;
+    border: solid 1px;
+    padding: 0 4px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Poppins", sans-serif;
+}
+
+.nomePreenchimento{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.campoSectionDois{
+    height: 38px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px;
+    padding: 0 4px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Poppins", sans-serif;
+}
+
+#campoDetalhes{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: solid 1px;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Poppins", sans-serif;
+    resize: vertical;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#botaoEnviar{
+    background-color: var(--corDetalhes);
+    color: white;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5% 0;
+    margin-left: calc(90% - 300px);
+    cursor: pointer;
+}
+
+#botaoEnviar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+    z-index: 1; /* Pseudo-elemento sobre o fundo, mas atrás do texto */
+}
+
+#botaoEnviar:hover::before{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/*cAMPO DE ADICIONAR IMAGEM*/
+
+
+.campoDeAdicionar {
+    display: flex;
+    background-color: white;
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-file-upload {
+    display: flex;
+    flex-direction: column;
+    color: var(--corIconeImagem);
+    font-size: 70px;
+    background-color: #ff110057;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px var(--corIconeImagem) dotted;
+    width: 70px;
+    cursor: pointer;
+}
+
+.custom-file-upload>i {
+    margin: auto;
+}
+
+
+#file-upload {
+    all: unset;
+    display: none;
+    inset: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.image-preview-area {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que as imagens se ajustem em várias linhas */
+    justify-content: flex-start;
+    /* Alinha as imagens à esquerda */
+}
+
+.image-preview {
+    width: 20%;
+    /* Define a largura de cada imagem */
+    margin: 1%;
+    /* Margem ao redor das imagens */
+    border-radius: 5px;
+    /* Borda arredondada para as imagens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra leve */
+    object-fit: cover;
+    /* Garante que a imagem preencha o espaço */
 }
