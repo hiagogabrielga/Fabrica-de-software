@@ -10,6 +10,11 @@
     --corDeFundo: #EFEFEF;
 }
 
+main{
+    width: 60%;
+    margin: 0 auto;
+}
+
 body {
     background-color: var(--corDeFundo);
     margin: 0;
@@ -22,7 +27,7 @@ body {
 
 .campoFundo{
     margin: auto;
-    width: 60%;
+    width: 100%;
 }
 
 .sectionDuasColunas{
@@ -281,9 +286,9 @@ form{
     border-radius: 20px;
     font-size: 15px;
     font-weight: bold;
-    margin: 5% 0;
-    margin-left: calc(90% - 200px);
+    margin: 5% 0 20% 10px;
     cursor: pointer;
+
 }
 
 /*cAMPO DE ADICIONAR IMAGEM*/
@@ -420,9 +425,8 @@ form{
     color: white;
 }
 
-#campoBotoesTelaEditar{
-    margin-left: calc(100% - 670px);
+.campoBotoes{
     display: flex;
-    width: 320px;
-    justify-content: space-around;
+    justify-content: right;
+    width: 100%;
 }
