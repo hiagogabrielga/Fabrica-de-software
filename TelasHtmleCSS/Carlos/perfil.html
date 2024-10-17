@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/perfil.css">
+    <title>Editar Perfil</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="barra-lateral">
+            <div class="perfil">
+                <i class="bi bi-person-circle"></i>
+                <button class="botao-editar">Editar perfil</button>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><button class="botao-menu">Meus produtos</button></li>
+                    <li><button class="botao-menu">Sair</button></li>
+                    <li><button class="excluir-conta">Excluir conta</button></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="conteudo">
+            <form class="informaçoes-pessoais">
+                <h2>Meus dados</h2>
+                <div class="informaçoes">
+                    <input type="text" placeholder="Nome completo">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="informaçoes">
+                    <input type="text" placeholder="CPF/CNPJ">
+                    <input type="text" placeholder="Data de nascimento">
+                </div>
+                
+                <hr>
+
+                <h2>Telefones</h2>
+                <div class="informaçoes">
+                    <input type="text" placeholder="+(00) 00 00000-0000">
+                    <input type="text" placeholder="+(00) 00 00000-0000">
+                </div>
+
+                <hr>
+
+                <h2>Endereço</h2>
+                <div class="informaçoes">
+                    <input type="text" placeholder="CEP">
+                    <input type="text" placeholder="Estado">
+                </div>
+                <div class="informaçoes">
+                    <input type="text" placeholder="Cidade">
+                    <input type="text" placeholder="Bairro">
+                </div>
+                <div class="informaçoes">
+                    <input type="text" placeholder="Endereço">
+                    <input type="text" placeholder="Número">
+                </div>
+
+                <div class="botao-salvar">
+                    <button type="submit">Salvar Alterações</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

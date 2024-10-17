@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.barra-lateral {
+    width: 250px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.perfil {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.perfil i {
+    font-size: 80px;
+    color: #333;
+    margin-bottom: -1px;
+}
+
+.botao-editar {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.botao-editar:hover {
+    background-color: #ddd;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 275px;
+}
+
+.menu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.botao-menu {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #d9534f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao-menu:hover {
+    background-color: #c9302c;
+}
+
+.excluir-conta {
+    background-color: transparent;
+    border: none;
+    color: #d9534f;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.excluir-conta:hover {
+    text-decoration: underline;
+}
+
+.conteudo {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.informaçoes-pessoais {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-left: -50px;
+}
+
+.informaçoes-pessoais h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.informaçoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.informaçoes input, .informaçoes select {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.informaçoes select {
+    background-color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.botao-salvar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao-salvar button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-salvar button:hover {
+    background-color: #c9302c;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .informaçoes {
+        flex-direction: column;
+    }
+
+    .informaçoes input, .informaçoes select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
