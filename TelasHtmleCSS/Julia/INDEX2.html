@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Opção</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <main>
+        <button class="back-button">Voltar</button>
+
+        <section class="form-container">
+            <h1>Não encontrou o que deseja?<br>Adicione a opção desejada aqui!</h1>
+            
+            <form>
+                <label for="campo">Qual campo não encontrou a opção?</label>
+                <select id="campo" name="campo">
+                    <option value="">Escolha</option>
+                    <!-- Outras opções aqui -->
+                </select>
+
+                <label for="opcao">Digite o nome da opção desejada:</label>
+                <textarea id="opcao" name="opcao" rows="4" placeholder="Digite a nova opção..."></textarea>
+
+                <button type="submit" class="save-button">Salvar</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

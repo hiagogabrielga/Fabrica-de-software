@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.red-section {
+    background-color: #c63434;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.red-section h1 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.gray-section {
+    background-color: #f2f2f2;
+    width: 80%;
+    position: relative; /* Necessário para o posicionamento do logo */
+    padding: 20px;
+}
+
+/* Estilizando o logo e a imagem juntos e posicionando no topo esquerdo */
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #7a7a7a;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+/* Centralizando apenas o container de login */
+.login-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Faz o container ocupar toda a altura da section cinza */
+}
+
+.container {
+    background-color: #d9d9d9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+.password-container {
+    position: relative;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="password"] {
+    padding-right: 40px;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    width: 45%;
+    padding: 10px;
+    background-color: #c63434;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b02a2a;
+}
+
+.forgot-password {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}

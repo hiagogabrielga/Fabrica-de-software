@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="red-section">
+        <h1>Bem-vindo de volta!</h1>
+    </div>
+    
+    <div class="gray-section">
+        <!-- Logo no topo esquerdo -->
+        <div class="logo-container">
+            <h1 class="logo">WebCar</h1>
+            <img src="logo.png" alt="Logo WebCar" class="logo-img">
+        </div>
+
+        <!-- Centralizando o login -->
+        <div class="login-container">
+            <div class="container">
+                <h2>Login</h2>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu email">
+
+                    <label for="senha">Senha</label>
+                    <div class="password-container">
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                        <!-- Ícone de olho -->
+                        <img id="togglePassword" src="eye.png" class="eye-icon" alt="Mostrar/Esconder Senha">
+                    </div>
+
+                    <div class="button-container">
+                        <button type="submit">Entrar</button>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

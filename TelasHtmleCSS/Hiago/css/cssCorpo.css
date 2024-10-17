@@ -376,7 +376,7 @@ form{
     padding: 1% 4%;
     background-color: var(--corIconeImagem);
     height: 60vh;
-    width: 80vw;
+    width: 100%;
     margin: 40px auto;
     border-radius: 20px;
     flex-direction: column;
@@ -392,11 +392,10 @@ form{
 
 .areaBotoes>button{
     width: 300px;
-    height: 50px;
+    height: 55px;
     background-color: white;
     border-radius: 15px;
     border: 1px solid black;
-    margin: 50px 0;
 }
 
 .areaBotoes>button>a{
@@ -421,7 +420,8 @@ form{
 }
 
 #mensagemDecomclusao{
-    font-size: 40px;
+    font-size: 50px;
+    margin: 0;
     color: white;
 }
 
