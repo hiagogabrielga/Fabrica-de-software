@@ -34,12 +34,14 @@ body {
     display: flex;
     padding: 5% 10% 0% 10%;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .sectionUmaColuna{
     display: flex;
     padding: 0% 10% 5% 10%;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .campodePrenchimento {
@@ -50,6 +52,10 @@ body {
     flex-direction: column;
     width: calc((100% / 2) - 4rem);
     /* calc para descontar a margem da largura do box se aumenta a marge tem que ajustar aqui tb */
+}
+
+.campodePrenchimento>input{
+    min-width: 100%;
 }
 
 .campodePrenchimentoDifgerente{
@@ -64,9 +70,10 @@ body {
 /*css do menu dropdown*/
 .select{
     position: relative;
-    width: 250px;
+    width: 100%;
     font-family: "Poppins", sans-serif;
 }
+
 #category-select label{
     font-size: 18px;
     font-weight: bold;
@@ -75,6 +82,7 @@ body {
 }
 
 #select-button{
+    min-width: 100%;
     display: flex;
     height: 38px;
     align-items: center;
@@ -132,7 +140,8 @@ body {
 #options{
     position: absolute;
     z-index: 10;
-    width: 250px;
+    width: 100%;
+    margin: 0 4px;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 1px;
     padding: 0;
@@ -300,10 +309,12 @@ form{
     border: solid 1px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 10px;
+    min-height: 125px;
 }
 
 .custom-file-upload {
     display: block;
+    position: absolute;
     height: 100px;
     color: var(--corIconeImagem);
     font-size: 70px;
@@ -334,6 +345,10 @@ form{
     /* Permite que as imagens se ajustem em várias linhas */
     justify-content: flex-start;
     /* Alinha as imagens à esquerda */
+}
+
+.image-preview:first-child{
+    margin-left: 110px;
 }
 
 .image-preview {
