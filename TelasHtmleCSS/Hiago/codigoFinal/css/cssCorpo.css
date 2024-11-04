@@ -8,10 +8,11 @@
     --corFontes: #505050;
     --corIconeImagem: #FF1300;
     --corDeFundo: #EFEFEF;
+    --largura-main: 60%
 }
 
 main{
-    width: 60%;
+    width: calc(100% - 40%);
     margin: 0 auto;
 }
 
@@ -75,7 +76,7 @@ body {
 }
 
 #category-select label{
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     margin-left: 10px;
     color: rgba(0, 0, 0, 0.5);
@@ -245,7 +246,6 @@ body {
 
 .campoSectionUm{
     height: 38px;
-    width: 242px;
     border-radius: 10px;
     border: solid 1px;
     padding: 0 4px;
@@ -254,7 +254,7 @@ body {
 }
 
 .nomePreenchimento{
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     margin-left: 10px;
     color: rgba(0, 0, 0, 0.5);
@@ -262,7 +262,6 @@ body {
 
 .campoSectionDois{
     height: 38px;
-    width: 100%;
     border-radius: 10px;
     border: solid 1px;
     padding: 0 4px;
@@ -390,8 +389,8 @@ form{
 .fundoClonclusao{
     padding: 1% 4%;
     background-color: var(--corIconeImagem);
+    opacity: 0.81;
     height: 60vh;
-    width: 100%;
     margin: 40px auto;
     border-radius: 20px;
     flex-direction: column;
@@ -406,7 +405,7 @@ form{
 }
 
 .areaBotoes>button{
-    width: 300px;
+    max-width: 300px;
     height: 55px;
     background-color: white;
     border-radius: 15px;
@@ -435,7 +434,7 @@ form{
 }
 
 #mensagemDecomclusao{
-    font-size: 50px;
+    font-size: 3rem;
     margin: 0;
     color: white;
 }
@@ -444,4 +443,65 @@ form{
     display: flex;
     justify-content: right;
     width: 100%;
+}
+
+#opcao-outro{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+
+@media screen  and (max-width: 1140px){
+    main{
+        width: 80%;
+    }
+}
+
+@media screen  and (max-width: 855px){
+    .sectionDuasColunas{
+        padding: 1%;
+    }
+
+    .sectionUmaColuna{
+        padding: 1%;
+    }
+
+}
+
+@media screen  and (max-width: 715px){
+    main{
+        width: 95%;
+    }
+}
+
+@media screen  and (max-width: 565px){
+    .campodePrenchimentoDifgerente {
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .campodePrenchimento{
+        padding: 0;
+        margin: 1rem 0;
+        width: calc((100% / 1) - 4rem);
+    }
+
+    #campoPrenchimentoContato{
+        width: calc((95% / 1));
+    }
+
+    #checkboxEstilizada{
+        padding: 0;
+        margin: 1rem 0;
+        width: calc((100% / 2) - 4rem);
+    }
+
+    #mensagemDecomclusao{
+        font-size: 2rem;
+    }
+}
+
+#campoDataVencimento{
+    flex-direction: column;
+    height: 97px;
 }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato Monetário</title>
+</head>
+<body>
+    <div class="campodePrenchimentoDifgerente">
+        <label for="campoValorMin" class="nomePreenchimento">Valor mínimo</label>
+        <input type="text" name="campoValorMin" id="campoValorMin" required
+            placeholder="Ex: R$ 79.490,00" class="campoSectionDois" onchange="formatarValorMonetarioMinimo()">
+    </div>
+    <div class="campodePrenchimentoDifgerente">
+        <label for="campoValorMax" class="nomePreenchimento">Valor máximo</label>
+        <input type="text" name="campoValorMax" id="campoValorMax" required
+            placeholder="Ex: R$ 100.000,00" class="campoSectionDois" onchange="formatarValorMonetarioMaximo()">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

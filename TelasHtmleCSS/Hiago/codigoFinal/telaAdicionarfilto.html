@@ -48,10 +48,13 @@
                                             <input type="radio" name="category" data-label="Opção 3">
                                             <span>Opção 3</span>
                                         </li>
+                                        <li class="option">
+                                            <a href="/TelasHtmleCSS/Julia/INDEX2.html" name="category"
+                                                data-label="Opção 4" id="opcao-outro"><span>Outros</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-
                             <div class="campodePrenchimento">
                                 <div class="select">
                                     <div id="category-select">
@@ -77,6 +80,10 @@
                                         <li class="option">
                                             <input type="radio" name="category" data-label="Opção 3">
                                             <span>Opção 3</span>
+                                        </li>
+                                        <li class="option">
+                                            <a href="/TelasHtmleCSS/Julia/INDEX2.html" name="category"
+                                                data-label="Opção 4" id="opcao-outro"><span>Outros</span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -108,6 +115,10 @@
                                             <input type="radio" name="category" data-label="Opção 3">
                                             <span>Opção 3</span>
                                         </li>
+                                        <li class="option">
+                                            <a href="/TelasHtmleCSS/Julia/INDEX2.html" name="category"
+                                                data-label="Opção 4" id="opcao-outro"><span>Outros</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -137,6 +148,10 @@
                                         <li class="option">
                                             <input type="radio" name="category" data-label="Opção 3">
                                             <span>Opção 3</span>
+                                        </li>
+                                        <li class="option">
+                                            <a href="/TelasHtmleCSS/Julia/INDEX2.html" name="category"
+                                                data-label="Opção 4" id="opcao-outro"><span>Outros</span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -168,6 +183,10 @@
                                             <input type="radio" name="category" data-label="Opção 3">
                                             <span>Opção 3</span>
                                         </li>
+                                        <li class="option">
+                                            <a href="/TelasHtmleCSS/Julia/INDEX2.html" name="category"
+                                                data-label="Opção 4" id="opcao-outro"><span>Outros</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -197,6 +216,10 @@
                                         <li class="option">
                                             <input type="radio" name="category" data-label="Opção 3">
                                             <span>Opção 3</span>
+                                        </li>
+                                        <li class="option">
+                                            <a href="/TelasHtmleCSS/Julia/INDEX2.html" name="category"
+                                                data-label="Opção 4" id="opcao-outro"><span>Outros</span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -234,7 +257,7 @@
 
                             <div class="campodePrenchimento">
                                 <label for="campoData" class="nomePreenchimento">Ano</label>
-                                <input type="date" name="campoData" id="campoData" required class="campoSectionUm">
+                                <input type="number" name="campoData" id="campoData" required class="campoSectionUm" placeholder="Ex: 2019" onchange="validarAno()">
                             </div>
 
                             <div class="campodePrenchimento">
@@ -244,22 +267,16 @@
 
                             <div class="campodePrenchimento">
                                 <label for="campoQuilometragem" class="nomePreenchimento">Quilometragem</label>
-                                <input type="text" name="campoQuilometragem" id="campoImagem" placeholder="Ex: 0 Km"
-                                    class="campoSectionUm">
+                                <input type="text" name="campoQuilometragem" id="campoQuilometragem" placeholder="Ex: 0 Km"
+                                    class="campoSectionUm" onchange="formatarDistancia()">
                             </div>
-                            <div class="campodePrenchimento">
-                                <label for="campoDoIpva" class="nomePreenchimento">IPVA</label>
-                                <div class="campoDoIpva">
-                                    <input type="checkbox" name="campoIpva" id="campoIpva" class="checkbox">
-                                    <label for="campoIpva" id="labelIpva" class="label"></label>
-                                </div>
-                                <div id="campoDataVencimento" style="display: none;">
-                                    <label for="ipvaAnoe" class="nomePreenchimento">Data de vencimento</label>
-                                    <input type="date" name="ipvaAno" id="ipvaAnoe" class="campoSectionUm">
-                                </div>
+                            <div class="campodePrenchimento" id="checkboxEstilizada">
+                                <label for="campoIpva" class="nomePreenchimento">IPVA</label>
+                                <input type="checkbox" name="campoIpva" id="campoIpva" class="checkbox" onchange="toggleDataVencimento()">
+                                <label for="campoIpva" id="labelIpva" class="label"></label>
                             </div>
 
-                            <div class="campodePrenchimento">
+                            <div class="campodePrenchimento" id="checkboxEstilizada">
                                 <label for="campoBilndagem" class="nomePreenchimento">Blindagem</label>
                                 <input type="checkbox" name="campoBilndagem" id="campoBilndagem" class="checkbox">
                                 <label for="campoBilndagem" id="labelBlindagem" class="label"></label>
@@ -267,6 +284,10 @@
                         </section>
 
                         <section class="sectionUmaColuna">
+                            <div id="campoDataVencimento" class="campodePrenchimentoDifgerente" style="display: none;">
+                                <label for="ipvaAno" class="nomePreenchimento">Data de vencimento do IPVA</label>
+                                <input type="date" name="ipvaAno" id="ipvaAno" class="campoSectionUm">
+                            </div>
                             <div class="campodePrenchimentoDifgerente">
                                 <label for="campoNome" class="nomePreenchimento">Nome de exibição</label>
                                 <input type="text" name="campoNome" id="campoNome" placeholder="Ex: Marca Modelo"
@@ -274,73 +295,29 @@
                             </div>
 
                             <div class="campodePrenchimentoDifgerente">
-                                <div class="upload-area">
-                                    <label for="inputImagem" class="nomePreenchimento">Imagens do produto</label>
-                                    <div class="campoDeAdicionar">
-                                        <label for="file-upload" class="custom-file-upload">
-                                            <i class="bi bi-file-earmark-plus-fill"></i>
-                                        </label>
-                                        <input type="file" id="file-upload" name="inputImagem" accept="image/*"
-                                            multiple>
-
-                                        <!-- Galeria onde as imagens serão exibidas -->
-                                        <div class="image-preview-area"></div>
-
-                                        <!-- Mensagem de erro caso não tenha imagens suficientes -->
-                                    </div>
-                                    <p class="error-message" style="display:none;color:red;">Adicione no mínimo 5
-                                        imagens.</p>
-                                </div>
-
+                                <label for="campoValorMin" class="nomePreenchimento">Valor mínimo</label>
+                                <input type="text" name="campoValorMin" id="campoValorMin" required
+                                    placeholder="Ex: R$ 79.490,00" class="campoSectionDois" onchange="formatarValorMonetarioMinimo()">
                             </div>
-
                             <div class="campodePrenchimentoDifgerente">
-                                <label for="campoDetalhes" class="nomePreenchimento">Detalhes</label>
-                                <textarea name="campoDetalhes" id="campoDetalhes"
-                                    placeholder="Adicione os detalhes sobre o seu produto aqui!" required></textarea>
-                            </div>
-
-                            <div class="campodePrenchimentoDifgerente">
-                                <label for="campoValor" class="nomePreenchimento">Valor do produto a vista</label>
-                                <input type="text" name="campoValor" id="campoValor" required
-                                    placeholder="Ex: R$ 79.490,00" class="campoSectionDois">
-                            </div class="campodePrenchimento">
-
-                            <div class="campodePrenchimentoDifgerente" id="campoPrenchimentoContato">
-                                <label for="campoContato" class="nomePreenchimento">Contatos para negociações</label>
-                                <div id="campoContatoFundo">
-
-                                    <label for="campoZapZap" class="nomePreenchimento">WhatsApp</label>
-                                    <div id="campoZapZap">
-                                        <i class="bi bi-whatsapp"></i>
-                                        <input type="text" name="campoContato" id="campoContato"
-                                            placeholder="+55 (69) 98411-1111" required>
-                                        <input type="checkbox" name="" id="" checked>
-                                    </div>
-
-                                    <label for="CampoEmail" class="nomePreenchimento">E-mail</label>
-                                    <div id="campoEmail">
-                                        <i class="bi bi-envelope"></i>
-                                        <input type="email" name="campoContato" id="campoContato"
-                                            placeholder="joaopedro@gmail.com" required>
-                                        <input type="checkbox" name="" id="" checked>
-                                    </div>
-                                </div>
+                                <label for="campoValorMax" class="nomePreenchimento">Valor máximo</label>
+                                <input type="text" name="campoValorMax" id="campoValorMax" required
+                                    placeholder="Ex: R$ 100.000,00" class="campoSectionDois" onchange="formatarValorMonetarioMaximo()">
                             </div>
                         </section>
                     </div>
                 </div>
                 <div class="campoBotoes">
-                    <input id="botaoEnviar" type="submit" value="Cadastrar Produto">
+                    <button id="botaoEnviar" onclick="enviarFormulario(event)">Criar alerta para esse filtro</button>
                 </div>
             </form>
         </div>
         <div class="conclusao" style="display: none;">
             <div class="fundoClonclusao">
-                <h2 id="mensagemDecomclusao">PRODUTO POSTADO COM SUCESSO!</h2>
+                <h2 id="mensagemDecomclusao">FILTRO SALVO COM SUCESSO!</h2>
                 <div class="areaBotoes">
                     <button><a href="#"><i class="bi bi-arrow-left"></i><span>Voltar a tela de produtos</span></a></button>
-                    <button><a href="#"><i class="bi bi-arrow-left"></i><span>Adicionar mais um produto</span></a></button>
+                    <button><a href="#"><i class="bi bi-arrow-left"></i><span>Adicionar mais um filtro</span></a></button>
                 </div>
             </div>
         </div>
@@ -406,5 +383,7 @@
     <script src="js/ScriptDropDown.js"></script>
     <script src="js/scriptCampoIpva.js"></script>
     <script src="js/scriptApresentarTela.js"></script>
+    <script src="js/scriptTratamentoDeDados.js"></script>
 </body>
+
 </html>

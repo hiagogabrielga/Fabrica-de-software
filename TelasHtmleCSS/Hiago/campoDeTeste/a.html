@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato de Km</title>
+</head>
+<body>
+    <label for="distanceInput">Digite a distância:</label>
+    <input type="text" id="distanceInput" name="distanceInput">
+    <script>
+        document.getElementById('distanceInput').addEventListener('chang', function() {
+            let value = this.value.replace(',', '.'); // Substitui vírgula por ponto
+            if (!isNaN(value) && value.trim() !== '') {
+                this.value = parseFloat(value).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' km';
+            } else {
+                this.value = ''; // Limpa o campo se o valor não for um número válido
+            }
+        });
+
+        document.getElementById('distanceInput').addEventListener('focus', function() {
+            this.value = this.value.replace(' km', ''); // Remove ' km' ao focar no campo
+        });
+
+        document.getElementById('distanceInput').addEventListener('blur', function() {
+            let value = this.value.replace(',', '.'); // Substitui vírgula por ponto
+            if (!isNaN(value) && value.trim() !== '') {
+                this.value = parseFloat(value).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' km';
+            } else {
+                this.value = ''; // Limpa o campo se o valor não for um número válido
+            }
+        });
+    </script>
+</body>
+</html>
