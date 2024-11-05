@@ -505,3 +505,16 @@ form{
     flex-direction: column;
     height: 97px;
 }
+
+.campodePrenchimento, .campodePrenchimentoDifgerente {
+    position: relative; /* Necessário para aplicar o z-index */
+}
+
+.campodePrenchimento:nth-child(1) { z-index: 3; }
+.campodePrenchimento:nth-child(2) { z-index: 2; }
+.campodePrenchimento:nth-child(3) { z-index: 1; }
+/* Continue incrementando o z-index para cada elemento adicional */
+
+.campodePrenchimentoDifgerente:nth-child(1) { z-index: 10; }
+.campodePrenchimentoDifgerente:nth-child(2) { z-index: 11; }
+/* Continue incrementando o z-index para cada elemento adicional */

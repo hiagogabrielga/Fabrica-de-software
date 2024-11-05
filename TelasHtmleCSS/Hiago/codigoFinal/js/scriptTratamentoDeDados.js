@@ -1,10 +1,10 @@
 function validarAno() {
     const campoData = document.getElementById('campoData');
-    const currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear() + 1;
     const inputYear = parseInt(campoData.value, 10);
 
     if (inputYear > currentYear) {
-        alert('O ano inserido é maior que o ano atual!');
+        alert(`O ano inserido é maior que o ano de ${currentYear}`);
         campoData.value = '';
     } else if (inputYear < 1900) {
         alert('O ano inserido não é válido!');
@@ -110,3 +110,66 @@ function formatarDistancia() {
         distanceInput.value = ''; // Limpa o campo se o valor não for um número válido
     }
 }
+
+function contarChecagemEmail() {
+    const elementoEmail = document.querySelector("#checkboxEmail")
+    if (!elementoEmail.checked) {
+        return false
+    } else {
+        return true
+    }
+}
+
+function contarChecagemZap() {
+    const elementoZap = document.querySelector("#checkboxZapZap")
+    if (!elementoZap.checked) {
+        return false
+    } else {
+        return true
+    }
+}
+
+function analizarChecagem() {
+    var telefone = contarChecagemZap()
+    var email = contarChecagemEmail()
+    if (telefone == true || email == true) {
+        
+    } else {
+        alert("Ao menos um dos campos deve estár marcado.")
+        var elementoZap = document.querySelector("#checkboxZapZap")
+        elementoZap.checked = true;
+    }
+}
+
+function formatarTelefone(event) {
+    let input = event.target;
+    let value = input.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+
+    // Limita o valor a 11 dígitos (2 para o DDD e 9 para o número)
+    if (value.length > 11) {
+        value = value.slice(0, 11);
+    }
+
+    // Aplica a formatação para o padrão +55 (69) 98411-1111
+    if (value.length <= 10) {
+        value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, "+55 ($1) $2-$3");
+    } else {
+        value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, "+55 ($1) $2-$3");
+    }
+
+    input.value = value; // Define o valor formatado no input
+
+    // Verifica se o número está completo
+    if (value.length < 18) { // O número formatado completo tem 18 caracteres
+        alert("Por favor, insira um número de telefone completo.");
+        input.focus();
+    }
+}
+
+
+
+document.querySelector('form').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Impede o envio do formulário
+    }
+});

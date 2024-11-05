@@ -333,8 +333,8 @@
                                     <div id="campoZapZap">
                                         <i class="bi bi-whatsapp"></i>
                                         <input type="text" name="campoContato" id="campoContato"
-                                            placeholder="+55 (69) 98411-1111" required>
-                                        <input type="checkbox" name="" id="" checked>
+                                            placeholder="+55 (69) 98411-1111" onchange="formatarTelefone(event)" required>
+                                        <input type="checkbox" name="" id="checkboxZapZap" checked  onclick="analizarChecagem()">
                                     </div>
 
                                     <label for="CampoEmail" class="nomePreenchimento">E-mail</label>
@@ -342,7 +342,7 @@
                                         <i class="bi bi-envelope"></i>
                                         <input type="email" name="campoContato" id="campoContato"
                                             placeholder="joaopedro@gmail.com" required>
-                                        <input type="checkbox" name="" id="" checked>
+                                        <input type="checkbox" name="" id="checkboxEmail" checked onclick="analizarChecagem()">
                                     </div>
                                 </div>
                             </div>
