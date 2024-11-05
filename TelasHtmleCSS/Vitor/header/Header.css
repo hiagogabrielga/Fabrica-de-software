@@ -47,7 +47,7 @@ header {
     left: -300px; 
     background-color: #fff;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.138);
-    width: 120px; /* Largura exata do menu */
+    width: 120px; 
     padding: 5px 30px;
     transition: left 0.3s ease;
     border-radius: 13px;
@@ -101,14 +101,14 @@ header {
 }
 
 .barra-pesquisa { 
-    width: 550px; /* Ajuste conforme necessário */
+    width: 550px; 
     height: 35px;
     position: relative;
     display: flex;
     margin: auto;
     align-items: center;
-    background-color: #e6e6e6; /* Cor de fundo semelhante */
-    border-radius: 5px; /* Canto arredondado */
+    background-color: #e6e6e6; 
+    border-radius: 5px; 
 }
 
 .barra-pesquisa input { 
@@ -120,11 +120,11 @@ header {
     font-size: 13px;
     color: #575757;
     font-weight: 600;
-    background-color: transparent; /* Para corresponder ao fundo */
+    background-color: transparent; 
 }
 
 .barra-pesquisa input::placeholder {
-    color: #989898; /* Cor mais clara para o placeholder */
+    color: #989898; 
     font-size: 11px;
 }
 
@@ -133,11 +133,11 @@ header {
 }
 
 .lupa {
-    background-color: #c63434; /* Cor de fundo vermelha */
+    background-color: #c63434; 
     border: none;
-    width: 60px; /* Largura do botão da lupa */
+    width: 60px; 
     height: 100%;
-    border-radius: 0 5px 5px 0; /* Bordas arredondadas apenas no canto direito */
+    border-radius: 0 5px 5px 0; 
     display: flex;
     align-items: center;
     justify-content: center;
