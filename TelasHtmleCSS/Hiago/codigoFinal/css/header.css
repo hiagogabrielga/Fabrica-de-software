@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--corDeFundo);
+}
+
+:root {
+    font-family: "Poppins", sans-serif;
+    --corPrincipal: #D9D9D9;
+    --corPrecimento: #ffffff;
+    --corDetalhes: #C63434;
+    --corFontes: #505050;
+    --corIconeImagem: #FF1300;
+    --corDeFundo: #EFEFEF;
+    --cor-barra-pesquisa: #ebebeb;
+}
+
+header { 
+    width: 100%;
+    height: 60px;
+    background-color: var(--corPrecimento);
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.logo img{ 
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.menu-icon {
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 5px;    
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 77px;
+    left: -300px; 
+    background-color: #fff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.138);
+    width: 120px; 
+    padding: 5px 30px;
+    transition: left 0.3s ease;
+    border-radius: 13px;
+}
+
+.menu-lateral a {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-lateral a:hover {
+    color: var(--corDetalhes);
+}
+
+#cidades {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #505050;
+    outline: none;
+    font-size: 12px;
+}
+
+#cidades option:hover {
+    background-color: var(--corDetalhes);
+    color: #fff;
+}
+
+#cidades:focus {
+    outline: none;
+    border: none;
+}
+
+.local_regiao {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 4.1rem;
+}
+
+.local_regiao i {
+    font-size: 18px; 
+    color: var(--corFontes); 
+    margin-right: 10px;
+}
+
+.barra-pesquisa { 
+    width: 550px; 
+    height: 35px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    background-color: #e6e6e6; 
+    border-radius: 5px; 
+}
+
+.barra-pesquisa input { 
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: #575757;
+    font-weight: 600;
+    background-color: transparent; 
+}
+
+.barra-pesquisa input::placeholder {
+    color: #989898; 
+    font-size: 11px;
+}
+
+.barra-pesquisa input:focus {
+    outline: none;
+}
+
+.lupa {
+    background-color: #c63434; 
+    border: none;
+    width: 60px; 
+    height: 100%;
+    border-radius: 0 5px 5px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lupa i {
+    color: white;
+    font-size: 22px;
+    margin-top: 2px;
+}
+
+.entrar-logar a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: var(--corFontes);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.entrar-logar { 
+    margin-top: 2rem;
+    margin-right: 3.5rem;
+}
+
+.carrinho img{ 
+    width: 50px;
+    margin-right: 1.6rem;
+    margin-top: 26px;
+    cursor: pointer;
+}
+
+.perfil { 
+    color: rgb(36, 36, 36);
+    font-size: 45px;
+    margin-right: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    margin-top: 1rem;
+    width: 500px;
+    padding: 9px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.061);
+    display: flex;
+    background-color: #fff;
+}
+
+nav ul li {
+    position: relative;
+    margin: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.voltar { 
+    position: fixed;
+    top: 77px;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.135);
+    width: 85px;
+    padding: 1px; 
+    margin-left: 10px;
+    text-align: center;
+    transition: left 0.3s ease;
+    border-radius: 25px;
+}
+
+.voltar a{ 
+    display: block;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.voltar>a:hover { 
+    color: var(--corDetalhes);
+}
