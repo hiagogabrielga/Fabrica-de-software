@@ -54,7 +54,7 @@ body {
     gap: 30px;
   }
   
-/* Estilização dos botões */
+
 /* Estilização dos botões */
 .support-btn {
     display: flex;
@@ -115,10 +115,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00000093; /* Cor do círculo, pode ser modificada */
-    border-radius: 50%; /* Faz o fundo ser um círculo */
-    width: 80px; /* Tamanho do círculo, pode ser modificado */
-    height: 80px; /* Tamanho do círculo, pode ser modificado */
+    background-color: #00000093; 
+    border-radius: 50%; 
+    width: 80px; 
+    height: 80px; 
   }
   
   .bi-robot {
@@ -127,7 +127,7 @@ body {
   
   
   .contact-details {
-    margin-top: 200px; /* Adiciona espaçamento entre o emoji e as informações de contato */
+    margin-top: 200px; 
   }
   
   .contact-details p {
