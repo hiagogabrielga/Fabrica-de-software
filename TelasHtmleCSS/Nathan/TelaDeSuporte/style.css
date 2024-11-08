@@ -13,8 +13,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 40px; /* Espaço acima do main */
-    margin-bottom: 40px; /* Espaço abaixo do main */
+    margin-top: 40px; 
+    margin-bottom: 40px;
   }
   
   .support-container {
@@ -25,8 +25,8 @@ body {
   .content-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 50px; /* Espaçamento entre os conteúdos da esquerda e da direita */
-    background-color: #fff;
+    gap: 50px; 
+    background-color: #D9D9D9;
     border-radius: 10px;
     padding: 20px;
     max-width: 1000px;
@@ -55,7 +55,7 @@ body {
   }
   
 
-/* Estilização dos botões */
+
 .support-btn {
     display: flex;
     align-items: center;
@@ -77,19 +77,32 @@ body {
   .support-btn:hover {
     background-color: #e0e0e0;
   }
+
+.support-btn.active {
+    background-color: #C63434;
+    color: #fff;
+    border-color: #ffffff;
+}
+
+
+.support-btn.locked {
+    background-color: #d3d3d3; 
+    color: #888; 
+    border-color: #d3d3d3;
+    cursor: not-allowed; 
+}
+
   
-  
-  /* Estilização para o elemento não clicável */
   .non-clickable {
     text-align: center;
-    background-color: #32cd32; /* Verde claro */
+    background-color: #32cd32; 
     color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
-    cursor: default; /* Remove o ponteiro de cursor */
+    cursor: default;
   }
   
   
@@ -101,7 +114,7 @@ body {
   
   .contact-info {
     width: 35%;
-    background-color: #ddd;
+    background-color: #BEBEBE;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -115,14 +128,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00000093; 
+    background-color: #EEEEEE; 
     border-radius: 50%; 
     width: 80px; 
     height: 80px; 
   }
   
   .bi-robot {
-    font-size: 40px; /* Tamanho do ícone do robô, pode ser ajustado */
+    font-size: 40px; 
   }
   
   
@@ -134,18 +147,16 @@ body {
     font-size: 14px;
     margin: 5px 0;
   }
-  #confirmation-message {
-    display: none;
-    padding: 15px;
-    background-color: #00ff00;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 5px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
+
+  .contact-details a {
+    text-decoration: none;
+    font-weight: bold; 
+    color: #000; 
+}
+
+.contact-details i {
+    color: initial; 
+}
   
   .hidden {
     display: none;
