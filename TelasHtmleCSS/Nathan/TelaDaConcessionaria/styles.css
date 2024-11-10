@@ -1,14 +1,14 @@
-.main-content {
+.conteudo-principal {
     padding: 40px;
     background-color: #EFEFEF;
 }
 
-.photo-section {
+.secao-foto {
     text-align: center;
     margin-bottom: 100px;
 }
 
-.photo-container {
+.container-foto {
     background-color: #D9D9D9;
     height: 250px;
     display: flex;
@@ -19,70 +19,65 @@
     margin: 0 auto; 
 }
 
-.photo-container, .pa {
+.container-foto, .texto-foto {
     font-size: 30px;
     color: #C63434;
-    font-weight: 00;
-
+    font-weight: 600;
 }
 
-.about-container,
-.contacts-container {
+.container-sobre,
+.container-contatos {
     background-color: #D9D9D9;
     padding: 20px; 
     border-radius: 10px;
     width: 35%; 
-    
 }
 
-.info-section {
+.secao-informacoes {
     display: flex;
     justify-content: space-between;
     gap: 5px;
     margin-bottom: 100px;
 }
-.photo-container,
-.about-container,
-.contacts-container {
+
+.container-foto,
+.container-sobre,
+.container-contatos {
     margin-bottom: 10px; 
 }
 
-.about-container h2,
-.contacts-container h2 {
+.container-sobre h2,
+.container-contatos h2 {
     color: #C63434;
     margin-bottom: 10px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
-
-
-
-
-.contact-item {
-    font-size: 16;
+.item-contato {
+    font-size: 16px;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     color: #333;
 }
 
-.contact-item i {
+.item-contato i {
     margin-right: 8px;
     font-size: 20px;
 }
 
-.products-section {
+.secao-produtos {
     padding: 20px;
     margin-bottom: 40px;
 }
 
-.products-section h2 {
+.secao-produtos h2 {
     text-align: center; 
     color: #858585;
     margin-bottom: 20px; 
 }
 
-.products-container {
+.container-produtos {
     display: flex;
     justify-content: space-between;
     gap: 10px; 
@@ -91,7 +86,7 @@
     border-radius: 10px;
 }
 
-.product-card {
+.cartao-produto {
     background-color: #FFFFFF;
     border-radius: 10px;
     width: 180px; 
@@ -103,18 +98,18 @@
     text-align: center;
 }
 
-.product-card img {
+.cartao-produto img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-.product-card p {
+.cartao-produto p {
     margin: 5px 0;
     font-weight: bold;
 }
 
-.product-card button {
+.cartao-produto button {
     background-color: #C63434;
     color: white;
     border: none;

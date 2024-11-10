@@ -1,164 +1,152 @@
 body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    background-color: #EFEFEF;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin-top: 40px; 
-    margin-bottom: 40px;
-  }
-  
-  .support-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px; 
-    background-color: #D9D9D9;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 1000px;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .support-options {
-    width: 60%;
-  }
-  
-  .support-options h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .support-options p {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-  
-
-
-.support-btn {
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    border: 2px solid #000;
-    border-radius: 5px;
-    background-color: #f8f8f8;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .support-btn i {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-  
-  .support-btn:hover {
-    background-color: #e0e0e0;
-  }
-
-.support-btn.active {
-    background-color: #C63434;
-    color: #fff;
-    border-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #EFEFEF;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-
-.support-btn.locked {
-    background-color: #d3d3d3; 
-    color: #888; 
-    border-color: #d3d3d3;
-    cursor: not-allowed; 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 40px; 
+  margin-bottom: 40px;
 }
 
-  
-  .non-clickable {
-    text-align: center;
-    background-color: #32cd32; 
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: default;
-  }
-  
-  
-  .confirm-btn {
-    background-color: #f0f0f0;
-    border: 2px solid #000;
-    font-weight: bold;
-  }
-  
-  .contact-info {
-    width: 35%;
-    background-color: #BEBEBE;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .circle-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #EEEEEE; 
-    border-radius: 50%; 
-    width: 80px; 
-    height: 80px; 
-  }
-  
-  .bi-robot {
-    font-size: 40px; 
-  }
-  
-  
-  .contact-details {
-    margin-top: 200px; 
-  }
-  
-  .contact-details p {
-    font-size: 14px;
-    margin: 5px 0;
-  }
-
-  .contact-details a {
-    text-decoration: none;
-    font-weight: bold; 
-    color: #000; 
+.conteudo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contact-details i {
-    color: initial; 
+.opcoes-suporte {
+  width: 60%;
 }
-  
-  .hidden {
-    display: none;
-  }
-  
+
+.opcoes-suporte h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.opcoes-suporte p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.botao-suporte {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-suporte i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.botao-suporte:hover {
+  background-color: #e0e0e0;
+}
+
+.botao-suporte.ativo {
+  background-color: #C63434;
+  color: #fff;
+  border-color: #ffffff;
+}
+
+.botao-suporte.bloqueado {
+  background-color: #d3d3d3;
+  color: #888;
+  border-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.bloqueio-confirmado {
+  text-align: center;
+  background-color: #32cd32;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.botao-confirmar {
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  font-weight: bold;
+}
+
+.info-contato {
+  width: 35%;
+  background-color: #BEBEBE;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fundo-circular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEEEEE;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.bi-robot {
+  font-size: 40px;
+}
+
+.detalhes-contato {
+  margin-top: 200px;
+}
+
+.detalhes-contato p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.detalhes-contato a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.detalhes-contato i {
+  color: initial;
+}
+
+.oculto {
+  display: none;
+}
