@@ -42,7 +42,7 @@ header {
 }
 
 .menu-lateral {
-    position: fixed;
+    position: absolute;
     top: 77px;
     left: -300px; 
     background-color: #fff;
@@ -217,6 +217,7 @@ nav ul li a {
     text-align: center;
     transition: left 0.3s ease;
     border-radius: 25px;
+    position: absolute;
 }
 
 .voltar a{ 
@@ -231,4 +232,9 @@ nav ul li a {
 
 .voltar>a:hover { 
     color: var(--corDetalhes);
+}
+
+
+main { 
+    margin-top: 60rem;
 }
