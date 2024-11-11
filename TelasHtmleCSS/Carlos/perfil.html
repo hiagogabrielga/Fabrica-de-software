@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/perfil.css">
+    <script src="../Carlos/js/perfil.js"></script>
     <title>Editar Perfil</title>
 </head>
 <body>
+    <div class="janela_exclusao" id="janela_exclusao">
+        <div class="exclusao">
+            <h1>Atenção!</h1>
+            <p>Tem certeza de que deseja excluir sua conta? Esta ação é irreversível e todos os seus dados serão permanentemente apagados.</p>
+            <div class="botoes-fechar">
+                <button class="concluir" id="concluir">Excluir</button>
+                <button class="fechar" id="fechar">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container">
         <aside class="barra-lateral">
             <div class="perfil">
@@ -18,7 +31,7 @@
                 <ul>
                     <li><button class="botao-menu">Meus produtos</button></li>
                     <li><button class="botao-menu">Sair</button></li>
-                    <li><button class="excluir-conta">Excluir conta</button></li>
+                    <li><button class="excluir-conta" id="excluir-conta">Excluir conta</button></li>
                 </ul>
             </nav>
         </aside>

@@ -11,6 +11,81 @@ body {
     background-color: #f4f4f4;
 }
 
+.janela_exclusao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    backdrop-filter: blur(2px);
+}
+
+.janela_exclusao.mostrar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.exclusao {
+    width: 60%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.exclusao h1 {
+    color: #c9302c;
+    margin-bottom: 20px;
+}
+
+.exclusao p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.botoes-fechar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.concluir,
+.fechar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.concluir {
+    background-color: #c9302c;
+    color: #fff;
+}
+
+.concluir:hover {
+    background-color: #d9534f;
+}
+
+.fechar {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.fechar:hover {
+    background-color: #5a6268;
+}
+
+
 .container {
     display: flex;
     min-height: 100vh;
@@ -162,6 +237,7 @@ hr {
     border-top: 1px solid #ccc;
     margin: 30px 0;
 }
+
 
 @media (max-width: 768px) {
     .container {
