@@ -7,7 +7,7 @@ function toggleMenu() {
     if (menuAberto) {
         // Fecha o menu
         menu.style.left = "-300px";  
-        voltar.style.left = "10px";  
+        voltar.style.left = "1px";  
     
         menuAberto = false;
     } else {
