@@ -104,7 +104,7 @@ body {
     border-radius: 10px;
 }
 
-.perfil {
+.perfil-1 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ body {
     margin-top: 90px;
 }
 
-.perfil i {
+.perfil-1 i {
     font-size: 80px;
     color: #333;
     margin-bottom: -1px;
@@ -138,7 +138,7 @@ body {
     margin-top: 275px;
 }
 
-.menu ul {
+.menu .ul {
     list-style: none;
     width: 100%;
 }
@@ -173,6 +173,7 @@ body {
 }
 
 .conteudo {
+    margin-top: 40px;
     width: 850px;
     margin-left: 2rem;
     padding: 40px;
