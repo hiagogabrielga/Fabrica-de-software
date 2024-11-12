@@ -1,0 +1,433 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--corDeFundo);
+}
+
+:root {
+    font-family: "Poppins", sans-serif;
+    --corPrincipal: #D9D9D9;
+    --corPrecimento: #ffffff;
+    --corDetalhes: #C63434;
+    --corFontes: #505050;
+    --corIconeImagem: #FF1300;
+    --corDeFundo: #EFEFEF;
+    --cor-barra-pesquisa: #ebebeb;
+}
+
+header { 
+    width: 100%;
+    height: 60px;
+    background-color: var(--corPrecimento);
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.logo img{ 
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.menu-icon {
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 5px;    
+}
+
+.menu-lateral {
+    position: absolute;
+    top: 77px;
+    left: -300px; 
+    background-color: #fff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.138);
+    width: 120px; 
+    padding: 5px 30px;
+    transition: left 0.3s ease;
+    border-radius: 13px;
+}
+
+.menu-lateral a {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-lateral a:hover {
+    color: var(--corDetalhes);
+}
+#cidades {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #505050;
+    outline: none;
+    font-size: 12px;
+}
+
+#cidades option:hover {
+    background-color: var(--corDetalhes);
+    color: #fff;
+}
+
+#cidades:focus {
+    outline: none;
+    border: none;
+}
+
+.local_regiao {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 4.1rem;
+}
+
+.local_regiao i {
+    font-size: 18px; 
+    color: var(--corFontes); 
+    margin-right: 10px;
+}
+
+.barra-pesquisa { 
+    width: 550px; /* Ajuste conforme necessário */
+    height: 35px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    background-color: #e6e6e6; /* Cor de fundo semelhante */
+    border-radius: 5px; /* Canto arredondado */
+}
+
+.barra-pesquisa input { 
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: #575757;
+    font-weight: 600;
+    background-color: transparent; /* Para corresponder ao fundo */
+}
+
+.barra-pesquisa input::placeholder {
+    color: #989898; /* Cor mais clara para o placeholder */
+    font-size: 11px;
+}
+
+.barra-pesquisa input:focus {
+    outline: none;
+}
+
+.lupa {
+    background-color: #c63434; /* Cor de fundo vermelha */
+    border: none;
+    width: 60px; /* Largura do botão da lupa */
+    height: 100%;
+    border-radius: 0 5px 5px 0; /* Bordas arredondadas apenas no canto direito */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lupa i {
+    color: white;
+    font-size: 22px;
+    margin-top: 2px;
+}
+
+.entrar-logar a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: var(--corFontes);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.entrar-logar { 
+    margin-top: 2rem;
+    margin-right: 3.5rem;
+}
+
+.carrinho img{ 
+    width: 50px;
+    margin-right: 1.6rem;
+    margin-top: 26px;
+    cursor: pointer;
+}
+
+.perfil { 
+    color: rgb(36, 36, 36);
+    font-size: 45px;
+    margin-right: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    margin-top: 1rem;
+    width: 500px;
+    padding: 9px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.061);
+    display: flex;
+    background-color: #fff;
+}
+
+nav ul li {
+    position: relative;
+    margin: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.menu-item {
+      position: relative;
+}
+  
+.menu-item .dropdown {
+      display: none;
+      position: absolute;
+      top: 110%; /* Espaçamento de 10% da altura do menu */
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 15px;
+      justify-content: center;
+      text-align: center;
+      width: 120px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+}
+  
+.menu-item {
+      position: relative;
+}
+  
+.menu-item .dropdown {
+      display: none; 
+      position: absolute;
+      top: 100%; 
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 15px;
+      justify-content: center;
+      text-align: center;
+      width: 120px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      margin-top: 15px; 
+}
+  
+.dropdown li {
+      padding: 12px 0;
+}
+  
+.dropdown li a {
+      color: black;
+      text-decoration: none;
+      display: block;
+     
+}
+  
+.dropdown li a:hover {
+      color: var(--corDetalhes);
+}
+  
+.menu-item a { 
+      color: rgb(0, 0, 0); 
+}
+  
+.menu-item a:hover { 
+      color: var(--corDetalhes);
+}
+  
+.voltar { 
+    position: fixed;
+    top: 77px;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.135);
+    width: 85px;
+    padding: 1px; 
+    margin-left: 10px;
+    text-align: center;
+    transition: left 0.3s ease;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.voltar a{ 
+    display: block;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.voltar>a:hover { 
+    color: var(--corDetalhes);
+}
+
+/*concessionáriass em destaque*/
+
+#mostrar_destaque { 
+    display:block;
+    color: rgb(105, 105, 105);
+    margin: auto;
+    text-align: center;
+    margin-top: 3.5rem;
+    font-size: 18px;
+}
+
+#destaque {
+    display:block;
+    color: rgb(105, 105, 105);
+    margin: auto;
+    text-align: center;
+    margin-top: 5.5rem;
+    font-size: 18px;
+}
+
+.fundo_cards { 
+    width: 810px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 210px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: var(--corPrincipal);
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.cards_cs { 
+    width: 150px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: var(--corDeFundo);
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    
+}
+
+.cards_cs img { 
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    margin-top: 0.7rem;
+}
+
+.cards_cs p { 
+    font-size: 14px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: rgb(46, 46, 46);
+}
+
+.cards_cs button { 
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: var(--corDetalhes);
+    color: var(--cor-barra-pesquisa);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.fundo_carros { 
+    width: 100%;
+    max-width: 700px;
+    height: 550px;
+    background-color: var(--corPrincipal);
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 6rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    
+}
+
+.card_carros { 
+    width: 220px;
+    height: 240px;
+    background-color: var(--corDeFundo);
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    text-align: center;
+    display: block;
+}
+
+.card_carros img { 
+    width: 220px;
+    height: 140px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card_carros p {
+    margin-top: 1px; 
+    font-size: 16px;
+    font-weight: 600;
+    color: #575757;
+}
+
+.card_carros button { 
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    border: none;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--corDetalhes);
+    color: var(--cor-barra-pesquisa);
+    font-size: 14px;
+    cursor: pointer;
+}
+
