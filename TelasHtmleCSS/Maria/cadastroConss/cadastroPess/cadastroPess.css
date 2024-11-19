@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; 
+    background-color: #a5a5a5;
+}
+
+.container-vermelho {
+    background-color: #c63434;
+    color: #fdfafa;
+    width: 20%; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-vermelho h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.container-vermelho p {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.linha-cinza {
+    background-color: #a5a5a5;
+    color: #a5a5a5;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    z-index: 1000; 
+}
+
+.logo {
+    width: 80px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-nome {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333; 
+}
+
+.cadastro-container {
+    width: 80%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #efefef; 
+    padding: 20px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-header h2 {
+    font-size: 25px;
+    color: #858585;
+    font-weight: 500;
+}
+
+form {
+    width: 100%;
+    max-width: 600px; 
+    background-color: #d9d9d9;
+    padding: 35px;
+    border-radius: 35px;
+    height: 620px;
+}
+label {
+    font-size: 17px;
+    cursor: pointer;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.botoes-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.botao {
+    background-color: #c63434;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    
+}
+
+.botao2 {
+    color: #c63434;
+    font-size: 12px;
+}
