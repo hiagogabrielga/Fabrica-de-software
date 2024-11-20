@@ -27,8 +27,8 @@ body {
 .filtros { 
     display: flex;
     flex-direction: column;
-    width: 280px;
-    height: 700px;
+    width: 250px;
+    height: 1300px;
     background-color: var(--corPrecimento);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.138);
     border-radius: 10px;
@@ -36,7 +36,7 @@ body {
 
 .fundo-carro { 
     width: 1100px;
-    height: 700px;
+    height: 1285px;
     background-color: var(--corPrincipal);
     margin-left: 20px;
     margin-left: 3.7rem;
@@ -62,7 +62,7 @@ body {
 
 .card_carros { 
     width: 200px;
-    height: 220px;
+    height: 230px;
     background-color: var(--corDeFundo);
     border-radius: 10px;
     margin: auto;
@@ -102,3 +102,140 @@ body {
     cursor: pointer;
 }
 
+.filter-box {
+    border-radius: 4px;
+    padding: 10px;
+}
+  
+.filter-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+   
+}
+  
+#search {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    background-color: var(--corPrincipal);
+    border: none;
+    border-radius: 5px;
+}
+  
+#marca { 
+    color: #505050;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.checkbox-container {
+    max-height: 150px; /* Altura máxima para a barra de rolagem */
+    overflow-y: auto;
+    padding-top: 10px;
+    margin-top: 10px;
+
+}
+  
+.checkbox-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #636363;
+}
+  
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+} 
+
+hr {
+    border: none; 
+    width: 90%;
+    height: 2px; 
+    background-color: #a4a4a4; 
+    margin: 20px auto; 
+    border-radius: 5px;
+}
+
+.ano { 
+    color: #505050;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.ano-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+  
+.ano-inputs {
+    display: flex;
+    gap: 5px; 
+}
+  
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.input-group input {
+    width: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--corPrincipal); 
+    text-align: center;
+    font-size: 14px; 
+    outline-color:#ababab;
+}
+  
+ 
+.example {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 5px;
+}
+  
+
+/* Estilizar a barra de rolagem */
+.checkbox-container::-webkit-scrollbar {
+    width: 10px; /* Largura da barra */
+  }
+  
+  /* Cor de fundo do trilho da barra de rolagem */
+  .checkbox-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cinza claro */
+    border-radius: 5px;
+  }
+  
+  /* Cor e estilo do "polegar" (a parte que desliza) */
+  .checkbox-container::-webkit-scrollbar-thumb {
+    background: #888; /* Cinza mais escuro */
+    border-radius: 5px; /* Deixa o polegar arredondado */
+  }
+  
+  /* Cor do "polegar" quando está sendo clicado/arrastado */
+  .checkbox-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Fica mais escuro ao passar o mouse */
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  
+  /* Remove as setas no Firefox */
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
