@@ -170,3 +170,13 @@ textarea {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+.save-button .color {
+    color: #ebebeb;
+    text-decoration: dashed;
+    font-size: 14px;
+}
+
+#main {
+    margin-top: 2rem;
+}

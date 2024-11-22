@@ -135,3 +135,9 @@ button:hover {
 .forgot-password:hover {
     text-decoration: underline;
 }
+
+.button-container .cor {
+    color: #ebebeb;
+    text-decoration: dashed;
+    font-size: 14px;
+}

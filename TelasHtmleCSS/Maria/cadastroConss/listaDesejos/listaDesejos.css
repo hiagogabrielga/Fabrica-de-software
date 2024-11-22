@@ -255,6 +255,7 @@ main {
     width: 8%;
    margin-left: 46%;
    padding: 0.3%;
+   margin-bottom: 3rem;
 }
 
 .div-mais{
@@ -332,4 +333,9 @@ main {
     color: var(--cor-barra-pesquisa);
     font-size: 14px;
     cursor: pointer;
+}
+
+.card_carros a {
+    color: var(--cor-barra-pesquisa);
+    text-decoration: dashed;
 }
