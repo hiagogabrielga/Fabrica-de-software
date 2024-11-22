@@ -14,25 +14,28 @@ function toggleMenu() {
     }
 }
 
+// Adiciona o evento de clique em cada item do menu
 document.querySelectorAll('.menu-item').forEach(function (item) {
     item.addEventListener('click', function (event) {
-        event.preventDefault(); 
-
-        
-        document.querySelectorAll('.dropdown').forEach(function (dropdown) {
-            if (dropdown !== item.querySelector('.dropdown')) {
-                dropdown.style.display = 'none';
-            }
-        });
-
         const dropdown = item.querySelector('.dropdown');
-        if (dropdown) {
+        if (dropdown && event.target.tagName !== 'A') {
+            // Só previne o comportamento padrão se não for um clique no link
+            event.preventDefault();
+
+            // Fecha outros dropdowns abertos
+            document.querySelectorAll('.dropdown').forEach(function (dropdownEl) {
+                if (dropdownEl !== dropdown) {
+                    dropdownEl.style.display = 'none';
+                }
+            });
+
+            // Abre ou fecha o dropdown atual
             dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
         }
     });
 });
 
-
+// Fecha os dropdowns ao clicar fora
 document.addEventListener('click', function (event) {
     const dropdowns = document.querySelectorAll('.dropdown');
     dropdowns.forEach(function (dropdown) {
@@ -41,4 +44,3 @@ document.addEventListener('click', function (event) {
         }
     });
 });
-
