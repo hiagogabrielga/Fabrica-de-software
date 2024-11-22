@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+    background-color: #efefef;
+    overflow-x: hidden;
+}
+
+.titulo{
+    text-align: center;
+    font-weight: 500;
+    color: #C63434;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    z-index: -1;
+}
+
+.fundo-carro { 
+    width: 1100px;
+    height: 700px;
+    background-color: #d9d9d9;
+    margin-left: 20px;
+    margin-left: 3.7rem;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    padding-bottom: 6px;
+}
+
+.card_carros .bot{
+    margin-top: 45px;
+}
+
+.card_carros { 
+    width: 200px;
+    height: 220px;
+    background-color: #efefef;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    text-align: center;
+    display: block;
+}
+
+.card_carros img { 
+    width: 200px;
+    height: 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card_carros p {
+    margin-top: 1px; 
+    font-size: 14px;
+    font-weight: 600;
+    color: #575757;
+}
+
+.card_carros button { 
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    border: none;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    background-color: #c63434;
+    color: #ebebeb;
+    font-size: 14px;
+    cursor: pointer;
+}

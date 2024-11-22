@@ -85,6 +85,8 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     padding: 20px;
     margin: 20px;
@@ -199,6 +201,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    gap: 20px;
 }
 
 .informaçoes input, .informaçoes select {

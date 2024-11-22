@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+/* Seção de imagens */
+.secao-imagens {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2; /* Ocupa duas linhas para alinhar com as seções à direita */
+    background-color: #fffefe;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secao-imagens img#imagemPrincipal {
+    width: 736px; /* Largura fixa para a imagem principal */
+    height: 500px; /* Altura fixa para a imagem principal */
+    object-fit: cover; /* Cobre o espaço mantendo a proporção */
+}
+
+.secao-imagens img {
+    width: 100%;
+}
+
+.carrossel-imagens {
+    display: flex;
+    gap: 7px;
+    margin-top: -5px;
+}
+
+.carrossel-imagens img {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.carrossel-imagens img.miniatura {
+    cursor: pointer;
+    width: 90px; 
+    height: 60px;
+    object-fit: cover; 
+    transition: transform 0.2s;
+}
+
+.carrossel-imagens img.miniatura:hover {
+    transform: scale(1.1); 
+}
+
+.carrossel-imagens .botao-seta {
+    width: 25px;
+}
+
+/* Seção de preços */
+.secao-precos {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secao-precos h2 {
+    color: #ff0000;
+    text-align: center;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: gray;
+    text-align: center;
+    margin-top: -10px;
+    margin-right: 120px;
+}
+
+.desconto {
+    color: gray;
+    margin-top: -20px;
+    margin-left: 205px;
+}
+
+.preco-novo {
+    font-size: 35px;
+    color: #0ca50c;
+    margin-top: -40px;
+}
+
+.texto-ou {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: -40px;
+    margin-left: 10px;
+}
+
+.parcelas {
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+.detalhe-desconto {
+    color: #0ca50c;
+    font-size: 15px;
+}
+
+/* Botões */
+.botao-lista-desejos,
+.botao-loja {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #c63434;
+    color: white;
+}
+
+.botao-lista-desejos:hover,
+.botao-loja:hover {
+    background-color: #d9534f;
+}
+
+/* Seção de contatos */
+.secao-contatos {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    background-color: #fffefe;
+    padding: 55px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.opcao-contato {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.secao-contatos h3 {
+    margin-top: -20px;
+    margin-right: 30px;
+}
+
+.opcao-contato a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.opcao-contato a:hover {
+    color: #007BFF;
+}
+
+.opcao-contato i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.opcao-contato a i.bi-whatsapp {
+    color: #25D366;
+}
+
+.opcao-contato a i.bi-envelope-fill {
+    color: #D44638;
+}
+
+/* Seção de detalhes do carro */
+.detalhes-carro {
+    grid-column: 1 / -1;
+    background-color: #fffefe;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.grade-detalhes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px 10px;
+    justify-items: start;
+}
+
+.grade-detalhes div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.grade-detalhes p:first-child {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.grade-detalhes p {
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.grade-detalhes .detalhe-data {
+    color: red; 
+    font-size: 10px;
+}
+
+/* Seção de especificações */
+.secao-especificacoes {
+    grid-column: 2 / span 1;
+    background-color: #fffefe;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secao-especificacoes h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.secao-especificacoes .mensagem {
+    padding: 60px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+.secao-especificacoes .mensagem p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .secao-imagens,
+    .secao-precos,
+    .secao-contatos,
+    .secao-especificacoes {
+        grid-column: 1 / span 1;
+        max-width: 100%;
+    }
+
+    .secao-precos,
+    .secao-contatos {
+        margin-top: 20px;
+    }
+}
