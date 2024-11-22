@@ -16,7 +16,7 @@ body {
     max-width: 1200px;
     margin: auto;
 }
-/* Seção de imagens */
+
 .secao-imagens {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2; /* Ocupa duas linhas para alinhar com as seções à direita */
@@ -197,33 +197,33 @@ body {
     margin-top: 20px;
 }
 
-.grade-detalhes {
+.grid-detalhes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px 10px;
     justify-items: start;
 }
 
-.grade-detalhes div {
+.grid-detalhes div {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.grade-detalhes p:first-child {
+.grid-detalhes p:first-child {
     font-size: 14px;
     color: #666;
     margin-bottom: 5px;
 }
 
-.grade-detalhes p {
+.grid-detalhes p {
     margin: 0;
     font-size: 20px;
     color: #000000;
     line-height: 1.5;
 }
 
-.grade-detalhes .detalhe-data {
+.grid-detalhes .detalhe-data {
     color: red; 
     font-size: 10px;
 }
