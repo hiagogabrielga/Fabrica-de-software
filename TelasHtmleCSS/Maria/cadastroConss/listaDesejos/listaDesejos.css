@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 body {
@@ -25,8 +24,6 @@ header {
     display: flex;
     margin: auto;
     align-items: center;
-    justify-content: space-between;
-    
 }
 
 .logo img{ 
@@ -40,7 +37,7 @@ header {
 .menu-icon {
     font-size: 35px;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 5px;    
 }
 
 .menu-lateral {
@@ -92,7 +89,7 @@ header {
 .local_regiao {
     display: flex;
     align-items: center;
-    margin-top: 1.6rem;
+    margin-top: 2rem;
     margin-left: 4.1rem;
 }
 
@@ -239,4 +236,100 @@ nav ul li a {
 
 main { 
     margin-top: 60rem;
+}
+
+.titulo{
+    text-align: center;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif; 
+    color: #C63434;
+}
+
+.compartilhar{
+    font-weight: 500;
+    font-family: "Poppins", sans-serif; 
+    background-color: #C63434;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 12px;
+    width: 8%;
+   margin-left: 46%;
+   padding: 0.3%;
+}
+
+.div-mais{
+    background-color: #FFFFFF;
+    width: 15%;
+    position: absolute;
+    margin-left: 1%;
+    height: 30%;
+    border-radius: 14px;
+}
+
+.fundo-carro { 
+    width: 1100px;
+    height: 700px;
+    background-color: var(--corPrincipal);
+    margin-left: 20px;
+    margin-left: 3.7rem;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    padding: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+}
+
+#semi_novos { 
+    color: var(--corFontes);
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 3rem;
+}
+
+.card_carros { 
+    width: 200px;
+    height: 220px;
+    background-color: var(--corDeFundo);
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    text-align: center;
+    display: block;
+}
+
+.card_carros img { 
+    width: 200px;
+    height: 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card_carros p {
+    margin-top: 1px; 
+    font-size: 14px;
+    font-weight: 600;
+    color: #575757;
+}
+
+.card_carros button { 
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    border: none;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--corDetalhes);
+    color: var(--cor-barra-pesquisa);
+    font-size: 14px;
+    cursor: pointer;
 }
