@@ -129,3 +129,8 @@ main {
     border-radius: 5px;
     cursor: pointer;
 }
+.cartao-produto a {
+    color: #ebebeb;
+    text-decoration: dashed;
+    font-size: 14px;
+}

@@ -431,3 +431,12 @@ nav ul li a {
     cursor: pointer;
 }
 
+.card_carros a {
+    color: var(--cor-barra-pesquisa);
+    text-decoration: dashed;
+}
+
+.cards_cs button a {
+    color: var(--cor-barra-pesquisa);
+    text-decoration: dashed;
+}

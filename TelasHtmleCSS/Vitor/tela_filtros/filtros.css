@@ -239,3 +239,8 @@ hr {
   input[type="number"] {
       -moz-appearance: textfield;
   }
+
+  .card_carros a {
+    color: var(--cor-barra-pesquisa);
+    text-decoration: dashed;
+}
