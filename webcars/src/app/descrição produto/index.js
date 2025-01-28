@@ -1,0 +1,1 @@
+import style from './decriçao-produto.module.css'
