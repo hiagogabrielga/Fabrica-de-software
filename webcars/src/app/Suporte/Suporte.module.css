@@ -1,0 +1,118 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .conteudoWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .opcoesSuporte {
+    width: 60%;
+  }
+  
+  .opcoesSuporte h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .opcoesSuporte p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .botoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .botaoSuporte {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botaoSuporte i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .botaoSuporte:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .botaoConfirmar {
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    font-weight: bold;
+  }
+  
+  .infoContato {
+    width: 35%;
+    background-color: #BEBEBE;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fundoCircular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .bi-robot {
+    font-size: 40px;
+  }
+  
+  .detalhesContato {
+    margin-top: 20px;
+  }
+  
+  .detalhesContato p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .detalhesContato a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .detalhesContato i {
+    color: initial;
+  }
+  
+  .oculto {
+    display: none;
+  }
+  

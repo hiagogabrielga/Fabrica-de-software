@@ -41,7 +41,7 @@ const Footer = () => {
               <li><Link className={styles.link} href="/Maria/cadastroConss/cadastroPess/cadastroPess">Criar conta</Link></li>
               <li><Link className={styles.link} href="/Julia/index">Logar conta</Link></li>
               <li><Link className={styles.link} href="/Carlos/perfil">Meu perfil</Link></li>
-              <li><Link className={styles.link} href="/Nathan/TelaDeSuporte/teladesuporte">Suporte</Link></li>
+              <li><Link className={styles.link} href="/Suporte">Suporte</Link></li>
               <li><Link className={styles.link} href="/Hiago/codigoFinal/telaAdicionarProduto">Vender veículo</Link></li>
               <li><Link className={styles.link} href="#">Contato: +55 (69) 012345678</Link></li>
             </ul>
