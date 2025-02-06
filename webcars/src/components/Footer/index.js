@@ -2,7 +2,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -42,7 +41,7 @@ const Footer = () => {
               <li><Link className={styles.link} href="/Julia/index">Logar conta</Link></li>
               <li><Link className={styles.link} href="/Carlos/perfil">Meu perfil</Link></li>
               <li><Link className={styles.link} href="/Suporte">Suporte</Link></li>
-              <li><Link className={styles.link} href="/TelaDaConcessionaria">Vender veículo</Link></li>
+              <li><Link className={styles.link} href="/TelaDaConcessinaria">Vender veículo</Link></li>
               <li><Link className={styles.link} href="#">Contato: +55 (69) 012345678</Link></li>
             </ul>
           </div>

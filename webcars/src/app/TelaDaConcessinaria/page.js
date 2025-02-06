@@ -46,7 +46,7 @@ const TelaDaConcessionaria = () => {
                 <img src="carro.jpg" alt="Volkswagen Gol" />
                 <p>Volkswagen Gol</p>
                 <button>
-                  <Link to="/carlos/descricao-produto">veja mais</Link>
+                  <Link href="/carlos/descricao-produto">veja mais</Link>
                 </button>
               </div>
             ))}
