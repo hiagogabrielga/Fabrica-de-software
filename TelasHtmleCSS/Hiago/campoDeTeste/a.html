@@ -10,7 +10,7 @@
     <input type="text" id="distanceInput" name="distanceInput">
     <script>
         document.getElementById('distanceInput').addEventListener('chang', function() {
-            let value = this.value.replace(',', '.'); // Substitui vírgula por ponto
+            let value = this.value.replace(',', '.');
             if (!isNaN(value) && value.trim() !== '') {
                 this.value = parseFloat(value).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' km';
             } else {
