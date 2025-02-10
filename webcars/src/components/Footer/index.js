@@ -17,6 +17,8 @@ const Footer = () => {
               <li><Link className={styles.link} href="#">Acessibilidade</Link></li>
               <li><Link className={styles.link} href="#">Gerenciamento de cookies</Link></li>
               <li><Link className={styles.link} href="#">Termos e condições</Link></li>
+              
+              <li><Link className={styles.link} href="./perfil">Termos e condições</Link></li>
             </ul>
           </div>
           <div className={styles.column}>
