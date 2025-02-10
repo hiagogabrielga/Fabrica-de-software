@@ -17,8 +17,6 @@ const Footer = () => {
               <li><Link className={styles.link} href="#">Acessibilidade</Link></li>
               <li><Link className={styles.link} href="#">Gerenciamento de cookies</Link></li>
               <li><Link className={styles.link} href="#">Termos e condições</Link></li>
-              
-              <li><Link className={styles.link} href="./perfil">Termos e condições</Link></li>
             </ul>
           </div>
           <div className={styles.column}>
@@ -41,7 +39,7 @@ const Footer = () => {
             <ul>
               <li><Link className={styles.link} href="/Maria/cadastroConss/cadastroPess/cadastroPess">Criar conta</Link></li>
               <li><Link className={styles.link} href="/Julia/index">Logar conta</Link></li>
-              <li><Link className={styles.link} href="/Carlos/perfil">Meu perfil</Link></li>
+              <li><Link className={styles.link} href="./perfil">Meu perfil</Link></li>
               <li><Link className={styles.link} href="/Suporte">Suporte</Link></li>
               <li><Link className={styles.link} href="/TelaDaConcessinaria">Vender veículo</Link></li>
               <li><Link className={styles.link} href="#">Contato: +55 (69) 012345678</Link></li>
