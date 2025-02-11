@@ -26,8 +26,7 @@ const Perfil = () => {
 
         if (botaoConcluir) {
             botaoConcluir.addEventListener("click", () => {
-                setModalVisivel(false);  // Fecha o modal ao clicar em 'Concluir'
-                // Aqui você pode adicionar a lógica de exclusão de conta
+                setModalVisivel(false);  
                 console.log("Conta excluída!");
             });
         }
@@ -35,13 +34,12 @@ const Perfil = () => {
         if (janelaExclusao) {
             janelaExclusao.addEventListener("click", (event) => {
                 if (event.target === janelaExclusao) {
-                    setModalVisivel(false);  // Fecha o modal ao clicar fora dele
+                    setModalVisivel(false);
                 }
             });
         }
 
         return () => {
-            // Limpeza dos eventos quando o componente for desmontado
             if (botaoExcluir) botaoExcluir.removeEventListener("click", () => {});
             if (botaoFechar) botaoFechar.removeEventListener("click", () => {});
             if (botaoConcluir) botaoConcluir.removeEventListener("click", () => {});
