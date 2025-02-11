@@ -13,3 +13,13 @@
 .main>h1{
   margin: auto;
 }
+
+:root {
+  --corPrincipal: #D9D9D9;
+  --corPrecimento: #ffffff;
+  --corDetalhes: #C63434;
+  --corFontes: #505050;
+  --corIconeImagem: #FF1300;
+  --corDeFundo: #EFEFEF;
+  --cor-barra-pesquisa: #ebebeb;
+}
