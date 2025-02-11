@@ -1,0 +1,32 @@
+.cabecalho{
+    height: 60px;
+    background-color: var(--corPrecimento);
+    display: flex;
+}
+
+.cabecalho > .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop_menu{
+    font-size: 2.09rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub_menu li{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    list-style-type: none;
+    flex-direction: column ;
+}
+
+.tres{
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+}
