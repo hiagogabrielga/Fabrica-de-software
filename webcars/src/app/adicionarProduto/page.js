@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useState } from "react";
-import Dropdown from "./DropDown.js";
-import DropdownEspecial from "./DropDownEspecial.js";
-import controleDadosImagem from "./controleDeDadosImagem.js";
-import DropdownSimulado from "./dropDownCodicao.js";
-import styles from "./page.module.css"
-import { formatarQuilometragem, validarAno, formatarValorMonetario, validarAnoCalendario } from "./controleDeDadosSimples.js";
+import Dropdown from "../funcoesDropdown/DropDown.js";
+import DropdownEspecial from "../funcoesDropdown/DropDownEspecial.js";
+import controleDadosImagem from "../funcoesDropdown/controleDeDadosImagem.js";
+import DropdownSimulado from "../funcoesDropdown/dropDownCodicao.js";
+import styles from "./adicionarPodutos.module.css"
+import { formatarQuilometragem, validarAno, formatarValorMonetario, validarAnoCalendario } from "../funcoesDropdown/controleDeDadosSimples.js";
 
 export default function AdicionarProduto() {
   const [dropdownAberto, setDropdownAberto] = useState("");
@@ -45,6 +45,8 @@ export default function AdicionarProduto() {
     setImagensTemporarias(files); // Armazena as imagens no array temporário
     handleFileChange(files);
   };
+
+  const [showMensagem, setShowMensagem] = useState(false)
 
   const handleFileChange = (files) => {
     if (files.length) {
@@ -86,7 +88,7 @@ export default function AdicionarProduto() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    /*e.preventDefault();
 
     const imagensProcessadas = await controleDadosImagem(imagensTemporarias);
 
@@ -115,7 +117,7 @@ export default function AdicionarProduto() {
       enderecoEmail: valorContatoEmailEndereco,
     };
 
-    /*try {
+    try {
       await axios.post(`http://localhost:8080/api/adicionar/adicionarCarro?nomeAnuncio=${selectedValues.nome}&anoCarro=${selectedValues.ano}&condicaoCarro=${selectedValues.condicao}&valorCarro=${selectedValues.valor}&ipvaPago=${selectedValues.ipva}&dataIpva=${selectedValues.dataIpva}&dataCompra=${selectedValues.dataCompra}&detalhesVeiculo=${selectedValues.detalhes}&blindagem=${selectedValues.blindagem}&idCor=${selectedValues.cor}&idAro=${selectedValues.aro}&idCategoria=${selectedValues.categoria}&idMarca=${selectedValues.marca}&idModelo=${selectedValues.modelo}&idCombustivel=${selectedValues.combustivel}&idCambio=${selectedValues.cambio}&idConcessionaria=1&nomeImagens=${selectedValues.imagens}`)
 
       alert("Dados enviado com sucesso!")
