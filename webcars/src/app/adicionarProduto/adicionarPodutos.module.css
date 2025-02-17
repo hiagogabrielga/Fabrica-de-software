@@ -248,7 +248,7 @@
 }
 
 .opcoesContato{
-    width: 100px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-//import axios from "axios";
-import { modelo } from "./dados.js"
+import { modelo } from "./dados.js";
 import styles from "./page.module.css";
 
 const DropdownEspecial = ({
@@ -15,73 +14,47 @@ const DropdownEspecial = ({
     const [selecionado, setSelecionado] = useState("Escolha");
     const [mensagem, setMensagem] = useState("");
 
-    const verificarUrlModelo = (valorMarca, valorCategoria) => {
+    const verificarResultadoModelo = (valorMarca, valorCategoria) => {
         if (!valorCategoria && !valorMarca) {
-            return `http://localhost:8080/api/modelo/`;
+            return modelo;
         } else if (!valorCategoria) {
-            return `http://localhost:8080/api/modelo?idMarca=${valorMarca}`;
+            return modelo.filter((mol) => mol.marca_id_marca === valorMarca);
         } else if (!valorMarca) {
-            return `http://localhost:8080/api/modelo?categoria=${valorCategoria}`;
+            return modelo.filter((mol) => mol.categoria_id_categoria === valorCategoria);
         } else {
-            return `http://localhost:8080/api/modelo?categoria=${valorCategoria}&idMarca=${valorMarca}`;
+            return modelo.filter(
+                (mol) => mol.marca_id_marca === valorMarca && mol.categoria_id_categoria === valorCategoria
+            );
         }
     };
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const url = verificarUrlModelo(valorMarca, valorCategoria);
-                console.log("URL gerada:", url);
-                //const resultado = await axios.get(url);
-                const resultado = modelo
-
-                if (resultado.data.length === 0) {
-                    setMensagem("Nenhum modelo encontrado para a marca e categoria selecionadas.");
-                    setValores([]);
-                } else {
-                    setMensagem("");
-                    setValores(resultado.data);
-                }
-            } catch (error) {
-                if (error.response && error.response.status === 404) {
-                    console.warn("Nenhum dado encontrado (404).");
-                    setMensagem("Nenhum modelo encontrado.");
-                    setValores([]);
-                } else {
-                    console.error("Erro ao buscar dados:", error);
-                    setMensagem("Erro ao buscar dados. Tente novamente mais tarde.");
-                }
-            }
-        };
-
-        fetchData();
+        const resultado = verificarResultadoModelo(valorMarca, valorCategoria);
+        setValores(resultado);
+        setMensagem(resultado.length === 0 ? "Nenhum modelo encontrado para a marca e categoria selecionadas." : "");
     }, [valorMarca, valorCategoria]);
 
     useEffect(() => {
-        // Resetando os valores quando 'valorMarca' ou 'valorCategoria' mudam
         setSelecionado("Escolha");
-        setValores([]);
-        setMensagem("");
     }, [valorMarca, valorCategoria]);
 
     const handleSelecionar = (valor, nome) => {
         setSelecionado(nome);
-        setDropdownAberto(""); // Fecha o dropdown ao selecionar um item
-        onValorSelecionado(label, valor); // Envia o valor selecionado para o componente pai
+        setDropdownAberto("");
+        onValorSelecionado(label, valor);
     };
 
     const handleAbrirDropdown = () => {
-        setDropdownAberto(dropdownAberto === label ? "" : label); // Alterna entre abrir e fechar
+        if (valores.length > 0) {
+            setDropdownAberto(dropdownAberto === label ? "" : label);
+        }
     };
 
-    // Função para desabilitar o dropdown se não houver valores
-    const isDropdownDisabled = valores.length === 0;
-
     useEffect(() => {
-        if (isDropdownDisabled) {
-            onValorSelecionado(label, "desabilitado"); // Envia "desabilitado" para o pai quando não houver opções
+        if (valores.length === 0) {
+            onValorSelecionado(label, "desabilitado");
         }
-    }, [isDropdownDisabled, label, onValorSelecionado]);
+    }, [valores, label, onValorSelecionado]);
 
     return (
         <div className={styles.filhoCampoDuasColunas}>
@@ -90,8 +63,8 @@ const DropdownEspecial = ({
                     <p className={styles.label}>{label[0].toUpperCase() + label.slice(1)}</p>
 
                     <div
-                        className={`${styles.customSelect} ${isDropdownDisabled ? styles.disabled : ""}`}
-                        onClick={() => !isDropdownDisabled && handleAbrirDropdown()} // Impede a abertura do dropdown se estiver desabilitado
+                        className={`${styles.customSelect} ${valores.length === 0 ? styles.disabled : ""}`}
+                        onClick={handleAbrirDropdown}
                     >
                         <span>{selecionado}</span>
                         <span className={styles.arrow}>
