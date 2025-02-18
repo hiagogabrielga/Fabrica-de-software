@@ -30,7 +30,7 @@
     flex-direction: column;
     width: 120px;
     margin-top: 250px;
-    margin-left: 5px;
+    margin-left: -200px;
     transition: transform 0.3s ease; 
     z-index: 9999;
     font-family: "Poppins", sans-serif;
@@ -55,7 +55,7 @@
 }
 
 .menuLateral.open {
-    transform: translateX(110px); /* Move para a posição visível */
+    transform: translateX(208px); /* Move para a posição visível */
   }
   
 
@@ -95,6 +95,39 @@
     border-radius: 5px;
 }
 
+.cidades {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #505050;
+    outline: none;
+    font-size: 12px;
+}
+
+.cidades option:hover {
+    background-color: var(--corDetalhes);
+    color: #fff;
+}
+
+.cidades:focus {
+    outline: none;
+    border: none;
+}
+
+.localRegiao {
+    display: flex;
+    align-items: center;
+    margin-top: 1.6rem;
+    margin-left: 4.1rem;
+}
+
+.localRegiao i {
+    font-size: 18px; 
+    color: var(--corFontes); 
+    margin-right: 10px;
+}
+
 .lupa i {
     color: white;
     font-size: 20px;
@@ -108,10 +141,19 @@
 }
 
 .perfil {
-    font-size: 40px;
-    cursor: pointer;
-    color: var(--corFontes);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+    font-size: 50px;
+    margin-right: 10px;
+    margin-top: 3px;
+
 }
+
+
 
 @media (max-width: 768px) {
     .barra-pesquisa {

@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./header.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu } from 'lucide-react';
+import { Menu, CircleUserRound, MapPin } from 'lucide-react';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +13,8 @@ export default function Header() {
   };
 
   return (
+    <>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <header className={styles.header}>
       <div className={styles.logo}>
         <Image src="/images/logo.png" alt="logo" width={60} height={60} />
@@ -37,8 +39,58 @@ export default function Header() {
       </div>
 
       <div className={styles.localRegiao}>
-        <span>&#x1F4CD;</span>
-        <select name="cidades" id="cidades">
+      <i className="bi bi-geo-fill"></i>
+        <select name="cidades" className={styles.cidades}>
+          <option value="Alta Floresta D'Oeste">Alta Floresta D'Oeste</option>
+                        <option value="Alto Alegre dos Parecis">Alto Alegre dos Parecis</option>
+                        <option value="Alto Paraíso">Alto Paraíso</option>
+                        <option value="Alvorada D'Oeste">Alvorada D'Oeste</option>
+                        <option value="Ariquemes">Ariquemes</option>
+                        <option value="Buritis">Buritis</option>
+                        <option value="Cabixi">Cabixi</option>
+                        <option value="Cacaulândia">Cacaulândia</option>
+                        <option value="Cacoal">Cacoal</option>
+                        <option value="Campo Novo de Rondônia">Campo Novo de Rondônia</option>
+                        <option value="Candeias do Jamari">Candeias do Jamari</option>
+                        <option value="Castanheiras">Castanheiras</option>
+                        <option value="Cerejeiras">Cerejeiras</option>
+                        <option value="Chupinguaia">Chupinguaia</option>
+                        <option value="Colorado do Oeste">Colorado do Oeste</option>
+                        <option value="Corumbiara">Corumbiara</option>
+                        <option value="Costa Marques">Costa Marques</option>
+                        <option value="Espigão D'Oeste">Espigão D'Oeste</option>
+                        <option value="Governador Jorge Teixeira">Governador Jorge Teixeira</option>
+                        <option value="Guajará-Mirim">Guajará-Mirim</option>
+                        <option value="Itapuã do Oeste">Itapuã do Oeste</option>
+                        <option value="Jaru">Jaru</option>
+                        <option value="Ji-Paraná">Ji-Paraná</option>
+                        <option value="Machadinho D'Oeste">Machadinho D'Oeste</option>
+                        <option value="Ministro Andreazza">Ministro Andreazza</option>
+                        <option value="Mirante da Serra">Mirante da Serra</option>
+                        <option value="Monte Negro">Monte Negro</option>
+                        <option value="Nova Brasilândia D'Oeste">Nova Brasilândia D'Oeste</option>
+                        <option value="Nova Mamoré">Nova Mamoré</option>
+                        <option value="Nova União">Nova União</option>
+                        <option value="Novo Horizonte do Oeste">Novo Horizonte do Oeste</option>
+                        <option value="Ouro Preto do Oeste">Ouro Preto do Oeste</option>
+                        <option value="Parecis">Parecis</option>
+                        <option value="Pimenta Bueno">Pimenta Bueno</option>
+                        <option value="Pimenteiras do Oeste">Pimenteiras do Oeste</option>
+                        <option value="Porto Velho">Porto Velho</option>
+                        <option value="Presidente Médici">Presidente Médici</option>
+                        <option value="Primavera de Rondônia">Primavera de Rondônia</option>
+                        <option value="Rio Crespo">Rio Crespo</option>
+                        <option value="Rolim de Moura">Rolim de Moura</option>
+                        <option value="Santa Luzia D'Oeste">Santa Luzia D'Oeste</option>
+                        <option value="São Felipe D'Oeste">São Felipe D'Oeste</option>
+                        <option value="São Francisco do Guaporé">São Francisco do Guaporé</option>
+                        <option value="São Miguel do Guaporé">São Miguel do Guaporé</option>
+                        <option value="Seringueiras">Seringueiras</option>
+                        <option value="Teixeirópolis">Teixeirópolis</option>
+                        <option value="Theobroma">Theobroma</option>
+                        <option value="Urupá">Urupá</option>
+                        <option value="Vale do Anari">Vale do Anari</option>
+                        <option value="Vale do Paraíso">Vale do Paraíso</option>
           <option value="Vilhena" selected>Vilhena</option>
         </select>
       </div>
@@ -60,8 +112,9 @@ export default function Header() {
       </div>
 
       <div className={styles.perfil}>
-        <span>&#128100;</span>
+      <i className="bi bi-person-circle"></i>
       </div>
     </header>
+    </>
   );
 }
