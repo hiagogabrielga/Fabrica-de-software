@@ -42,3 +42,8 @@ body {
 .main>h1{
   margin: auto;
 }
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+display: none;
+}
