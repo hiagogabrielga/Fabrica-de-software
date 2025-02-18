@@ -36,7 +36,7 @@ body {
 .main{
   height: 100vh;
   display: flex;
-  background-color: EFEFEF;
+  background-color: #EFEFEF;
 }
 
 .main>h1{
