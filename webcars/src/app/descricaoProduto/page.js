@@ -64,7 +64,9 @@ const Suporte = () => {
                     </div>
                     <div className={styles.opcaoContato}>
                         <a href="mailto:profissional@email.com">
-                            <i className="bi-envelope-fill"></i>
+                            <div className={styles.gmail}>
+                                <i className="bi-envelope-fill"></i>
+                            </div>
                             E-mail Profissional
                         </a>
                     </div>

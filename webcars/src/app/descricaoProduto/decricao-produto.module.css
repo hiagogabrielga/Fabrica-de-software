@@ -19,14 +19,11 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.secaoImagens img#imagemPrincipal {
+.secaoImagens img {
     width: 736px; /* Largura fixa para a imagem principal */
     height: 500px; /* Altura fixa para a imagem principal */
     object-fit: cover; /* Cobre o espaço mantendo a proporção */
-}
-
-.secaoImagens img {
-    width: 100%;
+    border-radius: 5px;
 }
 
 .carrosselImagens {
@@ -172,11 +169,11 @@
     margin-right: 10px;
 }
 
-.opcaoContato a i.bi-whatsapp {
-    color: #25D366;
+.opcaoContato a > i {
+    color: #0ca50c;
 }
 
-.opcaoContato a i.bi-envelope-fill {
+a> .gmail > i {
     color: #D44638;
 }
 
