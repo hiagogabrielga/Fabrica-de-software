@@ -21,40 +21,45 @@
     cursor: pointer;
 }
 
-.voltar { 
-    position: fixed;
-    top: 77px;
+.voltar {
+    position: absolute;
+    top: 69px;
     background-color: #fff;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.135);
     width: 85px;
-    padding: 1px; 
+    padding: 1px;
     margin-left: 10px;
     text-align: center;
-    transition: transform 0.3s ease; 
     border-radius: 25px;
-    position: absolute;
+    padding: 7px;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transição suave */
+    opacity: 1; 
+    visibility: visible; 
+    z-index: 9998; 
 }
 
-.voltar a{ 
-    display: block;
+.voltar.hidden {
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.voltar a {
     font-family: "Poppins", sans-serif;
-    padding: 10px 0;
     color: #000;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
 }
 
-.voltar>a:hover { 
+.voltar a:hover {
     color: var(--corDetalhes);
 }
-
 .menuLateral {
     display: flex;
     position: absolute;
     border-radius: 13px;
     flex-direction: column;
-    width: 120px;
+    width: 160px;
     margin-top: 250px;
     margin-left: -200px;
     transition: transform 0.3s ease; 
@@ -84,9 +89,6 @@
     transform: translateX(208px); /* Move para a posição visível */
   }
 
-.voltar.open {
-    transform: translateX(300px);
-}
 
 .barraPesquisa { 
     width: 550px; /* Ajuste conforme necessário */

@@ -1,16 +1,23 @@
-"use client"
+"use client"; // Garante que o código seja executado no lado do cliente
+
 import { useState } from "react";
 import styles from "./header.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, CircleUserRound, MapPin } from 'lucide-react';
+import { Menu } from "lucide-react";
 import CarrinhoImg from "/public/images/carrinho.png";
+import { usePathname } from "next/navigation"; // Importando usePathname para verificar a rota atual
 
 const SelectCidades = () => {
   const [cidade, setCidade] = useState("Vilhena");
 
   return (
-    <select name="cidades" className={styles.cidades} value={cidade} onChange={(e) => setCidade(e.target.value)}>
+    <select
+      name="cidades"
+      className={styles.cidades}
+      value={cidade}
+      onChange={(e) => setCidade(e.target.value)}
+    >
       <option value="Alta Floresta D'Oeste">Alta Floresta D'Oeste</option>
       <option value="Alto Alegre dos Parecis">Alto Alegre dos Parecis</option>
       <option value="Alto Paraíso">Alto Paraíso</option>
@@ -66,9 +73,9 @@ const SelectCidades = () => {
   );
 };
 
-
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname(); // Obtém a rota atual
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -76,56 +83,60 @@ export default function Header() {
 
   return (
     <>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-    <header className={styles.header}>
-      <div className={styles.logo}>
-        <Image src="/images/logo.png" alt="logo" width={60} height={60} />
-      </div>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+        rel="stylesheet"
+      />
+      <header className={styles.header}>
+        <div className={styles.logo}>
+          <Image src="/images/logo.png" alt="logo" width={60} height={60} />
+        </div>
 
-      <div className={styles.menuIcon} onClick={toggleMenu}>
-        <Menu color="black" size={33} />
-      </div>
+        <div className={styles.menuIcon} onClick={toggleMenu}>
+          <Menu color="black" size={33} />
+        </div>
 
-      {/* Envolvendo o menu lateral dentro de uma div */}
-      
+        {/* Menu lateral */}
         <nav className={`${styles.menuLateral} ${menuOpen ? styles.open : ""}`}>
-            <Link href="#">Criar Filtro</Link>
-            <Link href="#">Perfil</Link>
-            <Link href="#">Ajuda</Link>
-            <Link href="#">Sair</Link>
+          <Link href="#">Criar Filtro</Link>
+          <Link href="#">Perfil</Link>
+          <Link href="#">Ajuda</Link>
+          <Link href="#">Sair</Link>
         </nav>
-      
 
-      <div className={styles.voltar}>
-        <Link href="/app/pages.js">Voltar</Link>
-      </div>
+        {/* Exibindo o botão Voltar somente se não estiver na Home */}
+        {pathname !== "/" && (
+          <div className={`${styles.voltar} ${menuOpen ? styles.hidden : ""}`}>
+            <Link href="/">Voltar</Link>
+          </div>
+        )}
 
-      <div className={styles.localRegiao}>
-      <i className="bi bi-geo-fill"></i>
-        <SelectCidades/>
-      </div>
-
-      <div className={styles.barraPesquisa}>
-        <input type="text" placeholder="BUSCAR CARROS, MARCAS ETC..." />
-        <button className={styles.lupa}>
-          <i className="bi bi-search"></i>
-        </button>
-      </div>
-
-      <div className={styles.entrarLogar}>
-        <Link href="#">Criar sua conta</Link>
-        <Link href="#">Login</Link>
-      </div>
-
-      <div className={styles.perfilCarrinho}>
-        <div className={styles.carrinho}>
-          <Image src="/images/carrinho.png" alt="carrinho" width={50} height={50} />
+        <div className={styles.localRegiao}>
+          <i className="bi bi-geo-fill"></i>
+          <SelectCidades />
         </div>
-        <div className={styles.perfil}>
-          <i className="bi bi-person-circle"></i>
+
+        <div className={styles.barraPesquisa}>
+          <input type="text" placeholder="BUSCAR CARROS, MARCAS ETC..." />
+          <button className={styles.lupa}>
+            <i className="bi bi-search"></i>
+          </button>
         </div>
-      </div>
-  </header>
+
+        <div className={styles.entrarLogar}>
+          <Link href="#">Criar sua conta</Link>
+          <Link href="#">Login</Link>
+        </div>
+
+        <div className={styles.perfilCarrinho}>
+          <div className={styles.carrinho}>
+            <Image src={CarrinhoImg} alt="carrinho" width={50} height={50} />
+          </div>
+          <div className={styles.perfil}>
+            <i className="bi bi-person-circle"></i>
+          </div>
+        </div>
+      </header>
     </>
   );
 }
