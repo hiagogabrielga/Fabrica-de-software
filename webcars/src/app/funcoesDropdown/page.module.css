@@ -122,3 +122,19 @@
     background-color: #C6343499;
 }
 
+.linkOutro{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.linkOutro:hover {
+    background-color: #50505085;
+}
+
+.linkclass{
+    width: 100%;
+    color: black;
+
+}

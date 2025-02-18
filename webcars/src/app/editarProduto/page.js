@@ -6,7 +6,7 @@ import DropdownEspecial from "../funcoesDropdown/DropDownEspecial.js";
 import controleDadosImagem from "../funcoesDropdown/controleDeDadosImagem.js";
 import DropdownSimulado from "../funcoesDropdown/dropDownCodicao.js";
 import Link from 'next/link'
-import styles from "./adicionarPodutos.module.css"
+import styles from "./editarProduto.module.css"
 import { formatarQuilometragem, validarAno, formatarValorMonetario, validarAnoCalendario } from "../funcoesDropdown/controleDeDadosSimples.js";
 import { ArrowLeft } from "lucide-react";
 export default function AdicionarProduto() {
@@ -456,7 +456,8 @@ export default function AdicionarProduto() {
           </div>
         </div>
         <div className={styles.campoBotoes}>
-          <button id={styles.btnAdicionarProduto} onClick={() => setShowMensagem(!showMensagem)} type="button">Enviar</button>
+          <button id={styles.btnAdicionarProduto} onClick={() => setShowMensagem(!showMensagem)} type="button">Excluir produto</button>
+          <button id={styles.btnAdicionarProduto} onClick={() => setShowMensagem(!showMensagem)} type="button">Salvar alterações</button>
         </div>
 
       </form >
@@ -465,7 +466,7 @@ export default function AdicionarProduto() {
         <div className={styles.overlay}>
           <div className={styles.containerConclusao}>
             <div className={styles.containerMensagemConclusao}>
-              <p>PRODUTO POSTADO COM SUCESSO!</p>
+              <p>ALTERAÇÕES FEITAS COM SUCESSO!</p>
             </div>
             <div className={styles.containeBotao}>
               <button className={styles.botaoConclusao}>
@@ -473,17 +474,17 @@ export default function AdicionarProduto() {
                   <div className={styles.arrowEtexto}>
                     <ArrowLeft size={20} />
                     <p>
-                      Voltar a tela inical
+                      Voltar a tela inicial
                     </p>
                   </div>
                 </Link>
               </button>
               <button className={styles.botaoConclusao} onClick={reload}>
-                <Link href='/adicionarProduto' className={styles.conteudoBotaoConclusao}>
+                <Link href='#' className={styles.conteudoBotaoConclusao}>
                   <div className={styles.arrowEtexto}>
                     <ArrowLeft size={20} />
                     <p>
-                      Adicionar mais um produto
+                      Fazer mais alterações
                     </p>
                   </div>
                 </Link>

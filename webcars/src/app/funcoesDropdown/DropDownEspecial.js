@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { modelo } from "./dados.js";
 import styles from "./page.module.css";
+import Link from "next/link.js";
 
 const DropdownEspecial = ({
     label,
@@ -91,6 +92,7 @@ const DropdownEspecial = ({
                                     {item[`nome_${label}`]}
                                 </li>
                             ))}
+                            <Link className={styles.linkclass} href='/adicionarOpcaoDropdown'><li key={`adicionarTabela${label}`} className={styles.linkOutro}>Outro</li></Link>
                         </ul>
                     )}
 

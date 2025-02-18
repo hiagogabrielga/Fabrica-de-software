@@ -6,7 +6,7 @@ import DropdownEspecial from "../funcoesDropdown/DropDownEspecial.js";
 import controleDadosImagem from "../funcoesDropdown/controleDeDadosImagem.js";
 import DropdownSimulado from "../funcoesDropdown/dropDownCodicao.js";
 import Link from 'next/link'
-import styles from "./adicionarPodutos.module.css"
+import styles from "./adicionarFiltro.module.css"
 import { formatarQuilometragem, validarAno, formatarValorMonetario, validarAnoCalendario } from "../funcoesDropdown/controleDeDadosSimples.js";
 import { ArrowLeft } from "lucide-react";
 export default function AdicionarProduto() {
@@ -29,70 +29,26 @@ export default function AdicionarProduto() {
     contatoEmail: false,
   });
   const [valorDataIpva, setDataIpva] = useState();
-  const [valorValor, setValor] = useState();
-  const [valorDetalhes, setDetalhes] = useState();
+  const [valorValorMaximo, setValorMaximo] = useState();
+  const [valorValorMinimo, setValorMinimo] = useState();
   const [valorQuilometragem, setQuilometragem] = useState();
-  const [errorMessage, setErrorMessage] = useState('');
-
-  const [valorImagens, setImagens] = useState([]);
-  const [imagensTemporarias, setImagensTemporarias] = useState([]); // Array secundário para armazenar imagens temporariamente
-  const [imagePreviews, setImagePreviews] = useState([]);
-
-  const [valorContatoNumeroDeTelefone, setValorContatoNumeroDeTelefone] = useState();
-  const [valorContatoEmailEndereco, setValorContatoEmailEndereco] = useState();
-
-  const controleImagens = (event) => {
-    const files = Array.from(event.target.files);
-    setImagensTemporarias(files); // Armazena as imagens no array temporário
-    handleFileChange(files);
-  };
-
-  const [showMensagem, setShowMensagem] = useState(false)
-
-  const handleFileChange = (files) => {
-    if (files.length) {
-      const newPreviews = [];
-      files.forEach((file) => {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          newPreviews.push(reader.result);
-          if (newPreviews.length === files.length) {
-            setImagePreviews((prevPreviews) => [...prevPreviews, ...newPreviews]);
-          }
-        };
-        reader.readAsDataURL(file);
-      });
-    }
-  };
-
-  const excluirImagem = (index) => {
-    setImagensTemporarias((prevImagens) => {
-      const newImages = [...prevImagens];
-      newImages.splice(index, 1);
-      return newImages;
-    });
-
-    setImagePreviews((prevPreviews) => {
-      const newPreviews = [...prevPreviews];
-      newPreviews.splice(index, 1);
-      return newPreviews;
-    });
-  };
 
   const [exibirData, setExibirData] = useState(false);
+
+  const [showMensagem, setShowMensagem] = useState(false)
 
   const apresentarDataVencimento = (event) => {
     setExibirData(event.target.checked);
     if (event.target.checked === false) {
       setDataIpva(null);
     }
-  };
+  }
 
   const handleSubmit = async (e) => {
     /*e.preventDefault();
-
+ 
     const imagensProcessadas = await controleDadosImagem(imagensTemporarias);
-
+ 
     const selectedValues = {
       marca: valorMarca,
       aro: valorAro,
@@ -117,10 +73,10 @@ export default function AdicionarProduto() {
       numeroTelefone: valorContatoNumeroDeTelefone,
       enderecoEmail: valorContatoEmailEndereco,
     };
-
+ 
     try {
       await axios.post(`http://localhost:8080/api/adicionar/adicionarCarro?nomeAnuncio=${selectedValues.nome}&anoCarro=${selectedValues.ano}&condicaoCarro=${selectedValues.condicao}&valorCarro=${selectedValues.valor}&ipvaPago=${selectedValues.ipva}&dataIpva=${selectedValues.dataIpva}&dataCompra=${selectedValues.dataCompra}&detalhesVeiculo=${selectedValues.detalhes}&blindagem=${selectedValues.blindagem}&idCor=${selectedValues.cor}&idAro=${selectedValues.aro}&idCategoria=${selectedValues.categoria}&idMarca=${selectedValues.marca}&idModelo=${selectedValues.modelo}&idCombustivel=${selectedValues.combustivel}&idCambio=${selectedValues.cambio}&idConcessionaria=1&nomeImagens=${selectedValues.imagens}`)
-
+ 
       alert("Dados enviado com sucesso!")
     } catch (error) {
       console.error("erro ao enviar dados" + error)
@@ -333,7 +289,7 @@ export default function AdicionarProduto() {
             )}
             <div className={styles.filhoCampoUmaColuna}>
               <div className={styles.campodePrenchimento}>
-                <label className={styles.label}>Nome de exibição</label>
+                <label className={styles.label}>Nome do filtro</label>
                 <input
                   type="text"
                   name="nome"
@@ -343,120 +299,35 @@ export default function AdicionarProduto() {
               </div>
             </div>
 
-            <div className={styles.campoPreenchimentoimagens}>
-              <label className={styles.label}>Imagens do produto</label>
-              <input
-                id="file-upload"
-                type="file"
-                name="file-upload"
-                onChange={(e) => controleImagens(e)}
-                multiple
-                accept="image/*"
-                className={styles.inputFilesImagens}
-              />
-              <div>
-                <div id={styles.campoImagens} className="image-preview-area">
-                  <label id={styles.iconeAdicionarImagem} htmlFor="file-upload">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="50" fill="currentColor" className="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
-                      <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0" />
-                    </svg>
-                  </label>
-                  {imagePreviews.map((preview, index) => (
-                    <div key={`cardImagem${index}`} className={styles.cardImagem}>
-                      <input
-                        type="button"
-                        key={`botaoTirarImagem${index}`}
-                        onClick={() => excluirImagem(index)}
-                        className={styles.botaoTirarImagem}
-                        value="✖"
-                      />
-                      <div key={`campoImagem${index}`}>
-                        <img
-                          key={`imagem${index}`}
-                          src={preview}
-                          alt={`Pré-visualização ${index + 1}`}
-                          className={styles.imagemVeiculo}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {errorMessage && <div className="error-message">{errorMessage}</div>}
-            </div>
-
-            <div className={styles.campoDetalhes}>
-              <label className={styles.label}>Detalhes</label>
-              <textarea
-                name="detalhes"
-                cols="30"
-                rows="10"
-                onChange={(e) => setDetalhes(e.target.value)}
-                placeholder="Adicione os detalhes sobre o seu produto aqui!"
-              />
-            </div>
-
             <div className={styles.filhoCampoUmaColuna}>
               <div className={styles.campodePrenchimento}>
-                <label className={styles.label}>Valor do produto</label>
+                <label className={styles.label}>Valor mínimo</label>
                 <input
                   type="text"
                   name="valor"
                   onBlur={(e) => formatarValorMonetario(e.target)}
-                  onChange={(e) => setValor(e.target.value)}
+                  onChange={(e) => setValorMinimo(e.target.value)}
                   placeholder="Ex: R$ 150.000,00"
                 />
               </div>
             </div>
 
-            <div className={styles.campoContato}>
-              <label className={styles.label}>
-                Contatos para negociações
-              </label>
-              <div className={styles.campoOpcoesContato}>
-                <div className={styles.opcoesContato}>
-                  <div className={styles.labelOpcoescontato}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
-                      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                    </svg>
-                    <label className={styles.label}>
-                      Número
-                    </label>
-                    <input type="text" onChange={(e) => setValorContatoNumeroDeTelefone(e.target.value)} />
-                  </div>
-
-                  <input
-                    type="checkbox"
-                    name="contatoNumero"
-                    checked={checkboxValues.contatoNumero}
-                    onChange={handleCheckboxChange}
-                  />
-                </div>
-                <div className={styles.opcoesContato}>
-                  <div className={styles.labelOpcoescontato}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
-                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                    </svg>
-                    <label className={styles.label}>
-                      E-mail
-                    </label>
-                    <input type="text" onChange={(e) => setValorContatoEmailEndereco(e.target.value)} />
-                  </div>
-
-                  <input
-                    type="checkbox"
-                    name="contatoEmail"
-                    checked={checkboxValues.contatoEmail}
-                    onChange={handleCheckboxChange}
-                  />
-                </div>
+            <div className={styles.filhoCampoUmaColuna}>
+              <div className={styles.campodePrenchimento}>
+                <label className={styles.label}>Valor máximo</label>
+                <input
+                  type="text"
+                  name="valor"
+                  onBlur={(e) => formatarValorMonetario(e.target)}
+                  onChange={(e) => setValorMaximo(e.target.value)}
+                  placeholder="Ex: R$ 990.000,00"
+                />
               </div>
             </div>
           </div>
         </div>
         <div className={styles.campoBotoes}>
-          <button id={styles.btnAdicionarProduto} onClick={() => setShowMensagem(!showMensagem)} type="button">Enviar</button>
+          <button id={styles.btnAdicionarProduto} onClick={() => setShowMensagem(!showMensagem)} type="button">Criar alerta para esse filtro</button>
         </div>
 
       </form >
@@ -465,7 +336,7 @@ export default function AdicionarProduto() {
         <div className={styles.overlay}>
           <div className={styles.containerConclusao}>
             <div className={styles.containerMensagemConclusao}>
-              <p>PRODUTO POSTADO COM SUCESSO!</p>
+              <p>FILTRO SALVO COM SUCESSO!</p>
             </div>
             <div className={styles.containeBotao}>
               <button className={styles.botaoConclusao}>
@@ -479,11 +350,11 @@ export default function AdicionarProduto() {
                 </Link>
               </button>
               <button className={styles.botaoConclusao} onClick={reload}>
-                <Link href='/adicionarProduto' className={styles.conteudoBotaoConclusao}>
+                <Link href='/adicionarFiltro' className={styles.conteudoBotaoConclusao}>
                   <div className={styles.arrowEtexto}>
                     <ArrowLeft size={20} />
                     <p>
-                      Adicionar mais um produto
+                      Adicionar mais um filtro
                     </p>
                   </div>
                 </Link>
@@ -495,4 +366,4 @@ export default function AdicionarProduto() {
       }
     </div >
   );
-}
+};

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 //import axios from "axios";
+import Link from "next/link.js";
 import { categoria, cambio, cor, marca, combustivel, aro } from "./dados.js"
 import styles from "./page.module.css";
 
@@ -94,6 +95,7 @@ const Dropdown = ({ label, onValorSelecionado, dropdownAberto, setDropdownAberto
                                     {item[`nome_${label}`]}
                                 </li>
                             ))}
+                            <Link className={styles.linkclass} href='/adicionarOpcaoDropdown'><li key={`adicionarTabela${label}`} className={styles.linkOutro}>Outro</li></Link>
                         </ul>
                     )}
                 </div>
