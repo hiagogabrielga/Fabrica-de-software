@@ -58,13 +58,13 @@ const Suporte = () => {
                     <h3>Formas de Contato</h3>
                     <div className={styles.opcaoContato}>
                         <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">
-                            <i className="bi bi-whatsapp"></i>
+                            <i className="bi-whatsapp"></i>
                             WhatsApp
                         </a>
                     </div>
                     <div className={styles.opcaoContato}>
                         <a href="mailto:profissional@email.com">
-                            <i className="bi bi-envelope-fill"></i>
+                            <i className="bi-envelope-fill"></i>
                             E-mail Profissional
                         </a>
                     </div>
