@@ -1,3 +1,239 @@
 .main{
     background-color: var(--corDeFundo);
 }
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    margin-top: 1rem;
+    width: 500px;
+    padding: 9px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.061);
+    display: flex;
+    background-color: #fff;
+}
+
+.nav ul li {
+    position: relative;
+    margin: auto;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.menu_item {
+      position: relative;
+}
+  
+.menu_item .dropdown {
+      display: none;
+      position: absolute;
+      top: 110%; 
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 15px;
+      justify-content: center;
+      text-align: center;
+      width: 120px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+}
+  
+.menu_item {
+      position: relative;
+}
+  
+.dropdown {
+      display: none; 
+      position: absolute;
+      top: 100%; 
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 15px;
+      justify-content: center;
+      text-align: center;
+      width: 120px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      margin-top: 15px; 
+}
+  
+.dropdown li {
+    display: none;
+    
+}
+  
+.dropdown li a {
+      color: black;
+      text-decoration: none;
+      display: block;
+     
+}
+  
+.dropdown li a:hover {
+      color: var(--corDetalhes);
+}
+  
+.menu_item a { 
+      color: rgb(0, 0, 0); 
+}
+  
+.menu_item > a:hover { 
+    color: var(--corDetalhes);
+}
+  
+.carros_em_destaque { 
+    display:block;
+    color: rgb(105, 105, 105);
+    margin: auto;
+    text-align: center;
+    margin-top: 3.5rem;
+    font-size: 14px;
+}
+
+.destaque {
+    display:block;
+    color: rgb(105, 105, 105);
+    margin: auto;
+    text-align: center;
+    margin-top: 5.5rem;
+    font-size: 14px;
+}
+
+.fundo_cards { 
+    width: 810px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 210px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: var(--corPrincipal);
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.cards_cs { 
+    width: 150px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: var(--corDeFundo);
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    
+}
+
+.cards_cs img { 
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+}
+
+.cards_cs p { 
+    font-size: 14px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+}
+
+.cards_cs button { 
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: var(--corDetalhes);
+    color: var(--cor-barra-pesquisa);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.fundo_carros { 
+    width: 100%;
+    max-width: 716px;
+    height: 550px;
+    background-color: var(--corPrincipal);
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 6rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    
+}
+
+.card_carros { 
+    width: 220px;
+    height: 240px;
+    background-color: var(--corDeFundo);
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    text-align: center;
+    display: block;
+}
+
+.card_carros img { 
+    width: 220px;
+    height: 140px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card_carros p {
+    margin-top: 1px; 
+    font-size: 16px;
+    font-weight: 600;
+    color: #575757;
+}
+
+.card_carros button { 
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    border: none;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--corDetalhes);
+    color: var(--cor-barra-pesquisa);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card_carros a {
+    color: var(--cor-barra-pesquisa);
+    text-decoration: dashed;
+}
+
+.cards_cs button a {
+    color: var(--cor-barra-pesquisa);
+    text-decoration: dashed;
+}
