@@ -1,0 +1,133 @@
+.label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 7px;
+    color: var(--corFontes);
+    font-weight: bolder;
+}
+
+.arrow {
+    font-size: 14px;
+    color: var(--corFontes);
+    font-weight: bold;
+}
+
+.dropdownLista {
+    position: absolute;
+    width: 100%;
+    background-color: var(--corPrecimento);
+    border: 1px solid var(--corFontes);
+    border-radius: 8px;
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.campodePrenchimentoDropDown{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.selectContainer {
+    position: relative;
+    width: 100%;
+
+}
+
+.customSelect {
+    background-color: var(--corPrecimento);
+    border: 1px solid var(--corFontes);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #505050;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customSelect.disabled {
+    background-color: #f0f0f0;
+    border-color: #aaa;
+    cursor: not-allowed;
+    color: #aaa;
+}
+
+.dropdownItem {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdownItem:hover {
+    background-color: #50505085;
+}
+
+.filhoCampoDuasColunas{
+    box-sizing: border-box;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    width: calc((100% / 2) - 4rem);
+}
+
+.campoDuasColunas{
+    display: flex;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.campodePrenchimento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.campodePrenchimento input{
+    position: relative;
+    width: 100%;
+    background-color: var(--corPrecimento);
+    border: 1px solid var(--corFontes);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--corFontes);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.itemSelecionado {
+    background-color: #c6343485; /* Azul claro, altere conforme desejado */
+    font-weight: bold;
+}
+
+.itemSelecionado:hover{
+    background-color: #C6343499;
+}
+
+.linkOutro{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.linkOutro:hover {
+    background-color: #50505085;
+}
+
+.linkclass{
+    width: 100%;
+    color: black;
+
+}

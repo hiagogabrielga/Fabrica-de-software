@@ -76,6 +76,14 @@ const marca = [
     {
       id_marca: 3,
       nome_marca: "Ford"
+    },
+    {
+      id_marca: 4,
+      nome_marca: "Chevrolet"
+    },
+    {
+      id_marca: 5,
+      nome_marca: "Volkswagen"
     }
   ]
 
