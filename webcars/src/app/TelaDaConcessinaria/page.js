@@ -43,7 +43,7 @@ const TelaDaConcessionaria = () => {
           <div className={styles.containerProdutos}>
             {[1, 2, 3, 4].map((_, index) => (
               <div key={index} className={styles.cartaoProduto}>
-                <img src="carro.jpg" alt="Volkswagen Gol" />
+                <img src="/images/VW-Gol-lateral.jpg" alt="Volkswagen Gol" />
                 <p>Volkswagen Gol</p>
                 <button>
                   <Link href="/carlos/descricao-produto">veja mais</Link>
