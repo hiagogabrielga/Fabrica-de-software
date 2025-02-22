@@ -17,15 +17,14 @@ const Footer = () => {
               <li><Link className={styles.link} href="#">Acessibilidade</Link></li>
               <li><Link className={styles.link} href="#">Gerenciamento de cookies</Link></li>
               <li><Link className={styles.link} href="#">Termos e condições</Link></li>
-              <li><Link className={styles.link} href="/descricaoProduto">brthrtn tyjyn</Link></li>
             </ul>
           </div>
           <div className={styles.column}>
             <h3>Comprar</h3>
             <ul>
-              <li><Link className={styles.link} href="/Vitor/tela_filtros/filtros">Veículos novos</Link></li>
-              <li><Link className={styles.link} href="/Vitor/tela_filtros/filtros">Veículos semi-novos</Link></li>
-              <li><Link className={styles.link} href="/Vitor/tela_filtros/filtros">Veículos usados</Link></li>
+              <li><Link className={styles.link} href="/telaFiltroCarrosVGC">Veículos novos</Link></li>
+              <li><Link className={styles.link} href="/telaFiltroCarrosVGC">Veículos semi-novos</Link></li>
+              <li><Link className={styles.link} href="/telaFiltroCarrosVGC">Veículos usados</Link></li>
             </ul>
           </div>
           <div className={styles.column}>
@@ -39,10 +38,10 @@ const Footer = () => {
             <h3>Ajuda</h3>
             <ul>
               <li><Link className={styles.link} href="/Maria/cadastroConss/cadastroPess/cadastroPess">Criar conta</Link></li>
-              <li><Link className={styles.link} href="/Julia/index">Logar conta</Link></li>
+              <li><Link className={styles.link} href="/telaLogin">Logar conta</Link></li>
               <li><Link className={styles.link} href="/perfil">Meu perfil</Link></li>
               <li><Link className={styles.link} href="/Suporte">Suporte</Link></li>
-              <li><Link className={styles.link} href="/TelaDaConcessinaria">Vender veículo</Link></li>
+              <li><Link className={styles.link} href="/adicionarProduto">Vender veículo</Link></li>
               <li><Link className={styles.link} href="#">Contato: +55 (69) 012345678</Link></li>
             </ul>
           </div>

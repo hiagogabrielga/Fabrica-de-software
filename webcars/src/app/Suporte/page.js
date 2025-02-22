@@ -103,11 +103,11 @@ const Suporte = () => {
             <div className={styles.detalhesContato}>
               <p>
                 <i className="bi bi-whatsapp" style={{ color: "#50B231" }}></i> 
-                <a href="https://wa.me/69012345678" target="_blank" rel="noopener noreferrer">WhatsApp: (69) 012345678</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">WhatsApp: (69) 012345678</a>
               </p>
               <p>
                 <i className="bi bi-envelope" style={{ color: "#C51D1D" }}></i>
-                <a href="mailto:WebCars@gmail.com" target="_blank" rel="noopener noreferrer">Email: WebCars@gmail.com</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Email: WebCars@gmail.com</a>
               </p>
             </div>
           </aside>
