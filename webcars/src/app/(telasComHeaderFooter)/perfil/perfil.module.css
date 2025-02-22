@@ -126,6 +126,19 @@
     background-color: #ddd;
 }
 
+.botaoEditarNclick{
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: not-allowed; /* Sinal de proibido */
+    opacity: 0.5; /* Opacidade menor */
+}
+
 .menu {
     width: 100%;
     margin-top: 275px;
@@ -221,7 +234,9 @@
     margin-top: 20px;
 }
 
-.botaoSalvar button {
+
+
+.btnClicavel {
     background-color: #c9302c;
     color: white;
     padding: 10px 20px;
@@ -230,7 +245,9 @@
     cursor: pointer;
 }
 
-.botaoSalvar button:hover {
+
+
+.btnClicavel:hover {
     background-color: #d9534f;
 }
 
@@ -240,6 +257,16 @@
     margin: 30px 0;
 }
 
+
+.btnNclicavel{
+    cursor: not-allowed; /* Sinal de proibido */
+    opacity: 0.5; /* Opacidade menor */
+    background-color: #c9302c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
 
 @media (max-width: 768px) {
     .container {

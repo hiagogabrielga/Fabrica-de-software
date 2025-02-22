@@ -5,6 +5,7 @@ import styles from './perfil.module.css';
 
 const Perfil = () => {
     const [isModalVisivel, setModalVisivel] = useState(false);
+    const [logicPerfil, setLogicPerfil] = useState(true)
 
     useEffect(() => {
         const botaoExcluir = document.getElementById("excluirConta");
@@ -64,7 +65,7 @@ const Perfil = () => {
                 <aside className={styles.barraLateral}>
                     <div className={styles.perfil1}>
                         <i className="bi bi-person-circle"></i>
-                        <button className={styles.botaoEditar}>Editar perfil</button>
+                        <button className={logicPerfil ? styles.botaoEditar : styles.botaoEditarNclick } disabled={logicPerfil ? false : true} onClick={() => setLogicPerfil(!logicPerfil)}>Editar perfil</button>
                     </div>
                     <div className={styles.menu}>
                         <ul className={styles.ul}>
@@ -116,7 +117,7 @@ const Perfil = () => {
                         </div>
 
                         <div className={styles.botaoSalvar}>
-                            <button type="submit">Salvar Alterações</button>
+                            <button  disabled={logicPerfil ? true : false}  onClick={() => setLogicPerfil(!logicPerfil)} className={logicPerfil ? styles.btnNclicavel : styles.btnClicavel } type="submit">Salvar Alterações</button>
                         </div>
                     </form>
                 </main>

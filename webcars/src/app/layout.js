@@ -1,6 +1,4 @@
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Create Next App from Web Cars",
@@ -9,17 +7,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-br">
       <body>
-        <header>
-          <Header />
-        </header>
-        <main>
-          {children}
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        {children}
       </body>
     </html>
   );
