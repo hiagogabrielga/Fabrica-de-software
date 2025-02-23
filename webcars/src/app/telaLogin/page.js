@@ -43,7 +43,7 @@ export default function LoginPage() {
 
                             </div>
                             <div className={styles.campoBotoes}>
-                                <Link href='#' className={styles.ancora}>Esqueceu sua senha?</Link>
+                                <Link href='/TrocarSenha' className={styles.ancora}>Esqueceu sua senha?</Link>
                                 <button className={styles.buttonSubmit} type="submit">Entrar</button>
                             </div>
                         </div>

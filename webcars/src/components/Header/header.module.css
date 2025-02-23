@@ -169,9 +169,10 @@
 
 .localRegiao {
     display: flex;
-    align-items: center;
-    margin-top: 1.6rem;
-    margin-left: 4.1rem;
+    align-items:last baseline;
+    bottom: 0;
+    margin: 0px 25px 10px;
+    height: 100%;
 }
 
 .localRegiao i {

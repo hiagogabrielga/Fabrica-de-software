@@ -2,7 +2,6 @@
 import style from "./filtro.module.css";
 import { useState } from "react";
 import Image from "next/image"; 
-import '../globals.css';
 
 // Componente FilterBox (para os filtros de marca, modelo, etc.)
 const FilterBox = ({ label, options }) => {

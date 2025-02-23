@@ -60,7 +60,7 @@ export default function Header() {
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
         rel="stylesheet"
       />
-      <header className={styles.header}>
+      <div className={styles.header}>
         <div className={styles.logo}>
           <Image src="/images/logo.png" alt="logo" width={60} height={60} />
         </div>
@@ -112,7 +112,7 @@ export default function Header() {
 
           </div>
         </div>
-      </header>
+      </div>
     </>
   );
 }

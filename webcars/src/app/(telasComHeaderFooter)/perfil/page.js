@@ -21,13 +21,13 @@ const Perfil = () => {
 
         if (botaoFechar) {
             botaoFechar.addEventListener("click", () => {
-                setModalVisivel(false); 
+                setModalVisivel(false);
             });
         }
 
         if (botaoConcluir) {
             botaoConcluir.addEventListener("click", () => {
-                setModalVisivel(false);  
+                setModalVisivel(false);
                 console.log("Conta excluída!");
             });
         }
@@ -41,9 +41,9 @@ const Perfil = () => {
         }
 
         return () => {
-            if (botaoExcluir) botaoExcluir.removeEventListener("click", () => {});
-            if (botaoFechar) botaoFechar.removeEventListener("click", () => {});
-            if (botaoConcluir) botaoConcluir.removeEventListener("click", () => {});
+            if (botaoExcluir) botaoExcluir.removeEventListener("click", () => { });
+            if (botaoFechar) botaoFechar.removeEventListener("click", () => { });
+            if (botaoConcluir) botaoConcluir.removeEventListener("click", () => { });
         };
     }, []);
 
@@ -65,11 +65,14 @@ const Perfil = () => {
                 <aside className={styles.barraLateral}>
                     <div className={styles.perfil1}>
                         <i className="bi bi-person-circle"></i>
-                        <button className={logicPerfil ? styles.botaoEditar : styles.botaoEditarNclick } disabled={logicPerfil ? false : true} onClick={() => setLogicPerfil(!logicPerfil)}>Editar perfil</button>
+                        <button className={logicPerfil ? styles.botaoEditar : styles.botaoEditarNclick} disabled={logicPerfil ? false : true} onClick={() => setLogicPerfil(!logicPerfil)}>Editar perfil</button>
                     </div>
                     <div className={styles.menu}>
                         <ul className={styles.ul}>
                             <li>
+                                <Link href="/MeusAlertas">
+                                    <button className={styles.botaoMenu}>Meus alertas</button>
+                                </Link>
                                 <Link href="/Carlos/meus-produtos">
                                     <button className={styles.botaoMenu}>Meus produtos</button>
                                 </Link>
@@ -91,8 +94,8 @@ const Perfil = () => {
                             <input type="text" placeholder="CPF/CNPJ" />
                             <input type="text" placeholder="Data de nascimento" />
                         </div>
-                        
-                        <hr className={styles.hr}/>
+
+                        <hr className={styles.hr} />
 
                         <h2>Telefones</h2>
                         <div className={styles.informaçoes}>
@@ -100,7 +103,7 @@ const Perfil = () => {
                             <input type="text" placeholder="+(00) 00 00000-0000" />
                         </div>
 
-                        <hr className={styles.hr}/>
+                        <hr className={styles.hr} />
 
                         <h2>Endereço</h2>
                         <div className={styles.informaçoes}>
@@ -117,7 +120,7 @@ const Perfil = () => {
                         </div>
 
                         <div className={styles.botaoSalvar}>
-                            <button  disabled={logicPerfil ? true : false}  onClick={() => setLogicPerfil(!logicPerfil)} className={logicPerfil ? styles.btnNclicavel : styles.btnClicavel } type="submit">Salvar Alterações</button>
+                            <button disabled={logicPerfil ? true : false} onClick={() => setLogicPerfil(!logicPerfil)} className={logicPerfil ? styles.btnNclicavel : styles.btnClicavel} type="submit">Salvar Alterações</button>
                         </div>
                     </form>
                 </main>

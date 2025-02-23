@@ -1,0 +1,174 @@
+.bodyTrocarSenha {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin: auto;
+    background-color: var(--corPrincipal);
+    padding: 5% 3%;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.containerInputsVeric {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.mensagemCodveric {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.inputCodigoverif {
+    width: 60px;
+    height: 90px;
+    padding: 2%;
+    font-size: 36px;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.verfContainerBotoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+    align-items: flex-start;
+}
+
+.campoImagem {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 1%;
+    width: 100%;
+    position: fixed;
+}
+
+.containerBotoesVerfCod {
+    display: flex;
+    width: 100%;
+}
+
+#btnVerifCod {
+    margin: auto;
+    width: 70%;
+}
+
+
+.botoesVerf {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #c9302c;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.botoesVerf:hover {
+    background-color: #d9534f;
+}
+
+
+.inputEmail {
+    width: 60%;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    padding: 2%;
+}
+
+.containerAddOutEmail {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerRedSenha {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.inputPass {
+    background-color: var(--corPrecimento);
+    width: 70%;
+    padding: 0%;
+    height: auto;
+    display: flex;
+    border-radius: 15px;
+}
+
+.inputPass input {
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    padding: 2%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+}
+
+.inputPass button{
+    width: 10%;
+    padding: 2%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.inputPass input:focus{
+    outline: none;
+}
+
+
+.msgErro{
+    width: 80%;
+    background-color: rgba(197, 33, 33, 0.651);
+    padding: 1%;
+    border: 2px solid rgb(167, 21, 21);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.msgOk{
+    width: 80%;
+    height: 80%;
+    background-color: rgba(47, 197, 33, 0.651);
+    padding: 1%;
+    border: 2px solid rgb(62, 167, 21);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+}

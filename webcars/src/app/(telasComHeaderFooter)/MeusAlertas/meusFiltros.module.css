@@ -1,0 +1,91 @@
+.container {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--corPrincipal);
+    border-radius: 15px;
+    padding: 2%;
+    justify-content: center; /* Mantém os elementos centralizados no container */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.conteudoContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 10px; /* Define um espaço fixo entre os elementos */
+    margin: auto;
+}
+
+.bodyMeusProdutos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.valoresDatas{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 13px;
+    width: 100%;
+}
+
+#cardAdicionar{
+    background-color: var(--corPrecimento);
+    padding: 1%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 170px; /* Garante que não diminuam abaixo do tamanho mínimo */
+    border: 2px var(--corDetalhes) dotted ;
+    transition: 0.2s;
+}
+
+#cardAdicionar * {
+    color: var(--corDetalhes);
+}
+
+#cardAdicionar:hover {
+    background-color: rgba(160, 54, 54, 0.473);
+    border: 2px var(--corDetalhes) double ;
+}
+
+#cardAdicionar:hover *{
+    color: white;
+}
+
+.card {
+    background-color: var(--corPrecimento);
+    padding: 1%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-grow: 1; /* Permite que os cards cresçam igualmente */
+    min-width: 275px; /* Garante que não diminuam abaixo do tamanho mínimo */
+}
+
+.card:hover {
+    color: black;
+    background-color: rgb(224, 224, 224);
+}
+
+.conteudoCard {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--corFontes);
+}
