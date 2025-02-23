@@ -17,28 +17,19 @@ const Perfil = () => {
 
     const handleConcluirClick = () => {
         setModalVisivel(false);
-        console.log("Conta excluída!");
-    };
-
-    const handleJanelaExclusaoClick = (event) => {
-        if (event.target === event.currentTarget) {
-            setModalVisivel(false);
-        }
     };
 
     return (
         <>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-            <div 
-                className={`${styles.janelaExclusao} ${isModalVisivel ? styles.mostrar : ''}`} 
-                id="janelaExclusao" 
-                onClick={handleJanelaExclusaoClick}
-            >
+            <div className={`${styles.janelaExclusao} ${isModalVisivel ? styles.mostrar : ''}`} id="janelaExclusao">
                 <div className={styles.exclusao}>
                     <h1>Atenção!</h1>
                     <p>Tem certeza de que deseja excluir sua conta? Esta ação é irreversível e todos os seus dados serão permanentemente apagados.</p>
                     <div className={styles.botoesFechar}>
-                        <button className={styles.concluir} id="concluir" onClick={handleConcluirClick}>Excluir</button>
+                        <Link href="/telaLogin">
+                            <button className={styles.concluir} id="concluir" onClick={handleConcluirClick}>Excluir</button>
+                        </Link>
                         <button className={styles.fechar} id="fechar" onClick={handleFecharClick}>Fechar</button>
                     </div>
                 </div>
@@ -62,7 +53,7 @@ const Perfil = () => {
                                 <Link href="/MeusAlertas">
                                     <button className={styles.botaoMenu}>Meus alertas</button>
                                 </Link>
-                                <Link href="/meusProdutos">
+                                <Link href="/Carlos/meus-produtos">
                                     <button className={styles.botaoMenu}>Meus produtos</button>
                                 </Link>
                             </li>
