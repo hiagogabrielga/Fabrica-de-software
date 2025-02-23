@@ -97,7 +97,7 @@ export default function Header() {
         </div>
 
         <div className={styles.entrarLogar}>
-          <Link href="#">Criar sua conta</Link>
+          <Link href="/TelaCadastroCliente">Criar sua conta</Link>
           <Link href="/telaLogin">Login</Link>
         </div>
 

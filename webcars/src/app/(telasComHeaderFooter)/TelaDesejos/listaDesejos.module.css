@@ -1,0 +1,48 @@
+.container{
+    background-color: var(--brancoI);
+    width: 100%;
+    height: 100%;
+}
+
+.btnVoltar{
+    background-color: var(--branco);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 3px 4px 5px 2px var(--cinzaIII    );
+}
+
+.btnVoltar:hover{
+    cursor: pointer;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title > h1{
+    font-size: 3rem;
+    color: var(--vermelho);
+    font-weight: normal;
+}
+
+.btnCompartilhar{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-size: 1.1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 13px;
+}
+
+.btnCompartilhar:hover{
+    background-color: var(--vermelho-hover);
+    cursor: pointer;
+}

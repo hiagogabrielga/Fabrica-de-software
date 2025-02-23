@@ -1,0 +1,157 @@
+.containerCadastro {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.leftRed {
+  width: 30%;
+  height: 100%;
+  background-color: var(--corDetalhes);
+  display: flex;
+  align-items: center;
+}
+
+.conteudoLeftRed {
+  width: 60%;
+  margin: auto;
+  color: var(--corPrincipal);
+}
+
+.conteudoLeftRed h2 {
+  font-size: 35px;
+}
+
+.conteudoLeftRed h3 {
+  font-size: 15px;
+}
+
+.conteudoCadastro {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.campoImagem {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 1%;
+  width: 100%;
+}
+
+.containerFormulario {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  min-height: 85%;
+  width: 60%;
+  align-items: center;
+}
+
+.conteudoFormulario {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--corPrincipal);
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario {
+  width: 100%;
+  height: 100%;
+}
+
+.containerInput {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.containerInput label {
+  color: var(--corFontes);
+  font-weight: bolder;
+}
+
+.containerInput input {
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  padding: 1%;
+}
+
+.containerInput input:focus {
+  outline: none;
+}
+
+.btnContainer {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonSubmit {
+  background-color: var(--corDetalhes);
+  color: white;
+  padding: 2% 7%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnConcessionaria {
+  color: var(--corDetalhes);
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.buttonSubmit:hover {
+  background-color: #e03434;
+}
+
+.btnConcessionaria:hover {
+  color: #e03434;
+}
+
+.containerInputSenha {
+  width: 100%;
+  display: flex;
+  height: 35px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.containerInputSenha input {
+  width: 93%;
+  height: auto;
+  border-radius: 10px 0 0 10px;
+}
+
+.containerInputSenha button {
+  width: 7%;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.inputCadastro{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.containerLinks{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-around;
+}
