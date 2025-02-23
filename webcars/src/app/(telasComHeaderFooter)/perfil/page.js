@@ -53,7 +53,7 @@ const Perfil = () => {
                                 <Link href="/MeusAlertas">
                                     <button className={styles.botaoMenu}>Meus alertas</button>
                                 </Link>
-                                <Link href="/Carlos/meus-produtos">
+                                <Link href="/meusProdutos">
                                     <button className={styles.botaoMenu}>Meus produtos</button>
                                 </Link>
                             </li>
