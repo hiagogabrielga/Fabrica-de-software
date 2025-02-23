@@ -1,5 +1,4 @@
 import styled from "./listaDesejos.module.css";
-import Header from "@/components/header/Header";
 
 const carItens = [
     {
@@ -53,8 +52,6 @@ const carItens = [
 export default function ListaDesejos() {
     return (
         <div className={styled.container}>
-            <Header />
-
             <button className={styled.btnVoltar}>Voltar</button>
 
             <div className={styled.title}>
