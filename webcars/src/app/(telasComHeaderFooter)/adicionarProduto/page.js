@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useState, useEffect } from "react";
-import Dropdown from "../funcoesDropdown/DropDown.js";
-import DropdownEspecial from "../funcoesDropdown/DropDownEspecial.js";
-import controleDadosImagem from "../funcoesDropdown/controleDeDadosImagem.js";
-import DropdownSimulado from "../funcoesDropdown/dropDownCodicao.js";
+import Dropdown from "@/components/funcoesDropdown/DropDown.js";
+import DropdownEspecial from "@/components/funcoesDropdown/DropDownEspecial.js";
+import controleDadosImagem from "@/components/funcoesDropdown/controleDeDadosImagem.js";
+import DropdownSimulado from "@/components/funcoesDropdown/dropDownCodicao.js";
 import Link from 'next/link'
 import styles from "./adicionarPodutos.module.css"
-import { formatarQuilometragem, validarAno, formatarValorMonetario, validarAnoCalendario } from "../funcoesDropdown/controleDeDadosSimples.js";
+import { formatarQuilometragem, validarAno, formatarValorMonetario, validarAnoCalendario } from "@/components/funcoesDropdown/controleDeDadosSimples.js";
 import { ArrowLeft } from "lucide-react";
 export default function AdicionarProduto() {
   const [dropdownAberto, setDropdownAberto] = useState("");

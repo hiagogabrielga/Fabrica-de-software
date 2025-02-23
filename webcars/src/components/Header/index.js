@@ -71,7 +71,7 @@ export default function Header() {
 
         {/* Menu lateral */}
         <nav className={`${styles.menuLateral} ${menuOpen ? styles.open : ""}`}>
-          <Link href="adicionarFiltro">Criar Filtro</Link>
+          <Link href="adicionarAlerta">Criar Filtro</Link>
           <Link href="perfil">Perfil</Link>
           <Link href="Suporte">Ajuda</Link>
           <Link href="#">Sair</Link>

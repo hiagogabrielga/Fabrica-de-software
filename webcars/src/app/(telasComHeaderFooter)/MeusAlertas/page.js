@@ -1,10 +1,10 @@
 'use client';
 import React from "react";
 import Link from 'next/link';
-import styles from './meusFiltros.module.css';
+import styles from './meusAlertas.module.css';
 import { Plus, Filter, Car } from 'lucide-react';
 
-export default function MeusFiltros() {
+export default function MeusAlertas() {
     const itens = [
         { nome: 'Alerta 1', dataCriacao: '2025-02-01', dataAlteracao: '2025-02-10' },
         { nome: 'Alerta 2', dataCriacao: '2025-02-02', dataAlteracao: null },
@@ -20,7 +20,7 @@ export default function MeusFiltros() {
             <h2>Meus Alertas</h2>
             <div className={styles.container}>
                 <div className={styles.conteudoContainer}>
-                    <Link href='/adicionarFiltro' id={styles.cardAdicionar}>
+                    <Link href='/adicionarAlerta' id={styles.cardAdicionar}>
                         <div className={styles.conteudoCard}>
                             <div className={styles.iconesCard}>
                                 <Plus />
@@ -30,7 +30,7 @@ export default function MeusFiltros() {
                         </div>
                     </Link>
                     {itens.map((item, index) => (
-                        <Link href='/editaFiltro' key={index} className={styles.card}>
+                        <Link href='/editarAlerta' key={index} className={styles.card}>
                             <div className={styles.conteudoCard}>
                                 <div className={styles.iconesCard}>
                                     <Filter />

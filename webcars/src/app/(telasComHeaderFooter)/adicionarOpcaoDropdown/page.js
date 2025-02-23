@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from './adicionarOpcao.module.css';
 import DropdownSimulado from "./DropDownCampos";
-import { categoria, cambio, modelo, cor, marca, combustivel, aro } from "../funcoesDropdown/dados.js";
+import { categoria, cambio, modelo, cor, marca, combustivel, aro } from "@/components/funcoesDropdown/dados.js";
 
 export default function AdicionarProduto() {
     const [dropdownAberto, setDropdownAberto] = useState("");
