@@ -1,15 +1,32 @@
 'use client';
-import React from "react";
+import React, { useState } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './decricao-produto.module.css';
 
 const Suporte = () => {
-    const changeImage = (src) => {
-        const mainImage = document.getElementById('imagemPrincipal');
-        if (mainImage) {
-            mainImage.src = src;
-        }
+    const images = [
+        "/images/VW-Gol-frente-lateral.jpg",
+        "/images/VW-Gol-frente.jpg",
+        "/images/VW-Gol-interior.jpg",
+        "/images/VW-Gol-lateral-traseira.jpg",
+        "/images/VW-Gol-traseira.jpg",
+        "/images/VW-Gol-lateral.jpg",
+        "/images/VW-Gol-interior.jpg",
+    ];
+
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const handleNextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
+    const handlePreviousImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+
+    const changeImage = (index) => {
+        setCurrentImageIndex(index);
     };
 
     return (
@@ -17,27 +34,33 @@ const Suporte = () => {
             <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
             <div className={styles.container}>
                 <div className={styles.secaoImagens}>
-                    <img id="imagemPrincipal" src="/images/VW-Gol-frente-lateral.jpg" alt="Imagem principal do carro" />
+                    <img
+                        id="imagemPrincipal"
+                        src={images[currentImageIndex]}
+                        alt="Imagem principal do carro"
+                    />
                     <div className={styles.carrosselImagens}>
-                        <img src="/images/seta esquerda.jpg" alt="Seta para esquerda" className={styles.botaoSeta} />
-                        {[
-                            "/images/VW-Gol-frente-lateral.jpg",
-                            "/images/VW-Gol-frente.jpg",
-                            "/images/VW-Gol-interior.jpg",
-                            "/images/VW-Gol-lateral-traseira.jpg",
-                            "/images/VW-Gol-traseira.jpg",
-                            "/images/VW-Gol-lateral.jpg",
-                            "/images/VW-Gol-interior.jpg",
-                        ].map((src, index) => (
+                        <img
+                            src="/images/seta esquerda.jpg"
+                            alt="Seta para esquerda"
+                            className={styles.botaoSeta}
+                            onClick={handlePreviousImage}
+                        />
+                        {images.map((src, index) => (
                             <img
                                 key={index}
                                 src={src}
                                 alt={`Miniatura ${index + 1}`}
-                                className={styles.miniatura}
-                                onClick={() => changeImage(src)}
+                                className={`${styles.miniatura} ${index === currentImageIndex ? styles.miniaturaAtiva : ''}`}
+                                onClick={() => changeImage(index)}
                             />
                         ))}
-                        <img src="/images/seta direita.jpg" alt="Seta para direita" className={styles.botaoSeta} />
+                        <img
+                            src="/images/seta direita.jpg"
+                            alt="Seta para direita"
+                            className={styles.botaoSeta}
+                            onClick={handleNextImage}
+                        />
                     </div>
                 </div>
 

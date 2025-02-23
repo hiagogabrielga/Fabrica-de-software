@@ -1,62 +1,45 @@
 'use client';
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from 'next/link';
 import styles from './perfil.module.css';
 
 const Perfil = () => {
     const [isModalVisivel, setModalVisivel] = useState(false);
-    const [logicPerfil, setLogicPerfil] = useState(true)
+    const [logicPerfil, setLogicPerfil] = useState(true);
 
-    useEffect(() => {
-        const botaoExcluir = document.getElementById("excluirConta");
-        const botaoFechar = document.querySelector(".fechar");
-        const botaoConcluir = document.querySelector(".concluir");
-        const janelaExclusao = document.getElementById("janelaExclusao");
+    const handleExcluirClick = () => {
+        setModalVisivel(true);
+    };
 
-        if (botaoExcluir) {
-            botaoExcluir.addEventListener("click", () => {
-                setModalVisivel(true);
-            });
+    const handleFecharClick = () => {
+        setModalVisivel(false);
+    };
+
+    const handleConcluirClick = () => {
+        setModalVisivel(false);
+        console.log("Conta excluída!");
+    };
+
+    const handleJanelaExclusaoClick = (event) => {
+        if (event.target === event.currentTarget) {
+            setModalVisivel(false);
         }
-
-        if (botaoFechar) {
-            botaoFechar.addEventListener("click", () => {
-                setModalVisivel(false);
-            });
-        }
-
-        if (botaoConcluir) {
-            botaoConcluir.addEventListener("click", () => {
-                setModalVisivel(false);
-                console.log("Conta excluída!");
-            });
-        }
-
-        if (janelaExclusao) {
-            janelaExclusao.addEventListener("click", (event) => {
-                if (event.target === janelaExclusao) {
-                    setModalVisivel(false);
-                }
-            });
-        }
-
-        return () => {
-            if (botaoExcluir) botaoExcluir.removeEventListener("click", () => { });
-            if (botaoFechar) botaoFechar.removeEventListener("click", () => { });
-            if (botaoConcluir) botaoConcluir.removeEventListener("click", () => { });
-        };
-    }, []);
+    };
 
     return (
         <>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-            <div className={`${styles.janelaExclusao} ${isModalVisivel ? styles.mostrar : ''}`} id="janelaExclusao">
+            <div 
+                className={`${styles.janelaExclusao} ${isModalVisivel ? styles.mostrar : ''}`} 
+                id="janelaExclusao" 
+                onClick={handleJanelaExclusaoClick}
+            >
                 <div className={styles.exclusao}>
                     <h1>Atenção!</h1>
                     <p>Tem certeza de que deseja excluir sua conta? Esta ação é irreversível e todos os seus dados serão permanentemente apagados.</p>
                     <div className={styles.botoesFechar}>
-                        <button className={styles.concluir} id="concluir">Excluir</button>
-                        <button className={styles.fechar} id="fechar">Fechar</button>
+                        <button className={styles.concluir} id="concluir" onClick={handleConcluirClick}>Excluir</button>
+                        <button className={styles.fechar} id="fechar" onClick={handleFecharClick}>Fechar</button>
                     </div>
                 </div>
             </div>
@@ -65,7 +48,13 @@ const Perfil = () => {
                 <aside className={styles.barraLateral}>
                     <div className={styles.perfil1}>
                         <i className="bi bi-person-circle"></i>
-                        <button className={logicPerfil ? styles.botaoEditar : styles.botaoEditarNclick} disabled={logicPerfil ? false : true} onClick={() => setLogicPerfil(!logicPerfil)}>Editar perfil</button>
+                        <button 
+                            className={logicPerfil ? styles.botaoEditar : styles.botaoEditarNclick} 
+                            disabled={!logicPerfil} 
+                            onClick={() => setLogicPerfil(!logicPerfil)}
+                        >
+                            Editar perfil
+                        </button>
                     </div>
                     <div className={styles.menu}>
                         <ul className={styles.ul}>
@@ -73,12 +62,12 @@ const Perfil = () => {
                                 <Link href="/MeusAlertas">
                                     <button className={styles.botaoMenu}>Meus alertas</button>
                                 </Link>
-                                <Link href="/Carlos/meus-produtos">
+                                <Link href="/meusProdutos">
                                     <button className={styles.botaoMenu}>Meus produtos</button>
                                 </Link>
                             </li>
                             <li><button className={styles.botaoMenu}>Sair</button></li>
-                            <li><button className={styles.excluirConta} id="excluirConta">Excluir conta</button></li>
+                            <li><button className={styles.excluirConta} id="excluirConta" onClick={handleExcluirClick}>Excluir conta</button></li>
                         </ul>
                     </div>
                 </aside>
@@ -120,7 +109,14 @@ const Perfil = () => {
                         </div>
 
                         <div className={styles.botaoSalvar}>
-                            <button disabled={logicPerfil ? true : false} onClick={() => setLogicPerfil(!logicPerfil)} className={logicPerfil ? styles.btnNclicavel : styles.btnClicavel} type="submit">Salvar Alterações</button>
+                            <button 
+                                disabled={logicPerfil} 
+                                onClick={() => setLogicPerfil(!logicPerfil)} 
+                                className={logicPerfil ? styles.btnNclicavel : styles.btnClicavel} 
+                                type="submit"
+                            >
+                                Salvar Alterações
+                            </button>
                         </div>
                     </form>
                 </main>

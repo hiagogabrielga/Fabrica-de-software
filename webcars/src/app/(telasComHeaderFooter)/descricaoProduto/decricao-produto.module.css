@@ -20,9 +20,9 @@
 }
 
 .secaoImagens img {
-    width: 736px; /* Largura fixa para a imagem principal */
-    height: 500px; /* Altura fixa para a imagem principal */
-    object-fit: cover; /* Cobre o espaço mantendo a proporção */
+    width: 736px;
+    height: 500px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -52,6 +52,10 @@
 
 .carrosselImagens .botaoSeta {
     width: 25px;
+}
+
+.carrosselImagens .botaoSeta:hover {
+    transform: scale(1.1);
 }
 
 /* Seção de preços */

@@ -1,0 +1,124 @@
+.titulo {
+    padding: 17px;
+    text-align: center;
+    font-weight: 500;
+    color: #C63434;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+}
+
+.fundoCarro {
+    width: 1100px;
+    height: auto;
+    background-color: #d9d9d9;
+    margin-left: 20px;
+    margin-right: 3.7rem;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    padding: 10px;
+}
+
+.cardCarros .bot {
+    margin-top: 45px;
+}
+
+.cardCarros a {
+    color: wheat;
+    text-decoration: dashed;
+}
+
+.cardCarros {
+    width: 200px;
+    height: 220px;
+    background-color: #efefef;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+.cardCarros img {
+    width: 200px;
+    height: 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardCarros p {
+    margin-top: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #575757;
+}
+
+.cardCarros button {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    border: none;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    background-color: #c63434;
+    color: #ebebeb;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.butao {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #D9D9D9;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    z-index: 3;
+}
+
+.butao .editar, .delete {
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+    color: rgb(37, 37, 37); 
+}
+
+.butao .delete {
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+    color: rgb(41, 40, 40); 
+}
