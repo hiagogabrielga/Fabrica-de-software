@@ -49,11 +49,16 @@
     margin: 0;
 }
 
-.cardCarros img {
+.imagemCarro {
     width: 200px;
     height: 120px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.imagemPlus{
+    height: 120px;
+    width: 120px;
 }
 
 .cardCarros p {
