@@ -103,7 +103,9 @@ export default function Header() {
 
         <div className={styles.perfilCarrinho}>
           <div className={styles.carrinho}>
-            <Image src={CarrinhoImg} alt="carrinho" width={50} height={50} />
+            <Link href='/TelaDesejos' className={styles.perfil}>
+              <Image src={CarrinhoImg} alt="carrinho" width={50} height={50} />
+            </Link>
           </div>
           <div className={styles.perfil}>
             <Link href='/perfil' className={styles.linkPerfil}>

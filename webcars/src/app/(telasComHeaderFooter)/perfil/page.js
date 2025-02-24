@@ -50,6 +50,9 @@ const Perfil = () => {
                     <div className={styles.menu}>
                         <ul className={styles.ul}>
                             <li>
+                            <Link href="/TelaDesejos">
+                                    <button className={styles.botaoMenu}>Lista de desejo</button>
+                                </Link>
                                 <Link href="/MeusAlertas">
                                     <button className={styles.botaoMenu}>Meus alertas</button>
                                 </Link>
