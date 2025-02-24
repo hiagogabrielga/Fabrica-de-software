@@ -8,16 +8,16 @@ export default function Home() {
       <nav className={styles.nav}>
         <ul className={styles.menu}>
           <li className={styles.menu_item}>
-            <Link href="#">Categorias</Link>
+            <Link href="/telaFiltroCarrosVGC">Categorias</Link>
             <ul className={styles.dropdown}>
               {[1, 2, 3, 4, 5].map((num) => (
                 <li key={num}><Link href="#">Categoria {num}</Link></li>
               ))}
             </ul>
           </li>
-          <li className={styles.menu_item}><Link href="#">Catálogo 0Km</Link></li>
-          <li className={styles.menu_item}><Link href="#">Seminovos</Link></li>
-          <li className={styles.menu_item}><Link href="#">Vender</Link></li>
+          <li className={styles.menu_item}><Link href="/telaFiltroCarrosVGC">Catálogo 0Km</Link></li>
+          <li className={styles.menu_item}><Link href="/telaFiltroCarrosVGC">Seminovos</Link></li>
+          <li className={styles.menu_item}><Link href="/adicionarProduto">Vender</Link></li>
         </ul>
       </nav>
 
@@ -28,7 +28,7 @@ export default function Home() {
             <div className={styles.cards_cs} key={index}>
               <Image src="/images/fundo.jpg" alt="fundo" width={100} height={100}/>
               <p>{item}</p>
-              <button><Link href="../../Nathan/TelaDaConcessionaria/teladaconcessionaria.html">veja mais</Link></button>
+              <button><Link href="/TelaDaConcessionaria">veja mais</Link></button>
             </div>
           ))}
         </div>
@@ -41,7 +41,7 @@ export default function Home() {
             <div className={styles.card_carros} key={index}>
               <Image src="/images/VW-Gol-lateral.jpg" alt="carro" width={160} height={120}/>
               <p>{carro}</p>
-              <button><Link href="../../Carlos/descriçao-produto.html">veja mais</Link></button>
+              <button><Link href="/descricaoProduto">veja mais</Link></button>
             </div>
           ))}
         </div>

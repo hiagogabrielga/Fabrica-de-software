@@ -30,14 +30,14 @@ const Footer = () => {
           <div className={styles.column}>
             <h3>Novidades</h3>
             <ul>
-              <li><Link className={styles.link} href="/Vitor/tela_inicial/index">Os mais populares</Link></li>
-              <li><Link className={styles.link} href="/Vitor/tela_inicial/index">Promoções</Link></li>
+              <li><Link className={styles.link} href="/">Os mais populares</Link></li>
+              <li><Link className={styles.link} href="/telaFiltroCarrosVGC">Promoções</Link></li>
             </ul>
           </div>
           <div className={styles.column}>
             <h3>Ajuda</h3>
             <ul>
-              <li><Link className={styles.link} href="/Maria/cadastroConss/cadastroPess/cadastroPess">Criar conta</Link></li>
+              <li><Link className={styles.link} href="/TelaCadastroCliente">Criar conta</Link></li>
               <li><Link className={styles.link} href="/telaLogin">Logar conta</Link></li>
               <li><Link className={styles.link} href="/perfil">Meu perfil</Link></li>
               <li><Link className={styles.link} href="/Suporte">Suporte</Link></li>
