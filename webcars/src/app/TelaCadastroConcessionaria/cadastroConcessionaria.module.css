@@ -1,12 +1,10 @@
 .containerCadastro {
   display: flex;
   width: 100%;
-  height: 100%;
 }
 
 .leftRed {
   width: 30%;
-  height: 100%;
   background-color: var(--corDetalhes);
   display: flex;
   align-items: center;
@@ -45,9 +43,10 @@
   display: flex;
   margin: auto;
   flex-direction: column;
-  min-height: 85%;
+  height: auto;
   width: 60%;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .conteudoFormulario {
@@ -55,7 +54,7 @@
   background-color: var(--corPrincipal);
   width: 100%;
   height: 100%;
-  padding: 2%;
+  padding: 25px 10px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -71,6 +70,7 @@
   flex-direction: column;
   width: 90%;
   margin: auto;
+  margin-bottom: 15px;
 }
 
 .containerInput label {
@@ -154,4 +154,19 @@
   flex-direction: column;
   align-items: end;
   justify-content: space-around;
+}
+
+
+.containerTwoButtons{
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.containerTwoButtons > .containerInput{
+    width: 45%;
+    margin: 0;
+    margin-bottom: 15px;
 }
