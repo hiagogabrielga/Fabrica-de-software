@@ -89,7 +89,7 @@ const SemiNovos = () => {
 
   return (
     <div>
-      <h1 className={style.semiNovos}>Carros Seminovos</h1>
+      <h1 className={style.semiNovos}>Carros Filtrados</h1>
       <div className={style.mainContainer}>
         <div className={style.filtros}>
           <FilterBox label="Marca" options={marcas} />
