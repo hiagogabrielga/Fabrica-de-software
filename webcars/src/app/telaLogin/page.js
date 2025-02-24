@@ -21,9 +21,12 @@ export default function LoginPage() {
                     <p>Web Cars</p>
                 </div>
                 <div className={styles.containerFormulario}>
-                    <h3>Login</h3>
+                    <h2>Login</h2>
                     <form className={styles.formulario}>
                         <div className={styles.conteudoFormulario}>
+                            <div className={styles.containerImage}>
+                                <Image src={'/images/logo.png'} width={100} height={100} alt="Logo" />
+                            </div>
                             <div className={styles.containerInputs}>
                                 <div className={styles.campoInput}>
                                     <label>Email:</label>
@@ -43,7 +46,11 @@ export default function LoginPage() {
 
                             </div>
                             <div className={styles.campoBotoes}>
-                                <Link href='/TrocarSenha' className={styles.ancora}>Esqueceu sua senha?</Link>
+                                <div className={styles.containerAncoras}>
+                                    <Link href='/TelaCadastroCliente' className={styles.ancora}>Ainda não tenho uma conta</Link>
+                                    <Link href='/TrocarSenha' className={styles.ancora}>Esqueceu sua senha?</Link>
+                                </div>
+
                                 <button className={styles.buttonSubmit} type="submit">Entrar</button>
                             </div>
                         </div>

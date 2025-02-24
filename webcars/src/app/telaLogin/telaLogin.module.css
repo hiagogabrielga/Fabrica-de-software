@@ -45,6 +45,7 @@
 }
 
 .conteudoFormulario{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: var(--corPrincipal);
     width: 100%;
     height: 100%;
@@ -63,8 +64,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 20px auto;
-    height: 60%;
+    margin: 5px auto;
+    height: 40%;
 }
 
 .campoInput{
@@ -73,13 +74,16 @@
 }
 
 .campoInput label{
-    margin-left: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+    color: var(--corFontes);
 }
 
 .inputLogin{
     display: flex;
     width: 100%;
     margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #inputEmail{
@@ -90,9 +94,14 @@
     display: flex;
     width: 100%;
     border-radius: 5px 0 0 5px;
-    height: 30px;
+    height: 35px;
     border: none;
     color: black;
+    padding: 2%;
+}
+
+.inputLogin input:focus{
+    outline: none;
 }
 
 .bottonEye{
@@ -125,10 +134,26 @@
     background-color:#e03434;
 }
 
+.containerAncoras{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+
 .ancora{
-    color: rgba(0, 0, 0, 0.712);
+    color: var(--corDetalhes);
+    margin-top: 5px;
 }
 
 .ancora:hover{
-    color: rgba(0, 0, 0, 0.795);
+    color:#e03434;
+}
+
+.containerImage{
+    width: 100%;
+    display: flex;
+}
+
+.containerImage *{
+    margin: auto;
 }
