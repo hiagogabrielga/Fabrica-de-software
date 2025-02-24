@@ -1,5 +1,5 @@
 import styled from "./listaDesejos.module.css";
-
+import Image from "next/image";
 const carItens = [
     {
         id: 1,
