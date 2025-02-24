@@ -22,7 +22,6 @@ export default function Home() {
       </nav>
 
       <div className={styles.destaque}>
-        <h1>Concessionárias em destaque</h1>
         <div className={styles.fundo_cards}>
           {["Concessionária 1", "Concessionária 2", "Concessionária 3", "Concessionária 4", "Concessionária 5"].map((item, index) => (
             <div className={styles.cards_cs} key={index}>
