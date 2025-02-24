@@ -51,33 +51,8 @@ const carItens = [
 
 export default function ListaDesejos() {
     return (
-        <div className={styled.container}>
-            <button className={styled.btnVoltar}>Voltar</button>
-
-            <div className={styled.title}>
-                <h1>Lista de Desejos</h1>
-                <button className={styled.btnCompartilhar}>Compartilhar</button>
-            </div>
-            <div className={styled.container}>
-                <div className={styled.cardsContainer}>
-                    <div className={styled.cardAdicionar}>
-                        <Image src={AddIcon} alt="plus" width={55} height={55} />
-                        <button className={styled.button}>Adicionar Carro</button>
-                    </div>
-
-                    {carItens.map((item) => {
-                        return (
-                            <div className={styled.cards} key={item.id}>
-                                <Image src={item.imagem} alt="" width={280} height={280} />
-                                <p>{item.desc}</p>
-                                <button className={styled.button}>Veja mais</button>
-                            </div>
-
-                        )
-                    })}
-
-                </div>
-            </div>
+        <div>
+            <h1>Tela de desejo</h1>
         </div>
     )
 }
