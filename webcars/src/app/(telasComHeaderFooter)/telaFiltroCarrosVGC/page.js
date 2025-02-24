@@ -64,7 +64,10 @@ const SemiNovos = () => {
     'Audi', 'BMW', 'Chevrolet', 'Fiat', 'Ford', 'Honda', 'Hyundai', 'Jeep', 'Kia',
     'Mercedes-Benz', 'Nissan', 'Toyota', 'Volkswagen', 'Volvo', 'Renault'
   ];
-
+  const categorias = [
+    'Sedan', 'Hatchback', 'SUV', 'Crossover', 'Picape', 'Esportivo', 'Minivan', 'Conversível', 'Elétrico', 'Híbrido'
+  ];
+  
   const modelos = [
     'Corolla', 'Civic', 'Golf', 'Onix', 'Palio', 'HB20', 'Compass', 'Tucson', 'Amarok',
     'Cruze', 'Focus', 'Polo', 'Sandero', 'Ka', 'Jetta'
@@ -72,8 +75,10 @@ const SemiNovos = () => {
 
   const combustiveis = ['Álcool', 'Gasolina', 'Elétrico', 'Diesel', 'Etanol'];
 
+  // Nova constante para categorias de carros
+
   // Estado para controlar o número de cards
-  const [numeroDeCards, setNumeroDeCards] = useState(25); 
+  const [numeroDeCards, setNumeroDeCards] = useState(30); 
 
   // Dados dos carros
   const carros = Array(numeroDeCards).fill({
@@ -84,10 +89,12 @@ const SemiNovos = () => {
 
   return (
     <div>
-      <h1 className={style.semiNovos}>Carros Seminovos</h1>
+      <h1 className={style.semiNovos}>Carros Filtrados</h1>
       <div className={style.mainContainer}>
         <div className={style.filtros}>
           <FilterBox label="Marca" options={marcas} />
+          <hr />
+          <FilterBox label="Categoria" options={categorias} />
           <hr />
           <FilterBox label="Modelo" options={modelos} />
           <hr />
@@ -116,6 +123,7 @@ const SemiNovos = () => {
           />
           <hr />
           <FilterBox label="Combustível" options={combustiveis} />
+          {/* Adicionando o filtro de categorias */}
         </div>
         <div className={style.fundoCarro}>
           {carros.map((carro, index) => (
