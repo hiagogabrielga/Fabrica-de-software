@@ -126,6 +126,7 @@
     color: white;
     padding: 2% 7%;
     border-radius: 10px;
+    height: 50px;
     border: none;
     cursor: pointer;
 }
