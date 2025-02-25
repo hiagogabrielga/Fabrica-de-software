@@ -52,7 +52,7 @@ const CarCard = ({ image, name, link }) => {
       />
       <p>{name}</p>
       <button>
-        <a href={link}>veja mais</a>
+        <a href='/descricaoProduto'>veja mais</a>
       </button>
     </div>
   );
