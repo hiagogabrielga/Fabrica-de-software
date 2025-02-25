@@ -274,3 +274,9 @@ a> .gmail > i {
         margin-top: 20px;
     }
 }
+
+.botaoLoja1 {
+    background-color: #c63434;
+    color: white;
+    text-decoration: none;
+}

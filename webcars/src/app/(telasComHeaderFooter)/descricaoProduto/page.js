@@ -73,8 +73,8 @@ const Suporte = () => {
                     </p>
                     <p className={styles.textoOu}>ou</p>
                     <p className={styles.parcelas}>2x de R$ 39.745,50 sem juros</p>
-                    <button className={styles.botaoListaDesejos}>Adicionar à Lista de Desejos</button>
-                    <button className={styles.botaoLoja}>Ver na Loja</button>
+                    <button href="/TelaDaConcessionaria" className={styles.botaoListaDesejos}><Link href="/TelaDesejos" className={styles.botaoLoja1}>Adicionar à Lista de Desejos</Link></button>
+                    <button  className={styles.botaoLoja}><Link href="/TelaDaConcessionaria" className={styles.botaoLoja1}>Ver na Loja</Link></button>
                 </div>
 
                 <div className={styles.secaoContatos}>
